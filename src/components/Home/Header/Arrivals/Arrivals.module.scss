@@ -1,0 +1,30 @@
+@import '../../../../app/globals';
+
+.arrivalsContainer{
+  margin: {
+    top: 0;
+    right: 105px;
+  };
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrivalsContainer .icon{
+  padding: 0 10px;
+  font-size: 20px;
+}
+
+.arrivalsContainer .arrivalsButton{
+  
+  @include my-font;
+  @include my-button;
+  color: #FFF;
+  background-color: #AB5D02;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.11);
+}
+
+.arrivalsContainer .arrivalsButton .arrowIcon{
+  padding-left: 5px;
+}
+

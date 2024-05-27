@@ -1,0 +1,18 @@
+@import '../../app/globals';
+
+.bColor{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 300px;
+
+  .button{
+    @include my-font;
+    width: 100px;
+    height: 40px;
+    color: #AA336A;
+    text-transform: capitalize;
+    border: 1px solid #000;
+    font-weight: bold;
+  }
+}

@@ -1,0 +1,55 @@
+.mensContainer{
+  height: 100%;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: clip;
+
+  .content{
+    height: 100%;
+    width: 1445px;
+    margin: 0 40px 0 40px;
+    display: flex;
+    justify-content: space-between;
+
+    .left{
+      height: 100%;
+      width: 20%;
+      background: rgba(249, 249, 249, 1);
+      border-radius: 12px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 10px 30px;
+    }
+
+    .right{
+      width: 73%;
+      height: 100%;
+    }
+  }
+}
+
+// for dark theme
+
+.darkMensContainer{
+  // height: 100%;
+  background: #000;
+  color: #FFF;
+
+  .content{
+    height: 100%;
+    width: 1445px;
+    margin: 0 40px 0 40px;
+    display: flex;
+    justify-content: space-between;
+    background: #000;
+    .left{
+      background: #000;
+      color: #FFF ;
+    }
+  }
+}

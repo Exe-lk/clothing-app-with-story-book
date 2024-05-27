@@ -1,0 +1,39 @@
+@import '../../app/globals';
+
+.rounded{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  place-items: center;
+  height: 300px;
+
+  .button{
+    @include my-font;
+    width: 100px;
+    height: 40px;
+    color: #AA336A;
+    text-transform: capitalize;
+    border: 1px solid #000;
+    font-weight: bold;
+  }
+  .top{
+    border-top: {
+      left-radius: 10px;
+      right-radius: 10px;
+    }
+  }
+  .bottom{
+    border-bottom: {
+      left-radius: 10px;
+      right-radius: 10px;
+    }
+  }
+  .rounded10{
+    border-radius: 10px;
+  }
+  .rounded50{
+    border-radius: 50px;
+  }
+  .circle{
+    border-radius: 100%;
+  }
+}

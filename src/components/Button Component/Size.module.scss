@@ -1,0 +1,29 @@
+@import '../../app/globals';
+
+.size{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 300px;
+
+  .button{
+    @include my-font;
+    color: #AA336A;
+    text-transform: capitalize;
+    border: 1px solid #000;
+    font-weight: bold;
+  }
+
+  .small{
+    width: 70px;
+    height: 20px;
+  }
+  .medium{
+    width: 100px;
+    height: 40px;
+  }
+  .large{
+    width: 130px;
+    height: 60px;
+  }
+}

@@ -1,0 +1,122 @@
+@import '../globals';
+
+.wrapper{
+  display: flex;
+  align-items: center;
+
+  .aside{
+    width: 72px;
+  }
+  .componentsWrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  
+    .searchBar{
+      position: relative;
+      height: 100px;
+      margin: 10px;
+      display: flex;
+      align-items: center;
+  
+      .searchIcon{
+        margin: 10px;
+        font-size: 30px;
+      }
+  
+      .search{
+        margin: 10px;
+        height: 40px;
+        width: 100%;
+        border: none;
+        border-radius: 10px;
+        padding-left: 10px;
+        font-size: 18px;
+        @include my-font;
+        letter-spacing: 2px;
+      }
+      .search:focus{
+        outline: none;
+      }
+  
+      .search::placeholder{
+        @include my-font;
+        font: {
+          size: 18px;
+          weight: bold
+        }
+  
+      }
+    }
+  
+    .components{
+      margin: 10px;
+      height: 550px;
+      display: grid;
+      grid-template-columns: auto auto auto;
+      place-items: center;
+      // border-top: 10px solid linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);;
+  
+      .component{
+        width: 280px;
+        height: 150px;
+        background: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);
+        border-radius: 10px;
+        border: 2px solid rgba(0, 0, 0, 0.8);
+        transition: .4s ease-in-out;
+        display: grid;
+        .componentLink{
+          text-decoration: none;
+          display: flex;
+          align-items: center;
+          color: #000;
+          .componentIcon{
+            margin: 12px;
+            font-size: 70px;
+            cursor: pointer;
+          }
+    
+          span{
+            width: 150px;
+            cursor: pointer;
+            @include my-font;
+            text: {
+              transform: capitalize;
+              align: center;
+            }
+            font: {
+              size: 30px;
+              weight: bold;
+            }
+          }
+        }
+      }
+      .component:hover{
+        transform: scale(1.1);
+        border: 4px solid rgba(0, 0, 0, 0.8);
+      }
+    }
+  }
+}
+
+.darkWrapper{
+  .componentsWrapper{
+    background: #000;
+
+    .searchBar{
+      .searchIcon{
+        color: #FFF;
+      }
+    }
+    .components{
+      .component{
+        border: 2px solid rgba(255, 255, 255, 0.8);
+      }
+      .component:hover{
+        transform: scale(1.1);
+        border: 4px solid rgba(255, 255, 255, 0.8);
+      }
+    }
+  }
+}

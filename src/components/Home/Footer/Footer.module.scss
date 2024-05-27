@@ -1,0 +1,217 @@
+@import '../../../app/globals';
+$footer-top-font: 13px;
+
+.footer{
+  width: 100%;
+  height: 350px;
+  background-color: rgba(171, 93, 2, 0.06);
+  border-top: 1px solid rgba(171, 93, 2, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  @include my-font;
+
+  .top{
+    width: 100%;
+    height: 280px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: $footer-top-font;
+    text-transform: uppercase;
+    font-size: 11px;
+
+    .left{
+      width: 33%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      border-right: 1px solid rgba(0, 0, 0, 0.15);
+
+      .socialize{
+        width: 90%;
+        height: 95px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+
+        .icons1{
+          width: 90px;
+          display: flex;
+          justify-content: space-between;
+          padding-bottom: 10px;
+          cursor: pointer;
+          font-size: 15px;
+        }
+      }
+      .sendMail{
+        width: 90%;
+        height: 90px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+
+        .icons2{
+          width: 100px;
+          padding-bottom: 10px;
+          text-align: center;
+          cursor: pointer;
+          font-size: 15px;
+          display: flex;
+          justify-content: space-around;
+        }
+
+      }
+      .dropBy{
+        width: 100%;
+        height: 95px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        
+        p{
+          margin: 10px 0;
+        }
+      }
+    }
+    .middle{
+      p:nth-child(1){
+        text-transform: uppercase;
+        font-size: 40px;
+        @include my-font;
+        font-weight: 100;
+        margin-block-start: 0;
+        margin-block-end: 0;
+    
+        span{
+          @include ultra-bold;
+          font-weight: 900;
+          letter-spacing: -2px;
+          font-size: 40px;
+          margin-left: -7px;
+        }
+      };
+
+      p:nth-child(2){
+        @include cursive;
+        text-align: center;
+        color: rgba(0, 0, 0, 0.7);
+        font-size: 15px;
+      }
+    }
+    .right{
+      width: 33%;
+      height: 280px;
+      border-left: 1px solid rgba(0, 0, 0, 0.15);
+      
+      p{
+        text-align: center;
+        padding-top: 40px;
+        font-weight: bold;
+        letter-spacing: 1px;
+      }
+      .content{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .left{
+          width: 50%;
+          height: 120px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          border: none;
+
+          a{
+            text-decoration: none;
+            color: rgba(0, 0, 0, 0.6);
+            padding: 10px;
+          }
+        }
+        .right{
+          width: 50%;
+          height: 120px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          text-align: center;
+          border: none;
+
+          a{
+            text-decoration: none;
+            color: rgba(0, 0, 0, 0.6);
+            padding: 10px;
+          }
+        }
+      }
+    }
+
+  }
+  .bottom{
+    width: 80%;
+    text-align: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+    font-size: 10px;
+    color: #707070;
+  }
+}
+
+// for dark theme
+
+.darkFooter{
+  border-top: 1px solid rgb(255, 255, 255);
+}
+
+.darkFooter{
+  .top{
+    .left{
+      border-right: 1px solid rgb(255, 255, 255);
+
+      .socialize{
+        border-bottom: 1px solid rgb(255, 255, 255);
+      }
+      .sendMail{
+        border-bottom: 1px solid #FFF;
+      }
+    }
+    .middle{
+      p:nth-child(2){
+        @include cursive;
+        text-align: center;
+        color: #FFF;
+        font-size: 15px;
+      }
+    }
+    .right{
+      border-left: 1px solid #FFF;
+      .content{
+        .left{
+          a{
+            color: #FFF;
+          }
+        }
+        .right{
+          a{
+            color: #FFF;
+          }
+        }
+        
+      }
+      ;
+    }
+  }
+  .bottom{
+    border-top: 1px solid rgb(255, 255, 255);
+    color: #FFF;
+  }
+}

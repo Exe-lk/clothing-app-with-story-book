@@ -1,0 +1,88 @@
+@import '../../../../app/globals';
+
+
+.searchBar{
+  display: flex;
+  padding: {
+    left: 30px;
+    top: 0px;
+  } 
+}
+
+.searchBar{
+  input{
+    width: 183px;
+    height: 18px;
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 14px;
+    border: {
+      top: none;
+      left: none;
+      right: none;
+    }
+    margin: {
+      top: 10px;
+      left: 50px
+    }
+    @include my-font;
+    // font-family: var(--font-montserrat);
+    
+  }
+  .searchIcon{
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+    margin: {
+      top: 10px;
+      left: 0px
+    }
+    font-size: 20px;
+  }
+}
+
+.searchBar input:focus{
+  outline: none;
+}
+
+// for dark theme
+
+.darkSearchBar{
+  display: flex;
+  padding: {
+    left: 30px;
+    top: 0px;
+  } 
+  background: #000;
+  
+}
+
+.darkSearchBar{
+  input{
+    width: 183px;
+    height: 18px;
+    background: #000;
+    color: #FFF;
+    font-size: 14px;
+    border: {
+      top: none;
+      left: none;
+      right: none;
+    }
+    margin: {
+      top: 10px;
+      left: 50px
+    }
+  }
+  @include my-font;
+  .searchIcon{
+    color: #FFF;
+    border-bottom: 2px solid #FFF;
+    margin: {
+      top: 10px;
+      left: 0px
+    }
+    font-size: 20px;
+  }
+}
+
+.darkSearchBar input:focus{
+  outline: none;
+}

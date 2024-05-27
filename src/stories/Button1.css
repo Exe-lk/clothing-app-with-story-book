@@ -1,0 +1,42 @@
+.button{
+  text-transform: uppercase;
+  padding: 10px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.button-small-yes{
+  font-size: 11px;
+  padding: 10px 16px;
+  border-radius: 5px;
+}
+
+.button-medium-yes{
+  font-size: 13px;
+  padding: 12px 18px;
+  border-radius: 5px;
+}
+
+.button-large-yes{
+  font-size: 15px;
+  padding: 14px 20px;
+  border-radius: 5px;
+}
+
+.button-small-no{
+  font-size: 11px;
+  padding: 10px 16px;
+  border-radius: 0;
+}
+
+.button-medium-no{
+  font-size: 13px;
+  padding: 12px 18px;
+  border-radius: 0;
+}
+
+.button-large-no{
+  font-size: 15px;
+  padding: 14px 20px;
+  border-radius: 0;
+}

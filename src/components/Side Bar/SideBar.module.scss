@@ -1,0 +1,131 @@
+@import '../../app/globals';
+
+.sideBar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 72px;
+  background: #FFF;
+  height: 100vh;
+  z-index: 1000;
+
+  .sideBarInner{
+    .sideBarHeader{
+      display: flex;
+      display: grid;
+      place-items: center;
+      height: 72px;
+
+      .headerButton{
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        border: 0;
+        padding: 0;
+        background: transparent;
+        color: #000;
+
+        .headerLogo{
+          width: 50px;
+          height: 50px;
+        }
+      }
+      .headerButton:hover{
+        transform: scale(1.1);
+        transition: .4s ease-in-out;;
+      }
+    }
+    .sideBarMenu{
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      overflow: hidden;
+      justify-content: center;
+      align-items: center;
+
+      .sideBarLink{
+        overflow: hidden;
+        transition:  .4s ease-in-out;
+        padding: 50px 0;
+        margin: 5px;
+        background: transparent;
+        color: #000;
+        border: none;
+        cursor: pointer;
+        text-decoration: none;
+
+        .sideBarLogo{
+          width: 50px;
+          height: 50px;
+        }
+        span{
+          display: none;
+        }
+      }  
+      .sideBarLink:hover{
+        transform: scale(1.1);
+      }
+    }
+  }
+  .open{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.75);
+    transition:  .4s ease-in-out;
+    .sideBarHeader{
+      display: grid;
+      place-items: start;
+      
+      .headerButton{
+        text-align: start;
+        padding: 10px 0 10px 5px;
+        margin: 10px;
+      }
+    }
+    .sideBarMenu{
+      transition:  .4s ease-in-out;
+      .sideBarLink{
+        color: #000;
+        text-align: center;
+        padding: 50px 0;
+        margin: 10px;
+        display: flex;
+        align-items: center;       
+
+        span{
+          @include my-font;
+          display: block;
+          font: {
+            size: 30px;
+            weight: 500;
+          }
+          padding-left: 20px;
+        }
+      }
+    }
+  }
+}
+
+.darkSideBar{
+  background: rgba(0, 0, 0, 0.88);
+
+  .sideBarInner{
+    .sideBarHeader{
+
+      .headerButton{
+        color: #FFF;
+      }
+    }
+    .sideBarMenu{
+      .sideBarLink{
+        text-decoration: none;
+        color: #FFF;
+      }
+    }
+  }
+  .open{
+    background: rgba(0, 0, 0, 0.8);;
+  }
+}

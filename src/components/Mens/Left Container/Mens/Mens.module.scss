@@ -1,0 +1,41 @@
+@import '../../../../app/globals';
+
+.mens{
+  @include my-font;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-transform: capitalize;
+
+  p{
+    font-size: 15px;
+    font-weight: bold;
+    margin-block-start: 5px;
+    margin-block-end: 0;
+  }
+  ul{
+    list-style: none;
+    padding-inline-start: 20px;
+    font-size: 14px;
+    
+    li{
+      color: rgba(105, 105, 105, 1);
+      padding: 7px 0;
+    }
+    li:nth-child(7){
+      color: rgba(171, 93, 2, 1);
+    }
+  }
+}
+
+// for dark theme
+
+.darkMens{
+  ul{
+    li{
+
+      color: #FFF;
+    }
+  }
+}

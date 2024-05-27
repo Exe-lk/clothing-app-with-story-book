@@ -1,0 +1,43 @@
+@import '../../app/globals';
+
+.shadow{
+  display: grid;
+  grid-template-columns: auto auto;
+  place-items: center;
+  height: 300px;
+
+  .button{
+    @include my-font;
+    width: 100px;
+    height: 40px;
+    color: #AA336A;
+    text-transform: capitalize;
+    border: 1px solid #000;
+    font-weight: bold;
+  }
+
+  .none{
+    box-shadow: none;
+  }
+  .small{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  }
+  .medium{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3), 0 6px 20px 0 rgba(0,0,0,0.4);
+  }
+  .large{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4), 0 6px 20px 0 rgba(0,0,0,0.6);
+  }
+}
+
+.darkShadow{
+  .small{
+    box-shadow: 0 8px 16px 0 rgba(255,255,255,0.2), 0 6px 20px 0 rgba(255,255,255,0.19);
+  }
+  .medium{
+    box-shadow: 0 8px 16px 0 rgba(255,255,255,0.3), 0 6px 20px 0 rgba(255,255,255,0.4);
+  }
+  .large{
+    box-shadow: 0 8px 16px 0 rgba(255,255,255,0.4), 0 6px 20px 0 rgba(255,255,255,0.6);
+  }
+}

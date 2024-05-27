@@ -1,0 +1,79 @@
+@import '../../../app/globals';
+
+.navBar{
+  height: 70px;
+  width: 100%;
+  // position: sticky;
+  // top: 91px;
+  z-index: 100;
+  background: #FFF;
+  border-bottom: 1px solid #FFF;
+}
+
+.navBar{
+  nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .link{ 
+      @include my-font;
+      text: {
+        decoration: none;
+        transform: uppercase;
+      }
+      padding: 20px 40px;
+      font-size: 14px;
+      color: #000;
+    }
+    .link:hover{
+      color: #AB5D02;
+    }
+  }
+}
+
+// .navBar{
+//   nav{
+//     .link:nth-child(1){
+//       color: #AB5D02;
+//     }
+//   }
+// }
+
+// for dark theme
+
+.darkNavBar{
+  height: 70px;
+  background-color: #000;
+  position: sticky;
+  top: 91px;
+  z-index: 100;
+}
+
+.darkNavBar{
+  nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .link{ 
+      @include my-font;
+      text: {
+        decoration: none;
+        transform: uppercase;
+      }
+      padding: 20px 40px;
+      font-size: 14px;
+      color: #FFF;
+    }
+    .link:hover{
+      color: #AB5D02;
+    }
+  }
+}
+
+// .darkNavBar{
+//   nav{
+//     .link:nth-child(1){
+//       color: #AB5D02;
+//     }
+//   }
+// }

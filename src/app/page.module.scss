@@ -1,0 +1,25 @@
+.home{
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  overflow-x: clip;
+  .wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.darkHome{
+  width: 100%;
+  height: 1000%;
+  display: flex;
+  background: #000;
+  color: #FFF;
+  z-index: -1;
+  .wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -1,0 +1,31 @@
+@import '../../../app/globals';
+
+.path{
+  @include my-font;
+  text-transform: capitalize;
+  margin: 0 0 10px 80px;
+  width: 100%;
+
+  p{
+    text-align: start;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.35);
+    
+    span{
+      font-weight: bold;
+      color: #000;
+    }
+  }
+}
+
+// for dark theme
+
+.darkPath{
+  p{
+    color: #FFF;
+
+    span{
+      color: #FFF;
+    }
+  }
+}
