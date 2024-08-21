@@ -1,0 +1,70 @@
+// @import '../../../../app/globals';
+
+// .colors{
+//   @include my-font;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: flex-start;
+//   align-items: flex-start;
+//   text-transform: capitalize;
+
+//   p{
+//     font-size: 15px;
+//     font-weight: bold;
+//     margin-block-start: 5px;
+//     margin-block-end: 10px;
+//   }
+//   .colorsList{
+//     display: grid;
+//     grid-template-columns: auto auto auto auto;
+//     margin-left: 24px;
+
+//     div{
+//       height: 18px;
+//       width: 18px;
+//       border-radius: 100%;
+//       margin: 10px;
+//       padding: 5px;
+//     }
+//     div:nth-child(1){
+//       background: rgba(241, 40, 40, 1);
+//     }
+//     div:nth-child(2){
+//       background: rgba(94, 236, 91, 1);
+//     }
+//     div:nth-child(3){
+//       background: rgba(37, 104, 235, 1);
+//     }
+//     div:nth-child(4){
+//       background: rgba(224, 205, 33, 1);
+//     }
+//     div:nth-child(5){
+//       background: rgba(25, 104, 85, 1);
+//     }
+//     div:nth-child(6){
+//       background: rgba(10, 10, 10, 1);
+//     }
+//     div:nth-child(7){
+//       background: rgba(245, 238, 238, 1);
+//     }
+//     div:nth-child(8){
+//       background: rgba(224, 39, 195, 1);
+//     }
+//   }
+// }
+
+// // for dark theme
+
+// .darkColors{
+//   .colorsList{
+//     div{
+//       border: 2px solid #FFF;
+//     }
+//   }
+// }
+
+.colorCont{    
+  .colorItem.active{
+    border: 2px solid #AB5D02 !important;
+  }
+}

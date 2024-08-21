@@ -17,12 +17,12 @@ const BootstrapVars = () => {
   return (
     <div className='cotainer-fluid mx-0'>
 
-      <div className={`${styles.breadCrumb} row mx-0 w-100 position-fixed top-0`} style={{zIndex:1000}}>
+      <div className={`${styles.breadCrumb} row mx-0 w-100`} style={{zIndex:1000}}>
         <nav aria-label="breadcrumb" className='my-auto'>
           <ol className="breadcrumb fs-7 fs-sm-6 fs-md-5 fs-xxl-5 fs-xl-5 fs-lg-5">
             <li className="breadcrumb-item"><a href="/" className='text-decoration-none' style={{color: 'rgba(0, 0, 0, 0.35)'}}>Home</a></li>
             <Link href='installation' className="breadcrumb-item text-decoration-none" style={{color: 'rgba(0, 0, 0, 0.35)'}}>Getting Started</Link>
-            <li className="breadcrumb-item active" aria-current="page">{`Development`}</li>
+            <li className="breadcrumb-item active" aria-current="page">{`Bootstrap Variables`}</li>
           </ol>
         </nav>
       </div>

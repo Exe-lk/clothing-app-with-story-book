@@ -1,0 +1,16 @@
+@import '../../../../app/globals';
+
+.heading{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  
+
+  p{
+    @include my-font;
+    font-size: 15px;
+    text-transform: uppercase;
+  }
+}

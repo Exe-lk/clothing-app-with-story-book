@@ -22,7 +22,7 @@ const page = () => {
         <h3 className='fw-bold fs-4 fs-smx-xxl-2 mx-xl-2 mx-lg-2 mx-1 my-xxl-2 my-1 p-1  fs-md-3 fs-lg-3 fs-xl-3 fs-xxl-3'> <i className="bi bi-file-earmark-code"></i> <span>General Usage</span> </h3>
       </div>
 
-      <div className='row my-3' >
+      <div className='row my-3 ' >
         <div className={`${styles.formWrapper} col-10 m-auto rounded-2`} style={{background:'#FFF'}}>
           <div className={`${styles.formCode} row mx-0`}>
 
@@ -117,7 +117,7 @@ const page = () => {
 
       <div className='row my-5 d-flex align-items-start justify-content-center' >
           
-        <div className="col-xxl-5 col-xl-5 col-lg-10 col-sm-11 col-md-11 col-11 mx-2 my-xxl-5 my-xl-5 my-lg-5 my-md-4 my-sm-4 my-4 bg-white py-2" >
+        <div className={`${styles.container} col-xxl-5 col-xl-5 col-lg-10 col-sm-11 col-md-11 col-11 mx-2 my-xxl-5 my-xl-5 my-lg-5 my-md-4 my-sm-4 my-4 bg-white py-2 rounded-3`} >
           <div className="row mx-0">
             <div className="col-xxl-1 col-xl-2 col-lg-2 col-xl-2 col-2 m-0 p-0 text-center">
               <i className="bi bi-card-checklist fs-6 fs-sm-3 fs-md-2 fs-lg-3 fs-xl-1 fs-xxl-1"></i>
@@ -126,8 +126,8 @@ const page = () => {
               <p className='p-0 m-0'>view</p>
               <p className='p-0 m-0'>Form</p>
             </div>
-            <div className="col-3 fs-7 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-5 fs-xxl-5 text-capitalize mb-4 fw-bold d-flex align-items-center justify-content-center btn m-auto" style={{background:'#FF69B4'}}>
-              <p className='m-0 p-0 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5' style={{color:'#FF00FF'}}>storybook</p>
+            <div className={`${styles.strybook} col-3 fs-7 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-5 fs-xxl-5 text-capitalize mb-4 fw-bold d-flex align-items-center justify-content-center btn m-auto`} style={{background:'rgb(243, 207, 198)'}}>
+              <p className='m-0 p-0 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5' style={{color:'rgb(248, 152, 128)'}}>storybook</p>
             </div>
           </div>
           <div className="row mx-0 d-flex align-items-center justify-content-center fs-7 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-5 fs-xxl-5">
@@ -203,7 +203,7 @@ const page = () => {
           </div>
           </div>
         </div>
-        <div className="col-xxl-5 col-xl-5 col-lg-10 col-sm-11 col-md-11 col-11 mx-2 mx-2 my-xxl-5 my-xl-5 my-lg-5 my-md-4 my-sm-4 my-4 bg-white py-3" >
+        <div className={`${styles.container} col-xxl-5 col-xl-5 col-lg-10 col-sm-11 col-md-11 col-11 mx-2 mx-2 my-xxl-5 my-xl-5 my-lg-5 my-md-4 my-sm-4 my-4 bg-white py-3 rounded-3`} >
           <div className="row mx-0">
             <div className="col-xxl-1 col-xl-2 col-lg-2 col-xl-2 col-2 m-0 p-0 text-center" >
               <SlSizeFullscreen className='fs-6 fs-sm-3 fs-md-2 fs-lg-3 fs-xl-5 fs-xxl-5'/>
@@ -212,28 +212,46 @@ const page = () => {
               <p className='p-0 m-0'>size</p>
               <p className='p-0 m-0'>Form</p>
             </div>
-            <div className="col-3 fs-7 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-5 fs-xxl-5 text-capitalize mb-4 fw-bold d-flex align-items-center justify-content-center btn m-auto" style={{background:'#FF69B4'}}>
-              <p className='m-0 p-0 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5' style={{color:'#FF00FF'}}>storybook</p>
+            <div className={`${styles.strybook} col-3 fs-7 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-5 fs-xxl-5 text-capitalize mb-4 fw-bold d-flex align-items-center justify-content-center btn m-auto`} style={{background:'rgb(243, 207, 198)'}}>
+              <p className='m-0 p-0 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5' style={{color:'rgb(248, 152, 128)'}}>storybook</p>
             </div>
           </div>
           <div className="row mx-0 d-flex align-items-center justify-content-center fs-7 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-5 fs-xxl-5">
             <div className='col-12 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-6 rounded-0 d-flex flex-column align-items-center justify-content-start my-2'>
-              <div className="row mx-0 d-flex align-items-center justify-content-start w-100 my-1">
-                <label htmlFor="fName" className='w-25'>First Name</label>
-                <input type="text" id='fName' placeholder='sm...' className='w-25'/>
+              <div className="row mx-0 d-flex align-items-center justify-content-start w-100 my-3">
+                <div className="col-12 my-1">
+                  <label htmlFor="fName" className='w-25'>First Name</label>
+                  <input type="text" id='fName' placeholder='sm...' className='w-25'/>
+                </div>
+                <div className="col-12">
+                  <label htmlFor="lName" className='w-25'>Last Name</label>
+                  <input type="text" id='lName' placeholder='md...' className='w-25'/>
+                </div>
               </div>
-              <div className="row mx-0 d-flex align-items-center justify-content-start w-100 my-1">
-                <label htmlFor="lName" className='w-25'>Last Name</label>
-                <input type="text" id='lName' placeholder='md...' className='w-50'/>
+              <div className="row mx-0 d-flex align-items-center justify-content-start w-100 my-3">
+                <div className="col-12 my-1">
+                  <label htmlFor="fName" className='w-25'>First Name</label>
+                  <input type="text" id='fName' placeholder='sm...' className='w-50'/>
+                </div>
+                <div className="col-12">
+                  <label htmlFor="lName" className='w-25'>Last Name</label>
+                  <input type="text" id='lName' placeholder='md...' className='w-50'/>
+                </div>
               </div>
-              <div className="row mx-0 d-flex align-items-center justify-content-start w-100 my-1">
-                <label htmlFor="email" className='w-25'>Email</label>
-                <input type="text" id='email' placeholder='lg...' className='w-75'/>
+              <div className="row mx-0 d-flex align-items-center justify-content-start w-100 my-3">
+                <div className="col-12 my-1">
+                  <label htmlFor="fName" className='w-25'>First Name</label>
+                  <input type="text" id='fName' placeholder='sm...' className='w-75'/>
+                </div>
+                <div className="col-12">
+                  <label htmlFor="lName" className='w-25'>Last Name</label>
+                  <input type="text" id='lName' placeholder='md...' className='w-75'/>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="col-xxl-5 col-xl-5 col-lg-10 col-sm-11 col-md-11 col-11 mx-2 my-xxl-5 my-xl-5 my-lg-5 my-md-4 my-sm-4 my-4 bg-white" >
+        <div className={`${styles.container} col-xxl-5 col-xl-5 col-lg-10 col-sm-11 col-md-11 col-11 mx-2 my-xxl-5 my-xl-5 my-lg-5 my-md-4 my-sm-4 my-4 bg-white p-2 rounded-3`} >
           <div className="row mx-0">
             <div className="col-xxl-1 col-xl-2 col-lg-2 col-xl-2 col-2 m-0 p-0 text-center">
               <IoIosColorFill className='fs-6 fs-sm-3 fs-md-2 fs-lg-3 fs-xl-5 fs-xxl-5'/>
@@ -242,8 +260,8 @@ const page = () => {
               <p className='p-0 m-0'>disabled</p>
               <p className='p-0 m-0'>Form</p>
             </div>
-            <div className="col-3 fs-7 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-5 fs-xxl-5 text-capitalize mb-4 fw-bold d-flex align-items-center justify-content-center btn m-auto" style={{background:'#FF69B4'}}>
-              <p className='m-0 p-0 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5' style={{color:'#FF00FF'}}>storybook</p>
+            <div className={`${styles.strybook} col-3 fs-7 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-5 fs-xxl-5 text-capitalize mb-4 fw-bold d-flex align-items-center justify-content-center btn m-auto`} style={{background:'rgb(243, 207, 198)'}}>
+              <p className='m-0 p-0 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5' style={{color:'rgb(248, 152, 128)'}}>storybook</p>
             </div>
           </div>
           <div className="row mx-0 d-flex align-items-center justify-content-center fs-7 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-5 fs-xxl-5">
@@ -259,7 +277,7 @@ const page = () => {
             </div>
           </div>
         </div>
-        <div className="col-xxl-5 col-xl-5 col-lg-10 col-sm-11 col-md-11 col-11 mx-2 my-xxl-5 my-xl-5 my-lg-5 my-md-4 my-sm-4 my-4 bg-white " >
+        <div className={`${styles.container} col-xxl-5 col-xl-5 col-lg-10 col-sm-11 col-md-11 col-11 mx-2 my-xxl-5 my-xl-5 my-lg-5 my-md-4 my-sm-4 my-4 bg-white p-2 rounded-3`} >
           <div className="row mx-0">
             <div className="col-xxl-1 col-xl-2 col-lg-2 col-xl-2 col-2 m-0 p-0 text-center ">
               <RiShadowLine className='fs-6 fs-sm-3 fs-md-2 fs-lg-3 fs-xl-5 fs-xxl-5'/>
@@ -268,8 +286,8 @@ const page = () => {
               <p className='p-0 m-0'>inputBorder</p>
               <p className='p-0 m-0'>Form</p>
             </div>
-            <div className="col-3 fs-7 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-5 fs-xxl-5 text-capitalize mb-4 fw-bold d-flex align-items-center justify-content-center btn m-auto" style={{background:'#FF69B4'}}>
-              <p className='m-0 p-0 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5' style={{color:'#FF00FF'}}>storybook</p>
+            <div className={`${styles.strybook} col-3 fs-7 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-5 fs-xxl-5 text-capitalize mb-4 fw-bold d-flex align-items-center justify-content-center btn m-auto`} style={{background:'rgb(243, 207, 198)'}}>
+              <p className='m-0 p-0 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5' style={{color:'rgb(248, 152, 128)'}}>storybook</p>
             </div>
           </div>
           <div className="row mx-0 d-flex align-items-center justify-content-center fs-7 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-5 fs-xxl-5">

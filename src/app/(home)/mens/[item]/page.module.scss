@@ -1,6 +1,39 @@
+.itemContainer{
+  .imageContainer{
+    .heart{
+      top: 3% !important;
+      right: 6% !important;
+    }
+  }
+  .image:hover{
+    transform: scale(1.02);
+    transition: transform .5s ease-in-out;
+  }
+  .itemDes{
+    height: 100px !important;
+    z-index: 99 !important;
+    width: 101% !important;
+
+    p{
+      text-transform: capitalize !important;
+    }
+  }
+}
+
+
 @media screen and (min-width : 0) and (max-width: 575px) {
   .itemDetails{
     margin-top: 150px;
+  }
+  .itemContainer{
+    height: 300px;
+    .image{
+      width: 100% !important;
+      height: 247px;
+    }
+    .itemDes{
+      height: 70px !important;
+    }
   }
 }
 
@@ -8,11 +41,28 @@
   .itemDetails{
     margin-top: 200px;
   }
+  .itemContainer{
+    height: 300px;
+    .image{
+      width: 100% !important;
+      height: 247px;
+    }
+  }
 }
 
 @media screen and (min-width : 767px) and (max-width: 991px) {
   .itemDetails{
     margin-top: 250px;
+  }
+  .itemContainer{
+    height: 350px !important;
+    .image{
+      width: 100% !important;
+      height: 247px;
+    }
+    .itemDes{
+      height: 80px !important;
+    }
   }
 }
 
@@ -34,29 +84,7 @@
   }
 }
 
-// .imageContainer{
-//   .heart{
-//     top: 3% !important;
-//     right: 10% !important;
-
-//   }
-// }
-
 .relatedItems{
-  .itemContainer{
-    .imageContainer{
-      .heart{
-        top: 3% !important;
-        right: 10% !important;
-      }
-    }
-    .itemDes{
-      height: 100px !important;
-      z-index: 99 !important;
-    }
-  }
-  
-  
   @media screen and (min-width : 991px) {
     .itemContainer{
       .imageContainer{
@@ -70,6 +98,7 @@
     .imageContainer:hover .addToCart{
       opacity: 1;
       transform: translateY(0px);
+      transform: scale(1.02);
       transition: transform 0.5s ease-in-out;
     }
   }
@@ -99,10 +128,10 @@
   
   @media screen and (min-width : 768px) and (max-width: 991px) {
     .itemContainer{
-      height: 350px !important;
+      height: 420px !important;
       .image{
         width: 100% !important;
-        height: 247px;
+        height: 350px !important;
       }
       .itemDes{
         height: 80px !important;

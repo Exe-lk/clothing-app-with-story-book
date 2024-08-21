@@ -1,0 +1,81 @@
+.navBarContainer{
+  button:focus,
+  input:focus{
+    box-shadow: none !important;
+    outline: none !important;
+  }
+  
+  .search{
+    .searchBar{
+      width: 25% !important;
+      -webkit-transition: width 0.4s ease-in-out !important;
+      transition: width 0.4s ease-in-out !important;
+      border: 1px solid #AB5D02 !important;
+    }
+    .searchBar:focus{
+      width: 100% !important;
+    }
+    .searchRes{
+      border-bottom: 4px solid #AB5D02 !important;
+      border-right: 4px solid #AB5D02 !important;
+      border-left: 4px solid #AB5D02 !important;
+      ul:hover{
+        background-color: #AB5D0275 !important;
+        color: #AB5D02 !important;
+      }
+    }
+    .searchRes:active{
+      transition: height 0.5s ease-in-out !important;
+    }
+}
+
+  .navBar{
+    li.active{    
+      .navLink{
+        color:#AB5D02 !important;
+      }
+    }
+  }
+
+  // .navBar li::before{
+  //   position: absolute !important;
+  //   content: "" !important;
+  //   top: 0 !important;
+  //   left: -16px !important;
+  //   width: 0px !important;
+  //   height: 100% !important;
+  //   background-color: #49e12e !important;
+  //   border-radius: 5px !important;
+  // // }
+  // .navBar li:hover{
+  //   color:red !important;
+  // width: 5px !important;
+  // transition: 0.3s !important;
+// }
+
+  
+}
+
+@media screen and (min-width : 768px) and (max-width: 991px) {
+  .navBarContainer{
+    .offcanvas{
+      margin-top: 65px;
+    }
+  }
+}
+
+@media screen and (min-width : 576px) and (max-width: 767px) {
+  .navBarContainer{
+    .offcanvas{
+      margin-top: 65px;
+    }
+  }
+}
+
+@media screen and (min-width : 0) and (max-width: 575px) {
+  .navBarContainer{
+    .offcanvas{
+      margin-top: 65px;
+    }
+  }
+}

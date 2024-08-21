@@ -13,6 +13,7 @@ import { RiShadowLine } from "react-icons/ri";
 import Shadow from '@/components/Button Component/Shadow';
 import { useTheme } from '@/components/ThemeContext';
 import NavBar from '@/components/Home/NavBar/NavBar';
+import Link from 'next/link';
 
 const page = () => {
   return (
@@ -82,7 +83,7 @@ const page = () => {
 
       <div className='row my-5 d-flex align-items-start justify-content-center' >
           
-        <div className="col-xxl-5 col-xl-5 col-lg-5 col-sm-5 col-md-5 col-5 mx-2 my-xxl-5 my-xl-5 my-lg-5 my-md-4 my-sm-4 my-4 bg-white " >
+        <div className={`${styles.container} col-xxl-5 col-xl-5 col-lg-5 col-sm-5 col-md-5 col-5 mx-2 my-xxl-5 my-xl-5 my-lg-5 my-md-4 my-sm-4 my-4 bg-white p-2 rounded-3`} >
           <div className="row mx-0">
             <div className="col-xxl-1 col-xl-2 col-lg-2 col-xl-2 col-2 m-0 p-0 text-center">
               <MdOutlineRoundedCorner className='fs-6 fs-sm-3 fs-md-2 fs-lg-3 fs-xl-1 fs-xxl-1'/>
@@ -91,11 +92,11 @@ const page = () => {
               <p className='p-0 m-0'>rounded</p>
               <p className='p-0 m-0'>Button</p>
             </div>
-            <div className={`${styles.strybook} col-3 fs-7 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-5 fs-xxl-5 text-capitalize mb-4 fw-bold d-flex align-items-center justify-content-center btn m-auto`} style={{background:'rgb(243, 207, 198)'}}>
+            <Link href='https://66c5c74d841f3ca4bc8433d8-zbcojrxnsm.chromatic.com/?path=/story/stories-button--rounded-10'  className={`${styles.strybook} col-3 fs-7 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-5 fs-xxl-5 text-capitalize mb-4 fw-bold d-flex align-items-center justify-content-center btn m-auto`} style={{background:'rgb(243, 207, 198)'}}>
               {/* #FF69B4 */}
               <p className='m-0 p-0 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5' style={{color:'rgb(248, 152, 128)'}}>storybook</p>
               {/* #FF00FF */}
-            </div>
+            </Link>
           </div>
           <div className="row mx-0 d-flex align-items-center justify-content-center fs-7 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-5 fs-xxl-5">
             <button className='btn col-3 mx-xxl-2 mx-xl-2 mx-lg-2 mx-md-2 mx-1 my-xxl-2 my-1 p-1 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5  text-white rounded-0' style={{background:'#AB5D02'}}>default</button>
@@ -106,7 +107,7 @@ const page = () => {
             <button className='btn col-3 mx-xxl-2 mx-xl-2 mx-lg-2 mx-md-2 mx-1 my-xxl-2 my-1 p-1 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5  text-white rounded-pill ' style={{background:'#AB5D02'}}>pill</button>
           </div>
         </div>
-        <div className="col-xxl-5 col-xl-5 col-lg-5 col-sm-5 col-md-5 col-5 mx-2 mx-2 my-xxl-5 my-xl-5 my-lg-5 my-md-4 my-sm-4 my-4 bg-white " >
+        <div className={`${styles.container} col-xxl-5 col-xl-5 col-lg-5 col-sm-5 col-md-5 col-5 mx-2 mx-2 my-xxl-5 my-xl-5 my-lg-5 my-md-4 my-sm-4 my-4 bg-white p-2 rounded-3`} >
           <div className="row mx-0">
             <div className="col-xxl-1 col-xl-2 col-lg-2 col-xl-2 col-2 m-0 p-0 text-center" >
               <SlSizeFullscreen className='fs-6 fs-sm-3 fs-md-2 fs-lg-3 fs-xl-5 fs-xxl-5'/>
@@ -115,9 +116,9 @@ const page = () => {
               <p className='p-0 m-0'>size</p>
               <p className='p-0 m-0'>Button</p>
             </div>
-            <div className={`${styles.strybook} col-3 fs-7 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-5 fs-xxl-5 text-capitalize mb-4 fw-bold d-flex align-items-center justify-content-center btn m-auto`} style={{background:'rgb(243, 207, 198)'}}>
+            <Link href='https://66c5c74d841f3ca4bc8433d8-zbcojrxnsm.chromatic.com/?path=/story/stories-button--size-small'  className={`${styles.strybook} col-3 fs-7 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-5 fs-xxl-5 text-capitalize mb-4 fw-bold d-flex align-items-center justify-content-center btn m-auto`} style={{background:'rgb(243, 207, 198)'}}>
               <p className='m-0 p-0 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5' style={{color:'rgb(248, 152, 128)'}}>storybook</p>
-            </div>
+            </Link>
           </div>
           <div className="row mx-0 d-flex align-items-center justify-content-center h-100">
             <button className='btn btn-sm col-3 mx-xxl-2 mx-xl-2 mx-lg-2 mx-md-2 mx-1 my-xxl-2 my-1 text-white rounded-0 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5 text-center' style={{background:'#AB5D02'}}>sm</button>
@@ -126,7 +127,7 @@ const page = () => {
             <button className='btn btn-sm col-3 mx-xxl-2 mx-xl-2 mx-lg-2 mx-md-2 mx-1 my-xxl-2 my-1 text-white rounded-0 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5 text-center invisible' style={{background:'#AB5D02'}}>sm</button>
           </div>
         </div>
-        <div className="col-xxl-5 col-xl-5 col-lg-5 col-sm-5 col-md-5 col-5 mx-2 my-xxl-5 my-xl-5 my-lg-5 my-md-4 my-sm-4 my-4 bg-white" >
+        <div className={`${styles.container} col-xxl-5 col-xl-5 col-lg-5 col-sm-5 col-md-5 col-5 mx-2 my-xxl-5 my-xl-5 my-lg-5 my-md-4 my-sm-4 my-4 bg-white p-2 rounded-3`} >
           <div className="row mx-0">
             <div className="col-xxl-1 col-xl-2 col-lg-2 col-xl-2 col-2 m-0 p-0 text-center">
               <IoIosColorFill className='fs-6 fs-sm-3 fs-md-2 fs-lg-3 fs-xl-5 fs-xxl-5'/>
@@ -135,9 +136,9 @@ const page = () => {
               <p className='p-0 m-0'>bg-color</p>
               <p className='p-0 m-0'>Button</p>
             </div>
-            <div className={`${styles.strybook} col-3 fs-7 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-5 fs-xxl-5 text-capitalize mb-4 fw-bold d-flex align-items-center justify-content-center btn m-auto`} style={{background:'rgb(243, 207, 198)'}}>
+            <Link href='https://66c5c74d841f3ca4bc8433d8-zbcojrxnsm.chromatic.com/?path=/docs/stories-button--docs' className={`${styles.strybook} col-3 fs-7 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-5 fs-xxl-5 text-capitalize mb-4 fw-bold d-flex align-items-center justify-content-center btn m-auto`} style={{background:'rgb(243, 207, 198)'}}>
               <p className='m-0 p-0 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5' style={{color:'rgb(248, 152, 128)'}}>storybook</p>
-            </div>
+            </Link>
           </div>
           <div className="row mx-0 d-flex align-items-center justify-content-center ">
             <button className='btn col-3 mx-xxl-2 mx-xl-2 mx-lg-2 mx-md-2 mx-1 my-xxl-2 my-1 p-1 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5  text-white bg-danger  ' >danger</button>
@@ -147,7 +148,7 @@ const page = () => {
             <button className='btn col-3 mx-xxl-2 mx-xl-2 mx-lg-2 mx-md-2 mx-1 my-xxl-2 my-1 p-1 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5  text-white bg-black' >black</button>
           </div>
         </div>
-        <div className="col-xxl-5 col-xl-5 col-lg-5 col-sm-5 col-md-5 col-5 mx-2 my-xxl-5 my-xl-5 my-lg-5 my-md-4 my-sm-4 my-4 bg-white " >
+        <div className={`${styles.container} col-xxl-5 col-xl-5 col-lg-5 col-sm-5 col-md-5 col-5 mx-2 my-xxl-5 my-xl-5 my-lg-5 my-md-4 my-sm-4 my-4 bg-white p-2 rounded-3`} >
           <div className="row mx-0">
             <div className="col-xxl-1 col-xl-2 col-lg-2 col-xl-2 col-2 m-0 p-0 text-center ">
               <RiShadowLine className='fs-6 fs-sm-3 fs-md-2 fs-lg-3 fs-xl-5 fs-xxl-5'/>
@@ -156,9 +157,9 @@ const page = () => {
               <p className='p-0 m-0'>shadow</p>
               <p className='p-0 m-0'>Button</p>
             </div>
-            <div className={`${styles.strybook} col-3 fs-7 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-5 fs-xxl-5 text-capitalize mb-4 fw-bold d-flex align-items-center justify-content-center btn m-auto`} style={{background:'rgb(243, 207, 198)'}}>
+            <Link href='https://66c5c74d841f3ca4bc8433d8-zbcojrxnsm.chromatic.com/?path=/story/stories-button--shadow-medium'  className={`${styles.strybook} col-3 fs-7 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-5 fs-xxl-5 text-capitalize mb-4 fw-bold d-flex align-items-center justify-content-center btn m-auto`} style={{background:'rgb(243, 207, 198)'}}>
               <p className='m-0 p-0 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5' style={{color:'rgb(248, 152, 128)'}}>storybook</p>
-            </div>
+            </Link>
           </div>
           <div className="row mx-0 d-flex align-items-center justify-content-center ">
             <button className=' shadow-none btn col-3 mx-xxl-2 mx-xl-2 mx-lg-2 mx-md-2 mx-1 my-xxl-2 my-1 p-1 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5  text-white ' style={{background:'#AB5D02'}}>none</button>

@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "chromatic": "npx chromatic --project-token=chpt_5a843c149d8123f"
   },
   "dependencies": {
     "bootstrap": "^5.3.3",
@@ -36,6 +37,7 @@
     "@types/node": "^20",
     "@types/react": "^18.3.1",
     "@types/react-dom": "^18.3.0",
+    "chromatic": "^11.7.1",
     "eslint": "^8",
     "eslint-config-next": "14.2.3",
     "eslint-plugin-storybook": "^0.8.0",

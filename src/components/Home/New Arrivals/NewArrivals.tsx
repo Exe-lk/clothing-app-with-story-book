@@ -2,7 +2,7 @@
 import styles from './NewArrivals.module.scss';
 import React, { useState } from 'react';
 import Image from 'next/image';
-import { newArrivalsList } from './NewArrivalsList';
+import { newArrivalsList } from '../../../../public/assets/NewArrivalsHomeList';
 import notFav from '../../../../public/assets/newArrivals/notFav.svg';
 import rightArrow2 from '../../../../public/rightArrow2.svg';
 import { FaHeart } from "react-icons/fa";
@@ -12,30 +12,6 @@ import { BiHeartCircle } from "react-icons/bi";
 const NewArrivals = () => {
   const [fav, setFav] = useState(false);
   return (
-    // <div className={styles.newArrivals}>
-    //   <h1>new arrivals</h1>
-    //   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-    //   <div className={styles.content}>
-    //     {
-    //       newArrivalsList.map((item:any, key:any)=>{
-    //         return(
-    //           <div className={styles.item} >
-    //             <Image src={item.id} alt='item' />
-    //             {!item.favourite?(<Image src={notFav} alt='notFav' className={styles.notFav} />):(<FaHeart className={styles.fav}/>)}        
-    //             <p>{item.des}</p>
-    //             <p>{item.price}</p>
-    //           </div>
-    //         )
-    //       })
-    //     }
-    //   </div>
-    //   <button className={styles.showMore}>
-    //     show more
-    //     <Image src={rightArrow2} alt='rightArrow2' className={styles.rightArrow2}/>
-    //   </button>
-    // </div>
-    
-
     <>
         <h1 className='text-uppercase fs-4 fs-sm-2 fs-md-1 fs-lg-1 fs-xl-1 fs-xxl-1 fw-bold text-center'>new arrivals</h1>
         <p className='h5 fw-normal text-capitalize mb-4 fs-7 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-5 fs-xxl-5 text-center'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
@@ -47,9 +23,11 @@ const NewArrivals = () => {
                   <div className={`${styles.imageContainer} row mx-0 d-flex align-items-center m-0 p-0 position-relative`}>
                     <Image src={item.id} alt='item' className={`${styles.image} img-fluid object-fit-cover m-0 p-0 rounded-3 `}/>
                     {/* {!item.favourite?(<i className={`${styles.heart} bi bi-heart-fill position-absolute fs-xxl-5 btn m-0 p-0 w-auto`}></i>):(<i className={`${styles.heart} bi bi-heart  position-absolute fs-xxl-5 btn m-0 p-0 w-auto`}></i>)}   */}
-                   {item.discount? <div className={`${styles.discount} position-absolute fs-xxl-7 btn m-0 p-0 w-auto rounded-circle text-white fw-bold d-flex align-items-center justify-content-center p-1`} style={{background:'red'}}>
-                      -50%
-                    </div>:''}
+                    {
+                      item.discount? <div className={`${styles.discount} position-absolute fs-xxl-7 btn m-0 p-0 w-auto rounded-circle text-white fw-bold d-flex align-items-center justify-content-center p-1`} style={{background:'red'}}>
+                        -50%
+                      </div>:''
+                    }
                     {
                       fav? <i className={`${styles.heart} bi bi-heart-fill position-absolute fs-xxl-5 btn m-0 p-0 w-auto rounded-circle bg-white px-1 py-0`} onClick={()=>{
                         setFav(!fav)

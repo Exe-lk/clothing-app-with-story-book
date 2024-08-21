@@ -1,11 +1,11 @@
- import one from '../../../../public/assets/newArrivals/1.jpg'; 
-import two from '../../../../public/assets/newArrivals/2.jpg'; 
-import three from '../../../../public/assets/newArrivals/3.jpg'; 
-import four from '../../../../public/assets/newArrivals/4.jpg'; 
-import five from '../../../../public/assets/newArrivals/5.jpg'; 
-import six from '../../../../public/assets/newArrivals/6.jpg'; 
-import seven from '../../../../public/assets/newArrivals/7.jpg'; 
-import eight from '../../../../public/assets/newArrivals/8.jpg'; 
+import one from './newArrivals/1.jpg'; 
+import two from './newArrivals/2.jpg'; 
+import three from './newArrivals/3.jpg'; 
+import four from './newArrivals/4.jpg'; 
+import five from './newArrivals/5.jpg'; 
+import six from './newArrivals/6.jpg'; 
+import seven from './newArrivals/7.jpg'; 
+import eight from './newArrivals/8.jpg'; 
 
 export const newArrivalsList:any = [
   {'id': one, 'discount':false, 'favourite': true, 'des':'Rainy Light Green Skinee', 'price':'Rs 1700.00'},
