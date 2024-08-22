@@ -42,7 +42,7 @@ export default function ComponentsLayout({
               <NavBar />
             </div>
           </header>
-          <main className='container-xl container-xxl container-lg container-fluid-md container-fluid-sm container-fluid p-0 m-0 overflow-y-scroll'>
+          <main className='container-xl container-xxl container-lg container-fluid-md container-fluid-sm container-fluid p-0 m-0 overflow-y-scroll' style={{background:'#EDEADE'}}>
             <div className="mainContainer" style={{overflow:'clip'}}>
               {children}
             </div>
