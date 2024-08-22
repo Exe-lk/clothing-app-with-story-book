@@ -29,6 +29,46 @@ import it6three from '../../public/assets/womens cloths/item6/3.jpg';
 import it6four from '../../public/assets/womens cloths/item6/4.jpg';
 import it6five from '../../public/assets/womens cloths/item6/5.jpg';
 
+import D001It1 from '../../public/assets/discounted items/item1/1.jpg';
+import D001It2 from '../../public/assets/discounted items/item1/2.jpg';
+import D001It3 from '../../public/assets/discounted items/item1/3.jpg';
+import D001It4 from '../../public/assets/discounted items/item1/4.jpg';
+
+import D002It1 from '../../public/assets/discounted items/item2/1.jpg';
+import D002It2 from '../../public/assets/discounted items/item2/2.jpg';
+import D002It3 from '../../public/assets/discounted items/item2/3.jpg';
+import D002It4 from '../../public/assets/discounted items/item2/4.jpg';
+
+import D003It1 from '../../public/assets/discounted items/item3/1.jpg';
+import D003It2 from '../../public/assets/discounted items/item3/2.jpg';
+import D003It3 from '../../public/assets/discounted items/item3/3.jpg';
+import D003It4 from '../../public/assets/discounted items/item3/4.jpg';
+
+import D004It1 from '../../public/assets/discounted items/item4/1.jpg';
+import D004It2 from '../../public/assets/discounted items/item4/2.jpg';
+import D004It3 from '../../public/assets/discounted items/item4/3.jpg';
+import D004It4 from '../../public/assets/discounted items/item4/4.jpg';
+
+import D005It1 from '../../public/assets/discounted items/item5/1.jpg';
+import D005It2 from '../../public/assets/discounted items/item5/2.jpg';
+import D005It3 from '../../public/assets/discounted items/item5/3.jpg';
+import D005It4 from '../../public/assets/discounted items/item5/4.jpg';
+
+import D006It1 from '../../public/assets/discounted items/item6/1.jpg';
+import D006It2 from '../../public/assets/discounted items/item6/2.jpg';
+import D006It3 from '../../public/assets/discounted items/item6/3.jpg';
+import D006It4 from '../../public/assets/discounted items/item6/4.jpg';
+
+import D007It1 from '../../public/assets/discounted items/item7/1.jpg';
+import D007It2 from '../../public/assets/discounted items/item7/2.jpg';
+import D007It3 from '../../public/assets/discounted items/item7/3.jpg';
+import D007It4 from '../../public/assets/discounted items/item7/4.jpg';
+
+import D008It1 from '../../public/assets/discounted items/item8/1.jpg';
+import D008It2 from '../../public/assets/discounted items/item8/2.jpg';
+import D008It3 from '../../public/assets/discounted items/item8/3.jpg';
+import D008It4 from '../../public/assets/discounted items/item8/4.jpg';
+
 export const womensCartList = [
   {
   itemId: 1,
@@ -89,6 +129,94 @@ export const womensCartList = [
   itemId: 6,
   images: [it6one,it6two,it6three,it6four,it6five],
   name: 'Theo Ash Short',
+  availability: 'in-stock',
+  price: 2500.00,
+  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam',
+  size: 'large',
+  colors: ['grey', 'green', 'blue', 'yellow'],
+  materials: 'Lorem ipsum'
+  },
+  {
+  itemId: 'D001',
+  images: [D001It1,D001It2,D001It3,D001It4],
+  name: 'Zoey Baggy Peach Dress',
+  availability: 'in-stock',
+  price: 2500.00,
+  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam',
+  size: 'large',
+  colors: ['grey', 'green', 'blue', 'yellow'],
+  materials: 'Lorem ipsum'
+  },
+  {
+  itemId: 'D002',
+  images: [D002It1,D002It2,D002It3,D002It4],
+  name: 'Vacation Spring Break Dress',
+  availability: 'in-stock',
+  price: 2500.00,
+  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam',
+  size: 'large',
+  colors: ['grey', 'green', 'blue', 'yellow'],
+  materials: 'Lorem ipsum'
+  },
+  {
+  itemId: 'D003',
+  images: [D003It1,D003It2,D003It3,D003It4],
+  name: 'Tanzi High Neck Dress',
+  availability: 'in-stock',
+  price: 2500.00,
+  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam',
+  size: 'large',
+  colors: ['grey', 'green', 'blue', 'yellow'],
+  materials: 'Lorem ipsum'
+  },
+  {
+  itemId: 'D004',
+  images: [D004It1,D004It2,D004It3,D004It4],
+  name: 'Laeniy Printed One Shoulder Crop Top',
+  availability: 'in-stock',
+  price: 2500.00,
+  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam',
+  size: 'large',
+  colors: ['grey', 'green', 'blue', 'yellow'],
+  materials: 'Lorem ipsum'
+  },
+  {
+  itemId: 'D005',
+  images: [D005It1,D005It2,D005It3,D005It4],
+  name: 'Laeiny Green Printed Skirt',
+  availability: 'in-stock',
+  price: 2500.00,
+  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam',
+  size: 'large',
+  colors: ['grey', 'green', 'blue', 'yellow'],
+  materials: 'Lorem ipsum'
+  },
+  {
+  itemId: 'D006',
+  images: [D006It1,D006It2,D006It3,D006It4],
+  name: 'Oversize Flare Sleeves Bloue',
+  availability: 'in-stock',
+  price: 2500.00,
+  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam',
+  size: 'large',
+  colors: ['grey', 'green', 'blue', 'yellow'],
+  materials: 'Lorem ipsum'
+  },
+  {
+  itemId: 'D007',
+  images: [D007It1,D007It2,D007It3,D007It4],
+  name: 'SweetHeart Printed Crop Top',
+  availability: 'in-stock',
+  price: 2500.00,
+  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam',
+  size: 'large',
+  colors: ['grey', 'green', 'blue', 'yellow'],
+  materials: 'Lorem ipsum'
+  },
+  {
+  itemId: 'D008',
+  images: [D008It1,D008It2,D008It3,D008It4],
+  name: 'Square Neck Dress',
   availability: 'in-stock',
   price: 2500.00,
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam',

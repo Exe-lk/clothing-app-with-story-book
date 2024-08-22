@@ -21,19 +21,19 @@ import twenty from './discounted items/item20/1.jpg';
 
 
 export const discountedItemsList:any = [
-  {'id':1 , 'category':'women' , 'discount':true, 'name': one, 'favourite': false, 'des':'Zoey Baggy Peach Dress', 'price':'Rs 1700.00'},
-  {'id':17 , 'category':'kids' , 'discount':true, 'name': seventeen, 'favourite': false, 'des':'Miss Modano Kids Girls Long Sleeve Casual Top', 'price':'Rs 1700.00'},
-  {'id':5 , 'category':'women' , 'discount':true, 'name': five, 'favourite': false, 'des':'Laeiny Green Printed Skirt', 'price':'Rs 1700.00'},
-  {'id':9 , 'category':'men' , 'discount':true, 'name': nine, 'favourite': false, 'des':'The Azeez Shirt', 'price':'Rs 1700.00'},
-  {'id':10 , 'category':'men' , 'discount':true, 'name': ten, 'favourite': false, 'des':'Extended Collar Linen Shirt', 'price':'Rs 1700.00'},
-  {'id':2 , 'category':'women' , 'discount':true, 'name': two, 'favourite': false, 'des':'Vacation Spring Break Dress', 'price':'Rs 1700.00'},
-  {'id':11 , 'category':'men' , 'discount':true, 'name': eleven, 'favourite': false, 'des':'The Gallant Safari', 'price':'Rs 1700.00'},
-  {'id':19 , 'category':'kids' , 'discount':true, 'name': nineteen, 'favourite': false, 'des':'Little M Kids Short Sleeve Casual T-Shirt', 'price':'Rs 1700.00'},
-  {'id':8 , 'category':'women' , 'discount':true, 'name': eight, 'favourite': false, 'des':'Square Neck Dress', 'price':'Rs 1700.00'},
-  {'id':3 , 'category':'women' , 'discount':true, 'name': three, 'favourite': false, 'des':'Tanzi High Neck Dress', 'price':'Rs 1700.00'},
-  {'id':15 , 'category':'men' , 'discount':true, 'name': fifteen, 'favourite': false, 'des':'The Kingsley Corduroy Coat', 'price':'Rs 1700.00'},
-  {'id':4 , 'category':'women' , 'discount':true, 'name': four, 'favourite': false, 'des':'Laeniy Printed One Shoulder Crop Top', 'price':'Rs 1700.00'},
-  {'id':14 , 'category':'men' , 'discount':true, 'name': fourteen, 'favourite': false, 'des':'The Jevin Kurta', 'price':'Rs 1700.00'},
-  {'id':6 , 'category':'women' , 'discount':true, 'name': six, 'favourite': false, 'des':'Oversize Flare Sleeves Bloue', 'price':'Rs 1700.00'},
+  {'id':'D001' , 'category':'women' , 'discount':true, 'name': one, 'favourite': false, 'des':'Zoey Baggy Peach Dress', 'price':'Rs 1700.00'},
+  {'id':'D017' , 'category':'kids' , 'discount':true, 'name': seventeen, 'favourite': false, 'des':'Miss Modano Kids Girls Long Sleeve Casual Top', 'price':'Rs 1700.00'},
+  {'id':'D005' , 'category':'women' , 'discount':true, 'name': five, 'favourite': false, 'des':'Laeiny Green Printed Skirt', 'price':'Rs 1700.00'},
+  {'id':'D009' , 'category':'men' , 'discount':true, 'name': nine, 'favourite': false, 'des':'The Azeez Shirt', 'price':'Rs 1700.00'},
+  {'id':'D010' , 'category':'men' , 'discount':true, 'name': ten, 'favourite': false, 'des':'Extended Collar Linen Shirt', 'price':'Rs 1700.00'},
+  {'id':'D002' , 'category':'women' , 'discount':true, 'name': two, 'favourite': false, 'des':'Vacation Spring Break Dress', 'price':'Rs 1700.00'},
+  {'id':'D011' , 'category':'men' , 'discount':true, 'name': eleven, 'favourite': false, 'des':'The Gallant Safari', 'price':'Rs 1700.00'},
+  {'id':'D019' , 'category':'kids' , 'discount':true, 'name': nineteen, 'favourite': false, 'des':'Little M Kids Short Sleeve Casual T-Shirt', 'price':'Rs 1700.00'},
+  {'id':'D008' , 'category':'women' , 'discount':true, 'name': eight, 'favourite': false, 'des':'Square Neck Dress', 'price':'Rs 1700.00'},
+  {'id':'D003' , 'category':'women' , 'discount':true, 'name': three, 'favourite': false, 'des':'Tanzi High Neck Dress', 'price':'Rs 1700.00'},
+  {'id':'D015' , 'category':'men' , 'discount':true, 'name': fifteen, 'favourite': false, 'des':'The Kingsley Corduroy Coat', 'price':'Rs 1700.00'},
+  {'id':'D004' , 'category':'women' , 'discount':true, 'name': four, 'favourite': false, 'des':'Laeniy Printed One Shoulder Crop Top', 'price':'Rs 1700.00'},
+  {'id':'D014' , 'category':'men' , 'discount':true, 'name': fourteen, 'favourite': false, 'des':'The Jevin Kurta', 'price':'Rs 1700.00'},
+  {'id':'D006' , 'category':'women' , 'discount':true, 'name': six, 'favourite': false, 'des':'Oversize Flare Sleeves Bloue', 'price':'Rs 1700.00'},
   
 ]

@@ -30,6 +30,25 @@ import it8one from '../../public/assets/kids cloths/item8/1.jpg';
 import it8two from '../../public/assets/kids cloths/item8/2.jpg';
 import it8three from '../../public/assets/kids cloths/item8/3.jpg';
 
+import D017It1 from '../../public/assets/discounted items/item17/1.jpg';
+import D017It2 from '../../public/assets/discounted items/item17/2.jpg';
+import D017It3 from '../../public/assets/discounted items/item17/3.jpg';
+// import D017It4 from '../../public/assets/discounted items/item16/4.jpg';
+
+import D018It1 from '../../public/assets/discounted items/item18/1.jpg';
+import D018It2 from '../../public/assets/discounted items/item18/2.jpg';
+import D018It3 from '../../public/assets/discounted items/item18/3.jpg';
+// import D018It4 from '../../public/assets/discounted items/item16/4.jpg';
+
+import D019It1 from '../../public/assets/discounted items/item19/1.jpg';
+import D019It2 from '../../public/assets/discounted items/item19/2.jpg';
+import D019It3 from '../../public/assets/discounted items/item19/3.jpg';
+// import D019It4 from '../../public/assets/discounted items/item16/4.jpg';
+
+import D020It1 from '../../public/assets/discounted items/item20/1.jpg';
+import D020It2 from '../../public/assets/discounted items/item20/2.jpg';
+import D020It3 from '../../public/assets/discounted items/item20/3.jpg';
+
 export const kidsCartList = [
   {
   itemId: 1,
@@ -118,5 +137,49 @@ export const kidsCartList = [
   size: 'large',
   colors: ['grey', 'green', 'blue', 'yellow'],
   materials: 'Lorem ipsum'
+  },
+  {
+    itemId: 'D017',
+    images: [D017It1,D017It2,D017It3],
+    name: 'Miss Modano Kids Girls Long Sleeve Casual Top',
+    availability: 'in-stock',
+    price: 1700.00,
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam',
+    size: 'large',
+    colors: ['grey', 'green', 'blue', 'yellow'],
+    materials: 'Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum'
+  },
+  {
+    itemId: 'D018',
+    images: [D018It1,D018It2,D018It3],
+    name: 'Ozone Kids Girls Casual Blouse',
+    availability: 'in-stock',
+    price: 1700.00,
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam',
+    size: 'large',
+    colors: ['grey', 'green', 'blue', 'yellow'],
+    materials: 'Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum'
+  },
+  {
+    itemId: 'D019',
+    images: [D019It1,D019It2,D019It3],
+    name: 'Little M Kids Short Sleeve Casual T-Shirt',
+    availability: 'in-stock',
+    price: 1700.00,
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam',
+    size: 'large',
+    colors: ['grey', 'green', 'blue', 'yellow'],
+    materials: 'Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum'
+  },
+  {
+    itemId: 'D020',
+    images: [D020It1,D020It2,D020It3],
+    name: 'Little M Kids Loose Fit Casual T-Shirt',
+    availability: 'in-stock',
+    price: 1700.00,
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam',
+    size: 'large',
+    colors: ['grey', 'green', 'blue', 'yellow'],
+    materials: 'Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum'
   },
 ]
