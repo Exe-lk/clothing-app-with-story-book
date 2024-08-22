@@ -2,7 +2,7 @@
 import styles from './NewArrivals.module.scss';
 import React, { useState } from 'react';
 import Image from 'next/image';
-import { newArrivalsList } from '../../../../public/assets/NewArrivalsHomeList';
+import { newArrivalsHomeList } from '../../../../public/assets/NewArrivalsHomeList';
 import notFav from '../../../../public/assets/newArrivals/notFav.svg';
 import rightArrow2 from '../../../../public/rightArrow2.svg';
 import { FaHeart } from "react-icons/fa";
@@ -17,14 +17,14 @@ const NewArrivals = () => {
         <p className='h5 fw-normal text-capitalize mb-4 fs-7 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-5 fs-xxl-5 text-center'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
         
           {
-            newArrivalsList.map((item:any, key:any)=>{
+            newArrivalsHomeList.map((item:any, key:any)=>{
               return(
                 <div className={`${styles.itemContainer} btn col-xxl-2 col-xl-3 col-lg-3 col-md-3 col-sm-3 col-5 m-xxl-5 mx-3 my-2 m-sm-2 m-md-2 p-0 h-100`} key={key}>
                   <div className={`${styles.imageContainer} row mx-0 d-flex align-items-center m-0 p-0 position-relative`}>
                     <Image src={item.id} alt='item' className={`${styles.image} img-fluid object-fit-cover m-0 p-0 rounded-3 `}/>
                     {/* {!item.favourite?(<i className={`${styles.heart} bi bi-heart-fill position-absolute fs-xxl-5 btn m-0 p-0 w-auto`}></i>):(<i className={`${styles.heart} bi bi-heart  position-absolute fs-xxl-5 btn m-0 p-0 w-auto`}></i>)}   */}
                     {
-                      item.discount? <div className={`${styles.discount} position-absolute fs-xxl-7 btn m-0 p-0 w-auto rounded-circle text-white fw-bold d-flex align-items-center justify-content-center p-1`} style={{background:'red'}}>
+                      item.discount? <div className={`${styles.discount} position-absolute fs-xxl-7 btn m-0 p-0 w-auto rounded-circle text-white fw-bold d-flex align-items-center justify-content-center p-1 fs-8`} style={{background:'red'}}>
                         -50%
                       </div>:''
                     }

@@ -15,17 +15,17 @@ const Heading = () => {
         <p className='d-block my-auto'>categories</p>
         <div className="dropdown">
           <button className="btn dropdown-toggle text-white" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style={{background:'rgb(171, 93, 2)'}}>
-            All
+            {selectedValue}
           </button>
-          <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-            <li onSelect={()=>{setSelectedValue('all')}}><a className="dropdown-item" href="#">All</a></li>
-            <li onSelect={()=>{setSelectedValue('women')}}><a className="dropdown-item" href="#">Women</a></li>
-            <li onSelect={()=>{setSelectedValue('men')}}><a className="dropdown-item" href="#">Men</a></li>
-            <li onSelect={()=>{setSelectedValue('kids')}}><a className="dropdown-item" href="#">Kids</a></li>
+          <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1" onChange={(e:any) => setSelectedValue(e.target.value)}>
+            <li value={selectedValue} ><a className="dropdown-item" href="#">All</a></li>
+            <li value={selectedValue} ><a className="dropdown-item" href="#">Women</a></li>
+            <li value={selectedValue} ><a className="dropdown-item" href="#">Men</a></li>
+            <li value={selectedValue} ><a className="dropdown-item" href="#">Kids</a></li>
           </ul>
         </div>
       </div>
-      <ShoppingItems category={selectedValue} />
+      {/* <ShoppingItems category={selectedValue} /> */}
     </div>
   )
 }

@@ -16,12 +16,18 @@ const ShoppingItems = (props:any) => {
   return (
     <div className="row mx-0 ">
       {
-        discountedItemsList.filter(function(i:any){return i.category==props.category}).map((item:any, key:any)=>{
+        discountedItemsList.filter(function(i:any){
+          if(props.category=='all'){
+            return discountedItemsList
+          }else{
+            return i.category==props.category
+          }
+        }).map((item:any, key:any)=>{
           return(
           <div className={`${styles.itemContainer} col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-4 position-relative d-flex flex-column align-items-center text-capitalize my-md-3 my-sm-2 my-2`} key={key}>
             <div className={`${styles.imageContainer} row mx-0 d-flex align-items-center m-0 p-0 position-relative`}>
               <Link href={{pathname: "/mens/#", query: {id: item.id, name: item.des}}} className='text-decoration-none text-black p-0'>
-                <Image src={item.name} alt='item' className={`${styles.image} img-fluid object-fit-cover m-0 p-0 rounded-3`}/>
+                <Image src={item.name} alt='item' className='img-fluid object-fit-cover m-0 p-0 rounded-3'/>
               <div className={`${styles.addToCart} row btn rounded-0 mx-0 position-absolute bottom-0 d-flex align-items-center justify-content-center text-white p-xxl-3 p-xl-3 p-lg-3 p-2 w-100`} >
                 <i className="bi bi-cart3 w-auto ps-0 pe-2 fs-xxl-6"></i>
                 <p className='w-auto p-0 m-0 text-capitalize fs-xxl-6'>add to cart</p>

@@ -41,7 +41,7 @@ const WomenItem = () => {
                 <nav aria-label="breadcrumb" className=' my-auto'>
                   <ol className="breadcrumb fs-7 fs-sm-6 fs-md-5 fs-xxl-5 fs-xl-5 fs-lg-5">
                     <li className="breadcrumb-item"><a href="/" className='text-decoration-none' style={{color: 'rgba(0, 0, 0, 0.35)'}}>Home</a></li>
-                    <li className="breadcrumb-item"><a href="/women" className='text-decoration-none' style={{color: 'rgba(0, 0, 0, 0.35)'}}>{`mens`}</a></li>
+                    <li className="breadcrumb-item"><a href="/women" className='text-decoration-none' style={{color: 'rgba(0, 0, 0, 0.35)'}}>{`Women's`}</a></li>
                     <li className="breadcrumb-item active" aria-current="page">{item.name}</li>
                   </ol>
                 </nav>

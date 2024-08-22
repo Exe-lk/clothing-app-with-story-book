@@ -7,7 +7,7 @@ import six from './newArrivals/6.jpg';
 import seven from './newArrivals/7.jpg'; 
 import eight from './newArrivals/8.jpg'; 
 
-export const newArrivalsList:any = [
+export const newArrivalsHomeList:any = [
   {'id': one, 'discount':false, 'favourite': true, 'des':'Rainy Light Green Skinee', 'price':'Rs 1700.00'},
   {'id': two, 'discount':false, 'favourite': false, 'des':'Rainy Light Beige Skinee', 'price':'Rs 2700.00' },
   {'id': three, 'discount':false, 'favourite': false, 'des':'Round Neck Black And White Skinee', 'price':'Rs 3700.00'},

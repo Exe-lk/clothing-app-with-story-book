@@ -110,10 +110,10 @@ const Header = () => {
           <button className='d-block d-sm-block d-md-block d-lg-none d-xl-none d-xxl-none text-uppercase text-black bg-transparent border-0 fs-md-5 fs-sm-5 fs-7 '>login</button>
         </Link>
 
-        <button className="btn ms-xxl-4 ms-xl-3 ms-lg-1 py-lg-2 py-xl-2  text-white d-xxl-flex d-xl-flex d-lg-flex d-md-none d-none align-items-center text-uppercase rounded rounded-pill " style={{backgroundColor: '#AB5D02',boxShadow: '0 1px 0 rgba(0, 0, 0, 0.11)'}}>
+        <Link href='/new-arrivals' className="btn ms-xxl-4 ms-xl-3 ms-lg-1 py-lg-2 py-xl-2  text-white d-xxl-flex d-xl-flex d-lg-flex d-md-none d-none align-items-center text-uppercase rounded rounded-pill " style={{backgroundColor: '#AB5D02',boxShadow: '0 1px 0 rgba(0, 0, 0, 0.11)'}}>
           new arrivals
           <MdOutlineArrowOutward className='ms-1 fs-6 '/>
-        </button>
+        </Link>
       </div>
     </>
 
