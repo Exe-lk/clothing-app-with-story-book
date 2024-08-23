@@ -1,3 +1,8 @@
+.showMore.active.focus, .showMore.active:focus, .showMore.focus, .showMore:active.focus, .showMore:active:focus, .showMore:focus {
+  outline: 0 !important;
+  box-shadow: none !important;
+}
+
 @media screen and (min-width : 0) and (max-width: 575px) {
   .forMens{
     right: -63px !important;

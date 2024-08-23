@@ -12,6 +12,7 @@ import { useTheme } from '../../ThemeContext';
 import forWomen from '../../../../public/assets/shopByCategories/forWomen.jpg';
 import forMen from '../../../../public/assets/shopByCategories/forMen.jpg';
 import forKid from '../../../../public/assets/shopByCategories/forKids.jpg';
+import Link from 'next/link';
 
 const ShopByCategories = () => {
   const {theme} = useTheme();
@@ -40,7 +41,7 @@ const ShopByCategories = () => {
               <div className={`${styles.forWomens} col-6 position-absolute bottom-0`}>
                 <img src={forWomens.src} alt="forWomens" className="img-fluid "/>
               </div>
-              <div className='text-uppercase my-2 btn text-start' style={{color:'#AB5D02'}}>show more <i className="bi bi-arrow-right"></i></div>
+              <Link href='/women' className={`${styles.showMore} text-uppercase my-2 btn text-start`} style={{color:'#AB5D02'}}>show more <i className="bi bi-arrow-right"></i></Link>
             </div>
           </div>
           <div className="col-xxl-5 col-xl-5 col-lg-5 col-12">
@@ -55,7 +56,7 @@ const ShopByCategories = () => {
               <div className={`${styles.forMens} col-6 position-absolute bottom-0 me-0 ms-auto`}>
                 <img src={forMens.src} alt="forMens" className="img-fluid "/>
               </div>
-              <div className='text-uppercase my-2 btn text-start' style={{color:'#AB5D02'}}>show more <i className="bi bi-arrow-right"></i></div>
+              <Link href='/men' className={`${styles.showMore} text-uppercase my-2 btn text-start`} style={{color:'#AB5D02'}}>show more <i className="bi bi-arrow-right"></i></Link>
             </div>
             <div className="row mx-0 my-5  position-relative" style={{background: 'linear-gradient(213.42deg, #EEEEF0 8.79%, #FFF7F0 80.12%'}}>
               <h1 className='fs-4 fs-sm-2 fs-md-1 fs-lg-1 fs-xl-1 fs-xxl-1 text-start text-capitalize fw-semibold'>{`for kid's`}</h1>
@@ -68,7 +69,7 @@ const ShopByCategories = () => {
                 <div className={`${styles.forKids} col-6 position-absolute bottom-0 me-0 ms-auto`}>
                   <img src={forKids.src} alt="forKids" className="img-fluid "/>
                 </div>
-                <div className='text-uppercase my-2 btn text-start' style={{color:'#AB5D02'}}>show more <i className="bi bi-arrow-right"></i></div>
+                <Link href='/kids' className={`${styles.showMore} text-uppercase my-2 btn text-start`} style={{color:'#AB5D02'}}>show more <i className="bi bi-arrow-right"></i></Link>
             </div>
           </div>
         </div>

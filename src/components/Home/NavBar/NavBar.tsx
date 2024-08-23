@@ -52,12 +52,12 @@ const NavBar = () => {
     })
   },[])
   return (
-    <nav className={`${styles.navBarContainer} navbar navbar-expand-lg`} aria-label='Offcanvas navbar large bg-white'>
+    <nav className={`${styles.navBarContainer} navbar navbar-expand-lg py-0`} aria-label='Offcanvas navbar large bg-white'>
 
         <button className="navbar-toggler m-md-0 border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" style={{color:'#AB5D02'}} onClick={()=>{
           setActiveNav(!activeNav)
         }}>
-          <span className={`${activeNav===true? 'bi bi-x-lg text-black':'navbar-toggler-icon'}`}></span>
+          <span className={`${activeNav===true? 'bi bi-x-lg text-black fs-1':'navbar-toggler-icon fs-1'}`}></span>
         </button>
         <div className={`${styles.offcanvas} offcanvas offcanvas-start vw-100`} tabIndex={-1} id="offcanvas" aria-modal='true' role='dialog' aria-labelledby='offcanvasLabel' data-bs-scroll="true" data-bs-backdrop="false">
 
