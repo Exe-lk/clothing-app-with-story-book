@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import styles from './page.module.scss';
-import React, {use, useState} from 'react';
+import React, {use, useEffect, useRef, useState} from 'react';
 import Header from '@/components/Home/Header/Header';
 import NavBar from '@/components/Home/NavBar/NavBar';
 import Path from '@/components/Mens/Page Path/Path';
@@ -30,6 +30,20 @@ const KidsItem = () => {
   const searchParams = useSearchParams();
   const pathName = usePathname();
   const [fav, setFav] = useState(false);
+  const ref = useRef<HTMLDivElement>();
+  useEffect(() => {
+    const allLink = ref.current.querySelectorAll('div');
+    function changeMenuActive(this:any){{
+      allLink.forEach(n=>{
+        n.classList.remove(`${styles.active}`)
+      })
+      this.classList.add(`${styles.active}`)
+    }}
+
+    allLink.forEach(e=>{
+      e.addEventListener('click', changeMenuActive)
+    })
+  },[])
   return (
 
     <>
@@ -126,12 +140,11 @@ const KidsItem = () => {
                     <div className="col-12 p-0">
                       <h4 className='text-capitalize fs-xxl-2 fs-xl-2 fs-lg-2 fs-md-2 fs-sm-3 fs-3 fw-bold'>colors</h4>
                     </div>
-                    <div className="col-12 ms-2 my-1 ps-3 ">
-                      {/* <div className='d-flex align-items-center justify-content-center px-4 py-1'> */}
-                        <div className='rounded-circle border border-black me-xxl-5 me-xl-5 me-lg-5 me-md-4 me-sm-3 me-3 my-2 p-2 btn' style={{ ["background-color" as any]: item.colors[0], height:'20px', width:'20px' }}></div>
-                        <div className='rounded-circle border border-black mx-xxl-5 mx-xl-5 mx-lg-5 mx-md-4 mx-sm-3 mx-3 my-2 p-2 btn' style={{ ["background-color" as any]: item.colors[1], height:'20px', width:'20px' }}></div>
-                        <div className='rounded-circle border border-black mx-xxl-5 mx-xl-5 mx-lg-5 mx-md-4 mx-sm-3 mx-3 my-2 p-2 btn' style={{ ["background-color" as any]: item.colors[2], height:'20px', width:'20px' }}></div>
-                        <div className='rounded-circle border border-black mx-xxl-5 mx-xl-5 mx-lg-5 mx-md-4 mx-sm-3 mx-3 my-2 p-2 btn' style={{ ["background-color" as any]: item.colors[3], height:'20px', width:'20px' }}></div>
+                    <div className={`${styles.colorCont} col-12 ms-2 my-1 ps-3 `} ref={ref}>
+                        <div className={`${styles.colorItem} rounded-circle me-xxl-5 me-xl-5 me-lg-5 me-md-4 me-sm-3 me-3 my-2 p-2 btn`} style={{ ["background-color" as any]: item.colors[0], height:'20px', width:'20px' }}></div>
+                        <div className={`${styles.colorItem} rounded-circle mx-xxl-5 mx-xl-5 mx-lg-5 mx-md-4 mx-sm-3 mx-3 my-2 p-2 btn`} style={{ ["background-color" as any]: item.colors[1], height:'20px', width:'20px' }}></div>
+                        <div className={`${styles.colorItem} rounded-circle mx-xxl-5 mx-xl-5 mx-lg-5 mx-md-4 mx-sm-3 mx-3 my-2 p-2 btn`} style={{ ["background-color" as any]: item.colors[2], height:'20px', width:'20px' }}></div>
+                        <div className={`${styles.colorItem} rounded-circle mx-xxl-5 mx-xl-5 mx-lg-5 mx-md-4 mx-sm-3 mx-3 my-2 p-2 btn`} style={{ ["background-color" as any]: item.colors[3], height:'20px', width:'20px' }}></div>
                       {/* </div> */}
                     </div>
                   </div>

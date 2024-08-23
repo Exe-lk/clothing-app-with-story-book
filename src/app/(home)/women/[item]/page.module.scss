@@ -19,6 +19,13 @@
     }
   }
 }
+.itemDetails{
+  .colorCont{    
+    .colorItem.active{
+      border: 3px solid #AB5D02 !important;
+    }
+  }
+}
 
 
 @media screen and (min-width : 0) and (max-width: 575px) {

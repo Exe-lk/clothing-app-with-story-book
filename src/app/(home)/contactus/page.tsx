@@ -31,6 +31,9 @@ const page = () => {
             <input type="text" className='form-control rounded-1 p-2 my-2' placeholder='Phone number *' style={{border:'1px solid rgba(224, 224, 224, 1)'}}/>
             <select className='form-control rounded-1 p-2 my-2' style={{border:'1px solid rgba(224, 224, 224, 1)'}}>
               <option selected>What clothing category do you want? </option> 
+              <option >Men </option> 
+              <option >Women </option> 
+              <option >Kids </option> 
             </select>
             <button className='btn text-uppercase p-2 my-2 text-light p-0 m-0 fs-xxl-6 fs-xl-6 fs-lg-6 fs-md-7 fs-sm-7 fs-7' style={{background:'rgba(180, 110, 28, 1)'}}>send</button>
           </form>

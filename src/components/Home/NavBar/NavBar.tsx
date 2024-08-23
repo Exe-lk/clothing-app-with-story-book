@@ -100,7 +100,7 @@ const NavBar = () => {
                   <Link href="/women" className={`${styles.navLink} nav-link`}>women</Link>
                 </li>
                 <li className="nav-item mx-4">
-                  <Link href="/mens" className={`${styles.navLink} nav-link`}>men</Link>
+                  <Link href="/men" className={`${styles.navLink} nav-link`}>men</Link>
                 </li>
                 <li className="nav-item mx-4">
                   <Link href="/kids" className={`${styles.navLink} nav-link`}>kids</Link>

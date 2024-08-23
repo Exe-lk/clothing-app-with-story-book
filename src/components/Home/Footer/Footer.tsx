@@ -54,14 +54,14 @@ const Footer = () => {
               </div>
               <div className="row mx-0 w-100">
                   <div className='col-6 d-flex flex-column align-items-center justify-content-between '>
-                    <a href="#" className='btn fs-xxl-6 fs-xl-6 fs-lg-7'>Home</a>
-                    <a href="#" className='btn fs-xxl-6 fs-xl-6 fs-lg-7'>woman</a>
-                    <a href="#" className='btn fs-xxl-6 fs-xl-6 fs-lg-7'>men</a>
+                    <a href="/" className='btn fs-xxl-6 fs-xl-6 fs-lg-7'>Home</a>
+                    <a href="/women" className='btn fs-xxl-6 fs-xl-6 fs-lg-7'>woman</a>
+                    <a href="/men" className='btn fs-xxl-6 fs-xl-6 fs-lg-7'>men</a>
                   </div>
                   <div className='col-6 d-flex flex-column align-items-center justify-content-between fs-xxl-6 fs-xl-6 fs-lg-7'>
-                    <a href="#" className='btn fs-xxl-6 fs-xl-6 fs-lg-7'>kids</a>
-                    <a href="#" className='btn fs-xxl-6 fs-xl-6 fs-lg-7'>about us</a>
-                    <a href="#" className='btn fs-xxl-6 fs-xl-6 fs-lg-7'>contact us</a>
+                    <a href="/kids" className='btn fs-xxl-6 fs-xl-6 fs-lg-7'>kids</a>
+                    <a href="/aboutus" className='btn fs-xxl-6 fs-xl-6 fs-lg-7'>about us</a>
+                    <a href="/contactus" className='btn fs-xxl-6 fs-xl-6 fs-lg-7'>contact us</a>
                   </div>
               </div>
           </div>
@@ -76,12 +76,12 @@ const Footer = () => {
         <div className="row mx-0 ">
           <div className="col-12 d-flex flex-column text-uppercase">
             <p className='text-center fw-bold fs-6 fs-sm-5 fs-md-4'>navigate</p> 
-            <a href="#" className='btn fs-7 fs-sm-6 fs-md-5'>Home</a>
-            <a href="#" className='btn fs-7 fs-sm-6 fs-md-5'>woman</a>
-            <a href="#" className='btn fs-7 fs-sm-6 fs-md-5'>men</a>
-            <a href="#" className='btn fs-7 fs-sm-6 fs-md-5'>kids</a>
-            <a href="#" className='btn fs-7 fs-sm-6 fs-md-5'>about us</a>
-            <a href="#" className='btn fs-7 fs-sm-6 fs-md-5'>contact us</a>
+            <a href="/" className='btn fs-7 fs-sm-6 fs-md-5'>Home</a>
+            <a href="/women" className='btn fs-7 fs-sm-6 fs-md-5'>woman</a>
+            <a href="/men" className='btn fs-7 fs-sm-6 fs-md-5'>men</a>
+            <a href="/kids" className='btn fs-7 fs-sm-6 fs-md-5'>kids</a>
+            <a href="/aboutus" className='btn fs-7 fs-sm-6 fs-md-5'>about us</a>
+            <a href="/aboutus" className='btn fs-7 fs-sm-6 fs-md-5'>contact us</a>
           </div>
         </div>
         <div className="row mx-0 " >

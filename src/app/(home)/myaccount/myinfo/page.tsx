@@ -7,24 +7,6 @@ import Footer from '@/components/Home/Footer/Footer';
 import LeftMenu from '@/components/My Orders/Left Menu/LeftMenu';
 
 const MyInfo = () => {
-
-  // useEffect(()=>{
-  //   const allLi = document
-  //   .querySelector('.menu ul')
-  //   .querySelectorAll('li');
-
-  //   function changeMenuActive(this:any){{
-  //     allLi.forEach((n)=>{
-  //       n.classList.remove('active')
-  //     })
-  //     this.classList.add('active')
-  //   }}
-
-  //   allLi.forEach(e=>{
-  //     e.addEventListener('click', changeMenuActive)
-  //   })
-  // },
-  // [])
   return (
     <div className="container-fluid h-100  p-0">
       <div className='row mx-1 mx-sm-1 mx-md-1 mx-lg-0 mx-xl-0 mx-xxl-0 my-3 '>
@@ -81,7 +63,7 @@ const MyInfo = () => {
               <input type="text" id='re- enter new password' className='form-control text-capitalize '/>
             </div>
           </form>
-
+          <button className='btn text-white fs-7 fs-xxl-5 fs-xl-5 fs-lg-5 fs-md-6 fs-sm-6  py-xxl-2 py-xl-2 py-lg-2 py-md-1 py-sm-0 py-0 d-block mx-auto text-capitalize ' style={{background:'#AB5D02'}}>save</button>
         </div>
       </div>
 
