@@ -3,6 +3,7 @@
     .discount{
       top: 3% !important;
       left: 6% !important;
+      transition: transform 0.3s ease-in-out !important;
     }
     .heart{
       top: 3% !important;
@@ -15,6 +16,7 @@
     transition: transform .5s ease-in-out;
   }
 
+  .imageContainer:hover .discount,
   .imageContainer:hover .heart {
     transform: scale(1.2) !important;
   }
