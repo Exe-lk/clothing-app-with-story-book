@@ -23,14 +23,26 @@ import { IoHeartCircleSharp } from "react-icons/io5";
 import { BiHeartCircle } from "react-icons/bi";
 import Link from 'next/link';
 
+interface Item {
+  id: number;
+  name: string;
+  favourite: boolean;
+  des: string;
+  price: string
+}
 
 const KidsItem = () => {
-  const {theme} = useTheme();
   const [value, setValue] = useState(0);
   const searchParams = useSearchParams();
-  const pathName = usePathname();
-  const [fav, setFav] = useState(false);
   const ref = useRef<HTMLDivElement>();
+  const [items, setItems] = useState<Item []>(kidsRelatedItemsList);
+  const toggleFavourite = (id:number) =>{
+    setItems(prevItems=>
+      prevItems.map(item=>
+        item.id === id ? {...item, favourite: !item.favourite}: item
+      )
+    )
+  }
   useEffect(() => {
     const allLink = ref.current.querySelectorAll('div');
     function changeMenuActive(this:any){{
@@ -198,18 +210,17 @@ const KidsItem = () => {
                 <h1 className='text-uppercase fs-4 fs-sm-2 fs-md-1 fs-lg-1 fs-xl-1 fs-xxl-1 fw-bold text-center'>related items</h1>
                 <p className='h5 fw-normal text-capitalize mb-4 fs-7 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-5 fs-xxl-5 text-center'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
 
-                {/* <div className={`${styles.newArrivals} row mx-0 my-2`}> */}
                 {
-                    kidsRelatedItemsList.map((item:any, key:any)=>{
+                    items.map((item:any, key:any)=>{
                       return(
                         <div className={`${styles.itemContainer} col-xxl-2 col-xl-3 col-lg-3 col-md-3 col-sm-3 col-5 m-xxl-5 mx-3 my-2 m-sm-2 m-md-2 p-0 h-100 `} key={key}>
                           <div className={`${styles.imageContainer} row mx-0 d-flex align-items-center m-0 p-0 position-relative`}>
                             <Image src={item.name} alt='item' className={`${styles.image} img-fluid object-fit-cover m-0 p-0 rounded-3 `}/>
                             {
-                              fav? <i className={`${styles.heart} bi bi-heart-fill position-absolute fs-xxl-5 btn m-0 p-0 w-auto rounded-circle bg-white px-1 py-0`} onClick={()=>{
-                                setFav(!fav)
+                              item.favourite? <i className={`${styles.heart} bi bi-heart-fill position-absolute fs-xxl-5 btn m-0 p-0 w-auto rounded-circle bg-white px-1 py-0`} onClick={()=>{
+                                toggleFavourite(item.id)
                               }}></i> : <i className={`${styles.heart} bi bi-heart  position-absolute fs-xxl-5 btn m-0 p-0 w-auto rounded-circle bg-white px-1 py-0`} onClick={()=>{
-                                setFav(!fav)
+                                toggleFavourite(item.id)
                               }}></i>
                             }
                             <div className={`${styles.addToCart} row btn rounded-0 mx-0 position-absolute bottom-0 d-flex align-items-center justify-content-center text-white p-xxl-3 p-xl-3 p-lg-3 p-2 w-100`} style={{background:'rgba(171, 93, 2, 0.66)'}}>

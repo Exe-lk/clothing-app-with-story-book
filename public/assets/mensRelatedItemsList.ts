@@ -10,6 +10,6 @@ export const mensRelatedItemsList:any = [
   {'id':4 ,'name': four, 'favourite': false, 'des':'The Kaivalya Nehru Jacket', 'price':'Rs 1700.00'},
   {'id':5 ,'name': five, 'favourite': false, 'des':'The Asmaani Nehru Jacket', 'price':'Rs 1700.00'},
   {'id':6 ,'name': six, 'favourite': false, 'des':'The Sufiyana Kurta', 'price':'Rs 1700.00'},
-  {'id':7 ,'name': seven, 'favourite': true, 'des':'The Arnit Kurta', 'price':'Rs 1700.00'},
+  {'id':7 ,'name': seven, 'favourite': false, 'des':'The Arnit Kurta', 'price':'Rs 1700.00'},
   {'id':8 ,'name': eight, 'favourite': false, 'des':'The Leander Safari', 'price':'Rs 1700.00'}
 ]

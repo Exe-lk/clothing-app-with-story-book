@@ -1,28 +1,32 @@
 .itemContainer{
   .imageContainer{
+    .discount{
+      top: 3% !important;
+      left: 6% !important;
+    }
     .heart{
       top: 3% !important;
       right: 6% !important;
+      transition: transform 0.3s ease-in-out !important;
     }
   }
   .image:hover{
     transform: scale(1.02);
     transition: transform .5s ease-in-out;
   }
+
+  .imageContainer:hover .heart {
+    transform: scale(1.2) !important;
+  }
+
   .itemDes{
     height: 100px !important;
     z-index: 99 !important;
     width: 101% !important;
+    transform: scale(1.02) !important;
 
     p{
       text-transform: capitalize !important;
-    }
-  }
-}
-.itemDetails{
-  .colorCont{    
-    .colorItem.active{
-      border: 3px solid #AB5D02 !important;
     }
   }
 }

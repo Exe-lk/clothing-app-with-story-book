@@ -7,15 +7,29 @@ import { useTheme } from '@/components/ThemeContext';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 
+interface Item {
+  id: number;
+  name: string;
+  favourite: boolean;
+  des: string;
+  price: string
+}
+
 const ShoppingItems = () => {
   const {theme} = useTheme();
-  const router = useRouter();
-  const [fav, setFav] = useState(false);
+  const [items, setItems] = useState<Item []>(shoppingList);
+  const toggleFavourite = (id:number) =>{
+    setItems(prevItems=>
+      prevItems.map(item=>
+        item.id === id ? {...item, favourite: !item.favourite}: item
+      )
+    )
+  }
   return (
 
     <div className="row mx-0 ">
       {
-        shoppingList.map((item:any, key:any)=>{
+        items.map((item:any, key:any)=>{
           return(
             
             <div className={`${styles.itemContainer} col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-4 position-relative d-flex flex-column align-items-center text-capitalize my-md-3 my-sm-2 my-2`} key={key}>
@@ -28,10 +42,10 @@ const ShoppingItems = () => {
               </div>         
               </Link>
                 {
-                  fav? <i className={`${styles.heart} bi bi-heart-fill position-absolute fs-xxl-5 btn m-0 p-0 w-auto rounded-circle bg-white px-1 py-0`} onClick={()=>{
-                    setFav(!fav)
+                  item.favourite ? <i className={`${styles.heart} bi bi-heart-fill position-absolute fs-xxl-5 btn m-0 p-0 w-auto rounded-circle bg-white px-1 py-0`} onClick={()=>{
+                    toggleFavourite(item.id)
                   }}></i> : <i className={`${styles.heart} bi bi-heart  position-absolute fs-xxl-5 btn m-0 p-0 w-auto rounded-circle bg-white px-1 py-0`} onClick={()=>{
-                    setFav(!fav)
+                    toggleFavourite(item.id)
                   }}></i>
                 }
             </div>
