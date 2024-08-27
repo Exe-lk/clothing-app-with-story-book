@@ -14,7 +14,7 @@ const Heading = () => {
       <div className="col-6 col-lg-9 d-flex justify-content-between align-items-center w-100">
         <p className='d-block my-auto'>categories</p>
         <div className="dropdown">
-          <button className="btn dropdown-toggle text-white" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style={{background:'rgb(171, 93, 2)'}}>
+          <button className="btn dropdown-toggle text-white" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style={{background:'rgb(249, 249, 249)'}}>
             {selectedValue}
           </button>
           <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1" onChange={(e:any) => setSelectedValue(e.target.value)}>

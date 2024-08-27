@@ -33,6 +33,12 @@
   }
 }
 
+.colorCont{    
+  .colorItem.active{
+    border: 2px solid #AB5D02 !important;
+  }
+}
+
 @media screen and (min-width : 0) and (max-width: 575px) {
   .itemDetails{
     margin-top: 150px;

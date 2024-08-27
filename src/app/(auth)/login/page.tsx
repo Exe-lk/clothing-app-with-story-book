@@ -281,6 +281,9 @@ const LoginPage = () => {
               </div>
               <div className={`${styles.register} row mx-0 p-2  h-auto text-center`} >
                 <div className="col-6 overflow-hidden">
+                  <Link href='/' className='position-fixed top-0 start-0 fs-2'>
+                    <i className="bi bi-arrow-left-circle" style={{color:'rgba(180, 110, 28, 1)'}}></i>
+                  </Link>
                   <img src={register.src} alt="register" className='img-fluid object-fit-cover' style={{height:'500px',width:'600px'}}/>
                 </div>
                 <div className={`${styles.right} col-6 `}>

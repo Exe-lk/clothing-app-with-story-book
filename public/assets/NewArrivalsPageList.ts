@@ -13,11 +13,11 @@ import eighteen from './discounted items/item18/1.jpg';
 import twenty from './discounted items/item20/1.jpg'; 
 
 export const newArrivalsPageList:any = [
-  {'id':'NA001' ,'name': one, 'discount':false, 'category':'women', 'favourite': true, 'des':'Rainy Light Green Skinee', 'price':'Rs 1700.00'},
+  {'id':'NA001' ,'name': one, 'discount':false, 'category':'women', 'favourite': false, 'des':'Rainy Light Green Skinee', 'price':'Rs 1700.00'},
   {'id':'D013' ,'name': thirteen, 'discount':false, 'category':'men', 'favourite': false, 'des':'The Jevin Kurta', 'price':'Rs 1700.00'},
   {'id':'NA002' ,'name': two, 'discount':false, 'category':'women', 'favourite': false, 'des':'Rainy Light Beige Skinee', 'price':'Rs 2700.00' },
   {'id':'NA003' ,'name': three, 'discount':false, 'category':'women', 'favourite': false, 'des':'Round Neck Black And White Skinee', 'price':'Rs 3700.00'},
-  {'id':'NA004' ,'name': four, 'discount':false, 'category':'women', 'favourite': true, 'des':'Keep Calm Baggy T Shirt', 'price':'Rs 2500.00 '},
+  {'id':'NA004' ,'name': four, 'discount':false, 'category':'women', 'favourite': false, 'des':'Keep Calm Baggy T Shirt', 'price':'Rs 2500.00 '},
   {'id':'D016' ,'name': sixteen, 'discount':false, 'category':'men', 'favourite': false, 'des':'The Shahan Coat', 'price':'Rs 1700.00'},
   {'id':'NA005' ,'name': five, 'discount':false, 'category':'men', 'favourite': false, 'des':'The Rory Shirt', 'price':'Rs 1700.00'},
   {'id':'NA006' ,'name': six, 'discount':false, 'category':'men', 'favourite': false, 'des':'The Pryce Shirt', 'price':'Rs 1700.00'},

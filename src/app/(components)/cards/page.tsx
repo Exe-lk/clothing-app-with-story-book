@@ -46,14 +46,7 @@ const page = () => {
                 <span className={`${styles.punc}`}>{`{`}</span> 
                   <span className={`${styles.value}`}>{`String`}</span> 
                 <span className={`${styles.punc}`}>{`}`}</span> 
-                <span className={`${styles.comment}`}>{` // "default" || "top"|| "bottom"|| "rounded10"|| "rounded50"|| "pill"`}</span>{`\n`}   
-              </p>
-
-              <p className={`${styles.property}`}> {`size= `} 
-                <span className={`${styles.punc}`}>{`{`}</span> 
-                  <span className={`${styles.value}`}>{`String`}</span> 
-                <span className={`${styles.punc}`}>{`}`}</span> 
-                <span className={`${styles.comment}`}>{` // "sm" || "md" || "lg"`}</span>{`\n`}  
+                <span className={`${styles.comment}`}>{` // "default" || "rounded10"|| "rounded20"|| "rounded30`}</span>{`\n`}   
               </p>
 
               <p className={`${styles.property}`}> {`shadow=` } 
@@ -63,10 +56,11 @@ const page = () => {
                 <span className={`${styles.comment}`}>{` // "none" || "small"|| "medium"|| "large""`}</span>{`\n`}
               </p>
 
-              <p className={`${styles.property}`}> {`backgroundColor= ` } 
-                <span className={`${styles.punc}`}>{`{`}</span> 
+              <p className={`${styles.property}`}> {`view=` } 
+                <span className={`${styles.punc}`}>{`{`}</span>  
                   <span className={`${styles.value}`}>{`String`}</span> 
-                <span className={`${styles.punc}`}>{`}`}</span> {`\n`} 
+                <span className={`${styles.punc}`}>{`}`}</span> 
+                <span className={`${styles.comment}`}>{` // "list" || "grid"`}</span>{`\n`}
               </p>
 
               <p className={`${styles.property}`}>

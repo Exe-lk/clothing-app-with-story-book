@@ -34,7 +34,7 @@ const DiscountedItems = () => {
           <div className='row text-capitalize p-1 mx-1 fs-xxl-5 fs-xl-5 fs-lg-6 my-3'>
             <div className="col-6 col-lg-9 d-flex justify-content-between align-items-center w-100">
               <p className='d-block my-auto'>categories</p>
-              <select className='text-white' name="" id="" onChange={(e) => setSelectedValue(e.target.value)} style={{background:'rgb(171, 93, 2)'}}>
+              <select className='text-black rounded-3' name="" id="" onChange={(e) => setSelectedValue(e.target.value)} style={{background:'rgb(249, 249, 249)', border:'2px solid rgb(171, 93, 2)'}}>
                 <option value="all">All</option>
                 <option value="women" selected>Women</option>
                 <option value="men">Men</option>
@@ -51,7 +51,7 @@ const DiscountedItems = () => {
           <div className='row text-capitalize p-1 mx-1 fs-xxl-5 fs-xl-5 fs-lg-6 my-3'>
             <div className="col-6 col-lg-9 d-flex justify-content-between align-items-center w-100">
               <p className='d-block my-auto'>categories</p>
-              <select className='text-white' name="" id="" onChange={(e) => setSelectedValue(e.target.value)} style={{background:'rgb(171, 93, 2)'}}>
+              <select className='text-black rounded-3' name="" id="" onChange={(e) => setSelectedValue(e.target.value)} style={{background:'rgb(249, 249, 249)', border:'2px solid rgb(171, 93, 2)'}}>
                 <option value="all">All</option>
                 <option value="women" selected>Women</option>
                 <option value="men">Men</option>

@@ -165,7 +165,6 @@ const MensItem = () => {
                         <div className={`${styles.colorItem} rounded-circle mx-xxl-5 mx-xl-5 mx-lg-5 mx-md-4 mx-sm-3 mx-3 my-2 p-2 btn`} style={{ ["background-color" as any]: item.colors[1], height:'20px', width:'20px' }}></div>
                         <div className={`${styles.colorItem} rounded-circle mx-xxl-5 mx-xl-5 mx-lg-5 mx-md-4 mx-sm-3 mx-3 my-2 p-2 btn`} style={{ ["background-color" as any]: item.colors[2], height:'20px', width:'20px' }}></div>
                         <div className={`${styles.colorItem} rounded-circle mx-xxl-5 mx-xl-5 mx-lg-5 mx-md-4 mx-sm-3 mx-3 my-2 p-2 btn`} style={{ ["background-color" as any]: item.colors[3], height:'20px', width:'20px' }}></div>
-                      {/* </div> */}
                     </div>
                   </div>
 
