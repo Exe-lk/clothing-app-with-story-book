@@ -25,7 +25,7 @@ const Documentation = () => {
         </li>
       </Link>
 
-      <Link href="/women" className='nav-link fs-md-3 fs-sm-4 fs-4'>
+      <Link href="/getting-started" className='nav-link fs-md-3 fs-sm-4 fs-4'>
         <li className="nav-item mx-4 d-flex align-items-center justify-content-between my-2" data-bs-toggle="offcanvas">
           <div className={`${styles.left} col-8 d-flex align-items-center justify-content-start text-start`}>
             <HiArrowRightStartOnRectangle className="me-4 me-sm-4 me-md-5 fs-2" style={{color:'rgba(171, 93, 2, 1)'}}/>
@@ -61,7 +61,7 @@ const Documentation = () => {
         </li>
       </Link>
 
-      <Link href="/aboutus" className='nav-link fs-md-3 fs-sm-4 fs-4'>
+      <Link href="/forms" className='nav-link fs-md-3 fs-sm-4 fs-4'>
         <li className="nav-item mx-4 d-flex align-items-center justify-content-between my-2" data-bs-toggle="offcanvas">
           <div className={`${styles.left} col-8 d-flex align-items-center justify-content-start text-start`}>
             <AiOutlineForm className="me-4 me-sm-4 me-md-5 fs-2" style={{color:'rgba(171, 93, 2, 1)'}}/>
@@ -73,7 +73,7 @@ const Documentation = () => {
         </li>
       </Link>
 
-      <Link href="/contactus" className='nav-link fs-md-3 fs-sm-4 fs-4'>
+      <Link href="/cards" className='nav-link fs-md-3 fs-sm-4 fs-4'>
         <li className="nav-item mx-4 d-flex align-items-center justify-content-between my-2" data-bs-toggle="offcanvas">
           <div className={`${styles.left} col-8 d-flex align-items-center justify-content-start text-start`}>
             <TbCards className="me-4 me-sm-4 me-md-5 fs-2" style={{color:'rgba(171, 93, 2, 1)'}}/>

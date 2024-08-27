@@ -162,7 +162,7 @@ const SideBar = () => {
                     
                         <li className="nav-item d-flex align-items-center  mx-auto rounded-2 my-4">
                           <TbCards className={`${styles.shortmenu} bi-house text-white ms-1 me-3 fs-4` }/>
-                          <a href="#" className={`${styles.menuDetails} nav-link align-middle text-white d-none `}> Cards </a>
+                          <a href="/cards" className={`${styles.menuDetails} nav-link align-middle text-white d-none `}> Cards </a>
                             {/* <a href="#"><i className={`${styles.shortmenu} bi-house text-white` }></i></a> */}
                         </li>
 

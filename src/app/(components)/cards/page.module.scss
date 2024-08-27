@@ -1,0 +1,41 @@
+.buttonWrapper{
+  .buttonCode{
+    // background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+
+    code{
+      .line1,
+      .line7{
+        color: red;
+      }
+      .property{
+        color: green;
+      }
+      .value{
+        color: #AA336A;
+      }
+      .comment{
+        color: grey;
+      }
+      .punc{
+        color: #000;
+      }
+    }
+  }
+}
+
+.strybook:hover{
+  background-color: rgb(255, 182, 193) !important;
+  p{
+    color: #FF00FF !important;
+  }
+}
+
+.container:hover{
+  border: 2px solid #AB5D02 !important;
+  cursor: pointer !important;
+  transform: scale(1.02);
+  transition: transform 0.5s ease-in-out !important;
+}
+
+
+
