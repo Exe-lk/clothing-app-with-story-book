@@ -31,7 +31,7 @@ const ShoppingItems = (props:any) => {
     )
   }
   return (
-    <div className="row mx-0 ">
+    <div className="row mx-0">
       {
         items.filter(function(i:any){
           if(props.category=='all'){
@@ -45,6 +45,9 @@ const ShoppingItems = (props:any) => {
             <div className={`${styles.imageContainer} row mx-0 d-flex align-items-center m-0 p-0 position-relative`}>
               <Link href={{pathname: `/${item.category}/#`, query: {id: item.id, name: item.des}}} className='text-decoration-none text-black p-0'>
                 <Image src={item.name} alt='item' className='img-fluid object-fit-cover m-0 p-0 rounded-3'/>
+                <div className={`${styles.ribbonContainer} position-absolute top-0 start-0 position-relative bg-transparent overflow-hidden`}>
+                  <div className={`${styles.ribbon} text-uppercase fw-bold text-white position-absolute text-center fs-8 fs-sm-7 fs-xxl-6 fs-xl-6 w-auto`}>new arrivals</div>
+                </div>
               <div className={`${styles.addToCart} row btn rounded-0 mx-0 position-absolute bottom-0 d-flex align-items-center justify-content-center text-white p-xxl-3 p-xl-3 p-lg-3 p-2 w-100`} >
                 <i className="bi bi-cart3 w-auto ps-0 pe-2 fs-xxl-6"></i>
                 <p className='w-auto p-0 m-0 text-capitalize fs-xxl-6'>add to cart</p>

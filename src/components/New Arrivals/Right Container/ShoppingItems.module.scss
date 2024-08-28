@@ -1,5 +1,39 @@
 .itemContainer{
   .imageContainer{
+    .ribbonContainer {   
+      width: 300px;
+      height: 300px;
+      .ribbon {
+        background-color: #c00;
+        opacity: .7;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); 
+        transform: rotate(-45deg);
+        transition: opacity .5s ease-in-out;
+      }
+    }
+    
+    
+    .ribbon::before,
+    .ribbon::after {
+      content: "";
+      position: absolute;
+      bottom: -20px; /* Position the triangle at the bottom */
+      border-width: 20px; /* Size of the triangle */
+      border-style: solid;
+      border-color: #c00 transparent transparent transparent; /* Color of the triangle */
+      z-index: -1;
+    }
+    
+    .ribbon::before {
+      left: 0;
+      border-left-color: transparent; /* Left side triangle */
+    }
+    
+    .ribbon::after {
+      right: 0;
+      border-right-color: transparent; /* Right side triangle */
+    }
+    
     .discount{
       top: 3% !important;
       left: 6% !important;
@@ -8,6 +42,9 @@
       top: 3% !important;
       right: 6% !important;
     }
+  }
+  .imageContainer:hover .ribbon{
+    opacity: .9 !important;
   }
   .addToCart{
     background-color: rgba(171, 93, 2, 0.66);
@@ -19,9 +56,40 @@
 }
 
 
-@media screen and (min-width : 991px) {
+@media screen and (min-width : 1200px) {
   .itemContainer{
     .imageContainer{
+      .ribbonContainer {
+        .ribbon {
+          top: 32px; 
+          left: -52px;
+          padding: 5px 43px;
+        }
+      }
+      .addToCart{
+        z-index: 2 !important;
+        opacity: 0;
+        transform: translateY(100%);
+      }
+    }
+  }
+  .imageContainer:hover .addToCart{
+    opacity: 1;
+    transform: translateY(0px);
+    transition: transform 0.5s ease-in-out;
+    background-color: rgba(171, 93, 2, 0.66);
+  }
+}
+@media screen and (min-width : 991px) and (max-width: 1200px) {
+  .itemContainer{
+    .imageContainer{
+      .ribbonContainer {
+        .ribbon {
+          top: 25px; 
+          left: -51px;
+          padding: 5px 43px;
+        }
+      }
       .addToCart{
         z-index: 2 !important;
         opacity: 0;
@@ -40,9 +108,18 @@
 @media screen and (min-width : 0) and (max-width: 575px) {
   .itemContainer{
     height: 100% !important;
-    .image{
-      width: 100% !important;
-      height: 247px;
+    .imageContainer{
+      .ribbonContainer {
+        .ribbon {
+          top: 16px; 
+          left: -45px;
+          padding: 5px 40px;
+        }
+      }
+      .image{
+        width: 100% !important;
+        height: 247px;
+      }
     }
     .itemDes{
       // height: 70px !important;
@@ -53,9 +130,18 @@
 @media screen and (min-width : 576px) and (max-width: 767px) {
   .itemContainer{
     height: 100% !important;
-    .image{
-      width: 100% !important;
-      height: 247px;
+    .imageContainer{
+      .ribbonContainer {
+        .ribbon {
+          top: 24px; 
+          left: -47px;
+          padding: 5px 40px;
+        }
+      }
+      .image{
+        width: 100% !important;
+        height: 247px;
+      }
     }
   }
 }
@@ -63,9 +149,18 @@
 @media screen and (min-width : 768px) and (max-width: 991px) {
   .itemContainer{
     height: 100% !important;
-    .image{
-      width: 100% !important;
-      height: 247px;
+    .imageContainer{
+      .ribbonContainer {
+        .ribbon {
+          top: 24px; 
+          left: -47px;
+          padding: 5px 40px;
+        }
+      }
+      .image{
+        width: 100% !important;
+        height: 247px;
+      }
     }
     .itemDes{
       // height: 80px !important;
