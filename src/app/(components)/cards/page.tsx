@@ -1,7 +1,7 @@
 'use client';
 
 import styles from './page.module.scss';
-import React from 'react';
+import React, { useState } from 'react';
 import SideBar from '@/components/Side Bar/SideBar';
 import { MdOutlineRoundedCorner } from "react-icons/md";
 import Rounded from '@/components/Button Component/Rounded';
@@ -16,6 +16,10 @@ import NavBar from '@/components/Home/NavBar/NavBar';
 import Link from 'next/link';
 
 const page = () => {
+  const [selectedValue,setSelectedValue] = useState("list");
+  const handleRadioChange = (value:any) => {
+    setSelectedValue(value);
+  };
   return (
     <div className='container-fluid h-100' >
 
@@ -77,91 +81,223 @@ const page = () => {
 
       <div className='row my-5 d-flex align-items-start justify-content-center' >
           
-        <div className={`${styles.container} col-xxl-5 col-xl-5 col-lg-5 col-sm-5 col-md-5 col-5 mx-2 my-xxl-5 my-xl-5 my-lg-5 my-md-4 my-sm-4 my-4 bg-white p-2 rounded-3`} >
+        <div className={`${styles.container} col-10 mx-2 my-xxl-5 my-xl-5 my-lg-5 my-md-4 my-sm-4 my-4 bg-white p-2 rounded-3`} >
           <div className="row mx-0">
-            <div className="col-xxl-1 col-xl-2 col-lg-2 col-xl-2 col-2 m-0 p-0 text-center">
-              <MdOutlineRoundedCorner className='fs-6 fs-sm-3 fs-md-2 fs-lg-3 fs-xl-1 fs-xxl-1'/>
+            <div className="col-1 me-2 p-0 d-flex align-items-center justify-content-center mb-4">
+              <MdOutlineRoundedCorner className='fs-2 fs-sm-1 fs-md-2 fs-lg-1 fs-xl-1 fs-xxl-1'/>
             </div>
-            <div className="col-xxl-8 col-xl-6 col-lg-6 col-6 fs-7 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-5 fs-xxl-5 text-capitalize mb-4 fw-bold m-0 p-0">
+            <div className="col-xxl-7 col-xl-6 col-lg-6 col-6 fs-6 fs-sm-4 fs-md-3 fs-lg-3 fs-xl-1 fs-xxl-1 text-capitalize mb-4 fw-bold  p-0">
               <p className='p-0 m-0'>rounded</p>
-              <p className='p-0 m-0'>Button</p>
+              <p className='p-0 m-0'>Card</p>
             </div>
             <Link href='https://66c5c74d841f3ca4bc8433d8-zbcojrxnsm.chromatic.com/?path=/story/stories-button--rounded-10' target="_blank"  className={`${styles.strybook} col-3 fs-7 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-5 fs-xxl-5 text-capitalize mb-4 fw-bold d-flex align-items-center justify-content-center btn m-auto`} style={{background:'rgb(243, 207, 198)'}}>
               {/* #FF69B4 */}
-              <p className='m-0 p-0 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5' style={{color:'rgb(248, 152, 128)'}}>storybook</p>
+              <p className='m-0 p-0 fs-7 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5' style={{color:'rgb(248, 152, 128)'}}>storybook</p>
               {/* #FF00FF */}
             </Link>
           </div>
-          <div className="row mx-0 d-flex align-items-center justify-content-center fs-7 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-5 fs-xxl-5">
-            <button className='btn col-3 mx-xxl-2 mx-xl-2 mx-lg-2 mx-md-2 mx-1 my-xxl-2 my-1 p-1 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5  text-white rounded-0' style={{background:'#AB5D02'}}>default</button>
-            <button className='btn col-3 mx-xxl-2 mx-xl-2 mx-lg-2 mx-md-2 mx-1 my-xxl-2 my-1 p-1 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5  text-white rounded-top ' style={{background:'#AB5D02'}}>top</button>
-            <button className='btn col-3 mx-xxl-2 mx-xl-2 mx-lg-2 mx-md-2 mx-1 my-xxl-2 my-1 p-1 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5  text-white rounded-bottom ' style={{background:'#AB5D02'}}>bottom</button>
-            <button className='btn col-3 mx-xxl-2 mx-xl-2 mx-lg-2 mx-md-2 mx-1 my-xxl-2 my-1 p-1 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5  text-white rounded-1 ' style={{background:'#AB5D02'}}>rounded10</button>
-            <button className='btn col-3 mx-xxl-2 mx-xl-2 mx-lg-2 mx-md-2 mx-1 my-xxl-2 my-1 p-1 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5  text-white rounded-5 ' style={{background:'#AB5D02'}}>rounded50</button>
-            <button className='btn col-3 mx-xxl-2 mx-xl-2 mx-lg-2 mx-md-2 mx-1 my-xxl-2 my-1 p-1 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5  text-white rounded-pill ' style={{background:'#AB5D02'}}>pill</button>
-          </div>
-        </div>
-        <div className={`${styles.container} col-xxl-5 col-xl-5 col-lg-5 col-sm-5 col-md-5 col-5 mx-2 mx-2 my-xxl-5 my-xl-5 my-lg-5 my-md-4 my-sm-4 my-4 bg-white p-2 rounded-3`} >
-          <div className="row mx-0">
-            <div className="col-xxl-1 col-xl-2 col-lg-2 col-xl-2 col-2 m-0 p-0 text-center" >
-              <SlSizeFullscreen className='fs-6 fs-sm-3 fs-md-2 fs-lg-3 fs-xl-5 fs-xxl-5'/>
-            </div>
-            <div className="col-xxl-8 col-xl-6 col-lg-6 col-6 fs-7 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-5 fs-xxl-5 text-capitalize mb-4 fw-bold m-0 p-0">
-              <p className='p-0 m-0'>size</p>
-              <p className='p-0 m-0'>Button</p>
-            </div>
-            <Link href='https://66c5c74d841f3ca4bc8433d8-zbcojrxnsm.chromatic.com/?path=/story/stories-button--size-small' target="_blank"   className={`${styles.strybook} col-3 fs-7 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-5 fs-xxl-5 text-capitalize mb-4 fw-bold d-flex align-items-center justify-content-center btn m-auto`} style={{background:'rgb(243, 207, 198)'}}>
-              <p className='m-0 p-0 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5' style={{color:'rgb(248, 152, 128)'}}>storybook</p>
-            </Link>
-          </div>
-          <div className="row mx-0 d-flex align-items-center justify-content-center h-100">
-            <button className='btn btn-sm col-3 mx-xxl-2 mx-xl-2 mx-lg-2 mx-md-2 mx-1 my-xxl-2 my-1 text-white rounded-0 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5 text-center' style={{background:'#AB5D02'}}>sm</button>
-            <button className='btn col-3 mx-xxl-2 mx-xl-2 mx-lg-2 mx-md-2 mx-1 my-xxl-2 my-1 text-white rounded-0 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5 text-center' style={{background:'#AB5D02'}}>md</button>
-            <button className='btn col-3 mx-xxl-2 mx-xl-2 mx-lg-2 mx-md-2 mx-1 my-xxl-2 my-1 text-white rounded-0 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5 text-center' style={{background:'#AB5D02'}}>lg</button>
-            <button className='btn btn-sm col-3 mx-xxl-2 mx-xl-2 mx-lg-2 mx-md-2 mx-1 my-xxl-2 my-1 text-white rounded-0 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5 text-center invisible' style={{background:'#AB5D02'}}>sm</button>
-          </div>
-        </div>
-        <div className={`${styles.container} col-xxl-5 col-xl-5 col-lg-5 col-sm-5 col-md-5 col-5 mx-2 my-xxl-5 my-xl-5 my-lg-5 my-md-4 my-sm-4 my-4 bg-white p-2 rounded-3`} >
-          <div className="row mx-0">
-            <div className="col-xxl-1 col-xl-2 col-lg-2 col-xl-2 col-2 m-0 p-0 text-center">
-              <IoIosColorFill className='fs-6 fs-sm-3 fs-md-2 fs-lg-3 fs-xl-5 fs-xxl-5'/>
-            </div>
-            <div className="col-xxl-8 col-xl-6 col-lg-6 col-6 fs-7 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-5 fs-xxl-5 text-capitalize mb-4 fw-bold m-0 p-0">
-              <p className='p-0 m-0'>bg-color</p>
-              <p className='p-0 m-0'>Button</p>
-            </div>
-            <Link href='https://66c5c74d841f3ca4bc8433d8-zbcojrxnsm.chromatic.com/?path=/docs/stories-button--docs' target="_blank" className={`${styles.strybook} col-3 fs-7 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-5 fs-xxl-5 text-capitalize mb-4 fw-bold d-flex align-items-center justify-content-center btn m-auto`} style={{background:'rgb(243, 207, 198)'}}>
-            <p className='m-0 p-0 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5' style={{color:'rgb(248, 152, 128)'}}>storybook</p>
-            </Link>
-          </div>
           <div className="row mx-0 d-flex align-items-center justify-content-center ">
-            <button className='btn col-3 mx-xxl-2 mx-xl-2 mx-lg-2 mx-md-2 mx-1 my-xxl-2 my-1 p-1 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5  text-white bg-danger  ' >danger</button>
-            <button className='btn col-3 mx-xxl-2 mx-xl-2 mx-lg-2 mx-md-2 mx-1 my-xxl-2 my-1 p-1 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5  text-white bg-warning' >warning</button>
-            <button className='btn col-3 mx-xxl-2 mx-xl-2 mx-lg-2 mx-md-2 mx-1 my-xxl-2 my-1 p-1 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5  text-white bg-primary' >primary</button>
-            <button className='btn col-3 mx-xxl-2 mx-xl-2 mx-lg-2 mx-md-2 mx-1 my-xxl-2 my-1 p-1 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5  text-white bg-secondary' >secondary</button>
-            <button className='btn col-3 mx-xxl-2 mx-xl-2 mx-lg-2 mx-md-2 mx-1 my-xxl-2 my-1 p-1 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5  text-white bg-black' >black</button>
+            <div className="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-6 my-2">
+              <div className="card rounded-0">
+                <svg className="bd-placeholder-img card-img-top d-flex align-items-center justify-content-center rounded-0" width="100%" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
+                  <title>Placeholder</title>
+                  <rect width="100%" height="100%" fill="rgba(171, 93, 2, 0.66)"></rect>
+                  <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle"  fill="#000" >default</text>
+                </svg>
+                <div className="card-body">
+                  <h5 className="card-title fw-bold  fs-6 fs-sm-4 fs-md-3 fs-lg-3 fs-xl-1 fs-xxl-1">Card title</h5>
+                  <p className="card-text fs-7 fs-sm-6 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, eveniet.</p>
+                </div>
+              </div>
+            </div>
+            <div className="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-6 my-2">
+              <div className="card rounded-1">
+                <svg className="bd-placeholder-img card-img-top d-flex align-items-center justify-content-center rounded-top-1 rounded-bottom-0" width="100%" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
+                  <title>Placeholder</title>
+                  <rect width="100%" height="100%" fill="rgba(171, 93, 2, 0.66)"></rect>
+                  <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle"  fill="#000" >rounded10</text>
+                </svg>
+                <div className="card-body">
+                  <h5 className="card-title fw-bold fs-6 fs-sm-4 fs-md-3 fs-lg-3 fs-xl-1 fs-xxl-1">Card title</h5>
+                  <p className="card-text fs-7 fs-sm-6 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, eveniet.</p>
+                </div>
+              </div>
+            </div>
+            <div className="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-6 my-2">
+              <div className="card rounded-2">
+                <svg className="bd-placeholder-img card-img-top d-flex align-items-center justify-content-center rounded-top-2 rounded-bottom-0" width="100%" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
+                  <title>Placeholder</title>
+                  <rect width="100%" height="100%" fill="rgba(171, 93, 2, 0.66)"></rect>
+                  <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle"  fill="#000" >rounded20</text>
+                </svg>
+                <div className="card-body">
+                  <h5 className="card-title fw-bold fs-6 fs-sm-4 fs-md-3 fs-lg-3 fs-xl-1 fs-xxl-1">Card title</h5>
+                  <p className="card-text fs-7 fs-sm-6 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, eveniet.</p>
+                </div>
+              </div>
+            </div>
+            <div className="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-6 my-2">
+              <div className="card rounded-3">
+                <svg className="bd-placeholder-img card-img-top d-flex align-items-center justify-content-center rounded-top-3 rounded-bottom-0" width="100%" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
+                  <title>Placeholder</title>
+                  <rect width="100%" height="100%" fill="rgba(171, 93, 2, 0.66)"></rect>
+                  <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle"  fill="#000" >rounded30</text>
+                </svg>
+                <div className="card-body">
+                  <h5 className="card-title fw-bold fs-6 fs-sm-4 fs-md-3 fs-lg-3 fs-xl-1 fs-xxl-1">Card title</h5>
+                  <p className="card-text fs-7 fs-sm-6 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, eveniet.</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div className={`${styles.container} col-xxl-5 col-xl-5 col-lg-5 col-sm-5 col-md-5 col-5 mx-2 my-xxl-5 my-xl-5 my-lg-5 my-md-4 my-sm-4 my-4 bg-white p-2 rounded-3`} >
+        <div className={`${styles.container} col-10 mx-2 my-xxl-5 my-xl-5 my-lg-5 my-md-4 my-sm-4 my-4 bg-white p-2 rounded-3`} >
           <div className="row mx-0">
-            <div className="col-xxl-1 col-xl-2 col-lg-2 col-xl-2 col-2 m-0 p-0 text-center ">
-              <RiShadowLine className='fs-6 fs-sm-3 fs-md-2 fs-lg-3 fs-xl-5 fs-xxl-5'/>
+            <div className="col-1 me-2 p-0 d-flex align-items-center justify-content-center mb-4">
+              <RiShadowLine className='fs-2 fs-sm-1 fs-md-2 fs-lg-1 fs-xl-1 fs-xxl-1'/>
             </div>
-            <div className="col-xxl-8 col-xl-6 col-lg-6 col-6 fs-7 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-5 fs-xxl-5 text-capitalize mb-4 fw-bold m-0 p-0">
+            <div className="col-xxl-7 col-xl-6 col-lg-6 col-6 fs-6 fs-sm-4 fs-md-3 fs-lg-3 fs-xl-1 fs-xxl-1 text-capitalize mb-4 fw-bold  p-0">
               <p className='p-0 m-0'>shadow</p>
-              <p className='p-0 m-0'>Button</p>
+              <p className='p-0 m-0'>Card</p>
             </div>
             <Link href='https://66c5c74d841f3ca4bc8433d8-zbcojrxnsm.chromatic.com/?path=/story/stories-button--shadow-medium' target="_blank"  className={`${styles.strybook} col-3 fs-7 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-5 fs-xxl-5 text-capitalize mb-4 fw-bold d-flex align-items-center justify-content-center btn m-auto`} style={{background:'rgb(243, 207, 198)'}}>
               <p className='m-0 p-0 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5' style={{color:'rgb(248, 152, 128)'}}>storybook</p>
             </Link>
           </div>
           <div className="row mx-0 d-flex align-items-center justify-content-center ">
-            <button className=' shadow-none btn col-3 mx-xxl-2 mx-xl-2 mx-lg-2 mx-md-2 mx-1 my-xxl-2 my-1 p-1 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5  text-white ' style={{background:'#AB5D02'}}>none</button>
-            <button className=' shadow-sm btn col-3 mx-xxl-2 mx-xl-2 mx-lg-2 mx-md-2 mx-1 my-xxl-2 my-1 p-1 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5  text-white ' style={{background:'#AB5D02'}}>small</button>
-            <button className=' shadow btn col-3 mx-xxl-2 mx-xl-2 mx-lg-2 mx-md-2 mx-1 my-xxl-2 my-1 p-1 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5  text-white ' style={{background:'#AB5D02'}}>medium</button>
-            <button className=' shadow-lg btn col-3 mx-xxl-2 mx-xl-2 mx-lg-2 mx-md-2 mx-1 my-xxl-2 my-1 p-1 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5  text-white' style={{background:'#AB5D02'}}>large</button>
+            <div className="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-6 my-2">
+              <div className="card rounded-0 shadow-none">
+                <svg className="bd-placeholder-img card-img-top d-flex align-items-center justify-content-center rounded-0" width="100%" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
+                  <title>Placeholder</title>
+                  <rect width="100%" height="100%" fill="rgba(171, 93, 2, 0.66)"></rect>
+                  <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle"  fill="#000" >none</text>
+                </svg>
+                <div className="card-body">
+                  <h5 className="card-title fw-bold  fs-6 fs-sm-4 fs-md-3 fs-lg-3 fs-xl-1 fs-xxl-1">Card title</h5>
+                  <p className="card-text fs-7 fs-sm-6 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, eveniet.</p>
+                </div>
+              </div>
+            </div>
+            <div className="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-6 my-2">
+              <div className="card rounded-0 shadow-sm">
+                <svg className="bd-placeholder-img card-img-top d-flex align-items-center justify-content-center rounded-0" width="100%" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
+                  <title>Placeholder</title>
+                  <rect width="100%" height="100%" fill="rgba(171, 93, 2, 0.66)"></rect>
+                  <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle"  fill="#000" >small</text>
+                </svg>
+                <div className="card-body">
+                  <h5 className="card-title fw-bold fs-6 fs-sm-4 fs-md-3 fs-lg-3 fs-xl-1 fs-xxl-1">Card title</h5>
+                  <p className="card-text fs-7 fs-sm-6 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, eveniet.</p>
+                </div>
+              </div>
+            </div>
+            <div className="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-6 my-2">
+              <div className="card rounded-0 shadow">
+                <svg className="bd-placeholder-img card-img-top d-flex align-items-center justify-content-center rounded-0" width="100%" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
+                  <title>Placeholder</title>
+                  <rect width="100%" height="100%" fill="rgba(171, 93, 2, 0.66)"></rect>
+                  <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle"  fill="#000" >medium</text>
+                </svg>
+                <div className="card-body">
+                  <h5 className="card-title fw-bold fs-6 fs-sm-4 fs-md-3 fs-lg-3 fs-xl-1 fs-xxl-1">Card title</h5>
+                  <p className="card-text fs-7 fs-sm-6 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, eveniet.</p>
+                </div>
+              </div>
+            </div>
+            <div className="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-6 my-2">
+              <div className="card rounded-0 shadow-lg">
+                <svg className="bd-placeholder-img card-img-top d-flex align-items-center justify-content-center rounded-0" width="100%" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
+                  <title>Placeholder</title>
+                  <rect width="100%" height="100%" fill="rgba(171, 93, 2, 0.66)"></rect>
+                  <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle"  fill="#000" >large</text>
+                </svg>
+                <div className="card-body">
+                  <h5 className="card-title fw-bold fs-6 fs-sm-4 fs-md-3 fs-lg-3 fs-xl-1 fs-xxl-1">Card title</h5>
+                  <p className="card-text fs-7 fs-sm-6 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, eveniet.</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+        <div className={`${styles.container} col-10 mx-2 my-xxl-5 my-xl-5 my-lg-5 my-md-4 my-sm-4 my-4 bg-white p-2 rounded-3`} >
+          <div className="row mx-0">
+            <div className="col-1 me-2 p-0 d-flex align-items-center justify-content-center mb-4">
+              <RiShadowLine className='fs-2 fs-sm-1 fs-md-2 fs-lg-1 fs-xl-1 fs-xxl-1'/>
+            </div>
+            <div className="col-xxl-7 col-xl-6 col-lg-6 col-6 fs-6 fs-sm-4 fs-md-3 fs-lg-3 fs-xl-1 fs-xxl-1 text-capitalize mb-4 fw-bold  p-0 d-flex align-items-center ">
+              <div>
+                <p className='p-0 m-0'>view</p>
+                <p className='p-0 m-0'>Card</p>
+              </div>
+              <div className="form-check ms-xxl-5 ms-xl-5 ms-lg-5 ms-sm-4 ms-md-5 ms-3 fs-xxl-5 fs-xl-5 fs-lg-5 fs-md-5 fs-sm-6 fs-7">
+                <input className="form-check-input" type="radio" name="flexRadioDefault" id="list" checked={selectedValue ==="list"} onChange={() =>handleRadioChange("list")}/>
+                <label className="form-check-label" htmlFor="list">List</label>
+              </div>
+              <div className="form-check fs-7 fs-sm-6 fs-xl-5 fs-lg-5 fs-md-5 ms-2 ms-xxl-3 ms-xl-3 ms-lg-3 ms-md-3 ms-sm-2">
+                <input className="form-check-input" type="radio" name="flexRadioDefault" id="gird" checked={selectedValue ==="gird"} onChange={() =>handleRadioChange("gird")}/>
+                <label className="form-check-label" htmlFor="gird">Gird</label>
+              </div>
+            </div>
+            <Link href='https://66c5c74d841f3ca4bc8433d8-zbcojrxnsm.chromatic.com/?path=/story/stories-button--shadow-medium' target="_blank"  className={`${styles.strybook} col-3 fs-7 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-5 fs-xxl-5 text-capitalize mb-4 fw-bold d-flex align-items-center justify-content-center btn m-auto`} style={{background:'rgb(243, 207, 198)'}}>
+              <p className='m-0 p-0 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5' style={{color:'rgb(248, 152, 128)'}}>storybook</p>
+            </Link>
+          </div>
+          <div className={selectedValue==='list'?'row mx-0 d-flex align-items-center justify-content-center':'row mx-0 d-grid'} style={{gridTemplateColumns:'auto auto'}}>
+            <div className={selectedValue==='list'?'col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-6 my-2':'col-6 my-2 w-100'}>
+              <div className="card rounded-0 shadow-none">
+                <svg className="bd-placeholder-img card-img-top d-flex align-items-center justify-content-center rounded-0" width="100%" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
+                  <title>Placeholder</title>
+                  <rect width="100%" height="100%" fill="rgba(171, 93, 2, 0.66)"></rect>
+                  <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle"  fill="#000" >{selectedValue}</text>
+                </svg>
+                <div className="card-body">
+                  <h5 className="card-title fw-bold  fs-6 fs-sm-4 fs-md-3 fs-lg-3 fs-xl-1 fs-xxl-1">Card title</h5>
+                  <p className="card-text fs-7 fs-sm-6 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, eveniet.</p>
+                </div>
+              </div>
+            </div>
+            <div className={selectedValue==='list'?'col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-6 my-2':'col-6 my-2 w-100'}>
+              <div className="card rounded-0 shadow-sm">
+                <svg className="bd-placeholder-img card-img-top d-flex align-items-center justify-content-center rounded-0" width="100%" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
+                  <title>Placeholder</title>
+                  <rect width="100%" height="100%" fill="rgba(171, 93, 2, 0.66)"></rect>
+                  <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle"  fill="#000" >{selectedValue}</text>
+                </svg>
+                <div className="card-body">
+                  <h5 className="card-title fw-bold fs-6 fs-sm-4 fs-md-3 fs-lg-3 fs-xl-1 fs-xxl-1">Card title</h5>
+                  <p className="card-text fs-7 fs-sm-6 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, eveniet.</p>
+                </div>
+              </div>
+            </div>
+            <div className={selectedValue==='list'?'col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-6 my-2':'col-6 my-2 w-100'}>
+              <div className="card rounded-0 shadow">
+                <svg className="bd-placeholder-img card-img-top d-flex align-items-center justify-content-center rounded-0" width="100%" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
+                  <title>Placeholder</title>
+                  <rect width="100%" height="100%" fill="rgba(171, 93, 2, 0.66)"></rect>
+                  <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle"  fill="#000" >{selectedValue}</text>
+                </svg>
+                <div className="card-body">
+                  <h5 className="card-title fw-bold fs-6 fs-sm-4 fs-md-3 fs-lg-3 fs-xl-1 fs-xxl-1">Card title</h5>
+                  <p className="card-text fs-7 fs-sm-6 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, eveniet.</p>
+                </div>
+              </div>
+            </div>
+            <div className={selectedValue==='list'?'col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-6 my-2':'col-6 my-2 w-100'}>
+              <div className="card rounded-0 shadow-lg">
+                <svg className="bd-placeholder-img card-img-top d-flex align-items-center justify-content-center rounded-0" width="100%" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
+                  <title>Placeholder</title>
+                  <rect width="100%" height="100%" fill="rgba(171, 93, 2, 0.66)"></rect>
+                  <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle"  fill="#000" >{selectedValue}</text>
+                </svg>
+                <div className="card-body">
+                  <h5 className="card-title fw-bold fs-6 fs-sm-4 fs-md-3 fs-lg-3 fs-xl-1 fs-xxl-1">Card title</h5>
+                  <p className="card-text fs-7 fs-sm-6 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, eveniet.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
        
       </div>
     </div>
