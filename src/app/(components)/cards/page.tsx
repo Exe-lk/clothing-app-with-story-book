@@ -15,7 +15,7 @@ import { useTheme } from '@/components/ThemeContext';
 import NavBar from '@/components/Home/NavBar/NavBar';
 import Link from 'next/link';
 
-const page = () => {
+const Cards = () => {
   const [selectedValue,setSelectedValue] = useState("list");
   const handleRadioChange = (value:any) => {
     setSelectedValue(value);
@@ -304,4 +304,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Cards
