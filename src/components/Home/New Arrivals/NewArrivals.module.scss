@@ -1,16 +1,22 @@
 .itemContainer{
   .imageContainer{
+
+    // positioning discount badge 
     .discount{
       top: 3% !important;
       left: 6% !important;
       transition: transform 0.3s ease-in-out !important;
     }
+
+    // positioning fav icon
     .heart{
       top: 3% !important;
       right: 6% !important;
       transition: transform 0.3s ease-in-out !important;
     }
   }
+
+  // image hover effect
   .image:hover{
     transform: scale(1.02);
     transition: transform .5s ease-in-out;
@@ -44,6 +50,7 @@
       }
     }
   }
+  // pop-up add to cart when hovering on the image
   .imageContainer:hover .addToCart{
     opacity: 1;
     transform: translateY(0px);

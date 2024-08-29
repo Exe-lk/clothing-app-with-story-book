@@ -244,7 +244,7 @@ const Cards = () => {
           </div>
           <div className={selectedValue==='list'?'row mx-0 d-flex align-items-center justify-content-center':'row mx-0 d-grid'} style={{gridTemplateColumns:'auto auto'}}>
             <div className={selectedValue==='list'?'col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-6 my-2':'col-6 my-2 w-100'}>
-              <div className="card rounded-0 shadow-none">
+              <div className="card rounded-0">
                 <svg className="bd-placeholder-img card-img-top d-flex align-items-center justify-content-center rounded-0" width="100%" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
                   <title>Placeholder</title>
                   <rect width="100%" height="100%" fill="rgba(171, 93, 2, 0.66)"></rect>
@@ -257,7 +257,7 @@ const Cards = () => {
               </div>
             </div>
             <div className={selectedValue==='list'?'col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-6 my-2':'col-6 my-2 w-100'}>
-              <div className="card rounded-0 shadow-sm">
+              <div className="card rounded-0">
                 <svg className="bd-placeholder-img card-img-top d-flex align-items-center justify-content-center rounded-0" width="100%" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
                   <title>Placeholder</title>
                   <rect width="100%" height="100%" fill="rgba(171, 93, 2, 0.66)"></rect>
@@ -270,7 +270,7 @@ const Cards = () => {
               </div>
             </div>
             <div className={selectedValue==='list'?'col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-6 my-2':'col-6 my-2 w-100'}>
-              <div className="card rounded-0 shadow">
+              <div className="card rounded-0">
                 <svg className="bd-placeholder-img card-img-top d-flex align-items-center justify-content-center rounded-0" width="100%" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
                   <title>Placeholder</title>
                   <rect width="100%" height="100%" fill="rgba(171, 93, 2, 0.66)"></rect>
@@ -283,7 +283,7 @@ const Cards = () => {
               </div>
             </div>
             <div className={selectedValue==='list'?'col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-4 col-6 my-2':'col-6 my-2 w-100'}>
-              <div className="card rounded-0 shadow-lg">
+              <div className="card rounded-0">
                 <svg className="bd-placeholder-img card-img-top d-flex align-items-center justify-content-center rounded-0" width="100%" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
                   <title>Placeholder</title>
                   <rect width="100%" height="100%" fill="rgba(171, 93, 2, 0.66)"></rect>

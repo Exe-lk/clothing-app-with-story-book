@@ -34,12 +34,15 @@ const DiscountedItems = () => {
           <div className='row text-capitalize p-1 mx-1 fs-xxl-5 fs-xl-5 fs-lg-6 my-3'>
             <div className="col-6 col-lg-9 d-flex justify-content-between align-items-center w-100">
               <p className='d-block my-auto'>categories</p>
-              <select className='text-black rounded-3' name="" id="" onChange={(e) => setSelectedValue(e.target.value)} style={{background:'rgb(249, 249, 249)', border:'2px solid rgb(171, 93, 2)'}}>
-                <option value="all">All</option>
-                <option value="women" selected>Women</option>
-                <option value="men">Men</option>
-                <option value="kids">Kids</option>
-              </select>
+              <button className="btn dropdown-toggle text-black rounded-3" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style={{background:'rgb(249, 249, 249)',border:'2px solid rgb(171, 93, 2)'}}>
+              {selectedValue}
+              </button>
+              <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1" >
+                <li className={`${styles.item}`} value="all" onClick={() => setSelectedValue('all')}><a className={`${styles.item} dropdown-item`} href="#">All</a></li>
+                <li className={`${styles.item}`} value="women" onClick={() => setSelectedValue('women')}><a className={`${styles.item} dropdown-item`} href="#">Women</a></li>
+                <li className={`${styles.item}`} value="men" onClick={() => setSelectedValue('men')}><a className={`${styles.item} dropdown-item`} href="#">Men</a></li>
+                <li className={`${styles.item}`} value="kids" onClick={() => setSelectedValue('kids')}><a className={`${styles.item} dropdown-item`} href="#">Kids</a></li>
+              </ul>
             </div>
           </div>
           <Sizes />
@@ -51,12 +54,15 @@ const DiscountedItems = () => {
           <div className='row text-capitalize p-1 mx-1 fs-xxl-5 fs-xl-5 fs-lg-6 my-3'>
             <div className="col-6 col-lg-9 d-flex justify-content-between align-items-center w-100">
               <p className='d-block my-auto'>categories</p>
-              <select className='text-black rounded-3' name="" id="" onChange={(e) => setSelectedValue(e.target.value)} style={{background:'rgb(249, 249, 249)', border:'2px solid rgb(171, 93, 2)'}}>
-                <option value="all">All</option>
-                <option value="women" selected>Women</option>
-                <option value="men">Men</option>
-                <option value="kids">Kids</option>
-              </select>
+              <button className="btn dropdown-toggle text-black rounded-3" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style={{background:'rgb(249, 249, 249)',border:'2px solid rgb(171, 93, 2)'}}>
+              {selectedValue}
+              </button>
+              <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1" >
+                <li className={`${styles.item}`} value="all" onClick={() => setSelectedValue('all')}><a className={`${styles.item} dropdown-item`} href="#">All</a></li>
+                <li className={`${styles.item}`} value="women" onClick={() => setSelectedValue('women')}><a className={`${styles.item} dropdown-item`} href="#">Women</a></li>
+                <li className={`${styles.item}`} value="men" onClick={() => setSelectedValue('men')}><a className={`${styles.item} dropdown-item`} href="#">Men</a></li>
+                <li className={`${styles.item}`} value="kids" onClick={() => setSelectedValue('kids')}><a className={`${styles.item} dropdown-item`} href="#">Kids</a></li>
+              </ul>
             </div>
           </div>
           <Sizes />

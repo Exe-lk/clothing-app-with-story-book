@@ -18,10 +18,10 @@ const Heading = () => {
             {selectedValue}
           </button>
           <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1" onChange={(e:any) => setSelectedValue(e.target.value)}>
-            <li value={selectedValue} ><a className="dropdown-item" href="#">All</a></li>
-            <li value={selectedValue} ><a className="dropdown-item" href="#">Women</a></li>
-            <li value={selectedValue} ><a className="dropdown-item" href="#">Men</a></li>
-            <li value={selectedValue} ><a className="dropdown-item" href="#">Kids</a></li>
+            <li value={selectedValue} ><a className={`${styles.item} dropdown-item`} href="#">All</a></li>
+            <li value={selectedValue} ><a className={`${styles.item} dropdown-item`} href="#">Women</a></li>
+            <li value={selectedValue} ><a className={`${styles.item} dropdown-item`} href="#">Men</a></li>
+            <li value={selectedValue} ><a className={`${styles.item} dropdown-item`} href="#">Kids</a></li>
           </ul>
         </div>
       </div>

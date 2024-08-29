@@ -1,16 +1,4 @@
-@import '../../../../app/globals';
-
-.heading{
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  
-
-  p{
-    @include my-font;
-    font-size: 15px;
-    text-transform: uppercase;
-  }
+.item:hover{
+  background-color: rgba(171, 93, 2, 0.66) !important;
+  cursor: pointer !important;
 }
