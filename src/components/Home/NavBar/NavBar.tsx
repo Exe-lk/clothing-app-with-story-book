@@ -12,11 +12,16 @@ const categories = [...new Set(productList.map((item:any)=>{
 }))]
 
 const NavBar = () => {
+  
+  // hook for toggle between home and documentation in mobile view
+  const [activeMenu, setActiveMenu] = useState('mainMenu');
+
+  const toggleMenu = () => {
+    setActiveMenu((prevMenu) => (prevMenu === 'mainMenu' ? 'documentation' : 'mainMenu'));
+  };
+
   // hook for changing color on the active navbar section name
   const [activeNav, setActiveNav] = useState(false);
-
-  // hook for toggle between home and documentation in mobile view
-  const [sliderOn, setSliderOn] = useState(false);
 
   // hook for searchbar in mobile view
   const [activeSearchMob, setActiveSearchMob] = useState(false);
@@ -71,7 +76,7 @@ const NavBar = () => {
           setActiveNav(!activeNav)
         }}>
           {/* if activeNav return close button else menu icon */}
-          <span className={`${activeNav===true? 'bi bi-x-lg text-black fs-1':'navbar-toggler-icon fs-1'}`}></span>
+          <span className={`${activeNav===true? 'bi bi-x-lg text-black fs-2':'navbar-toggler-icon fs-2'}`}></span>
         </button>
         <div className={`${styles.offcanvas} offcanvas offcanvas-start vw-100`} tabIndex={-1} id="offcanvas" aria-modal='true' role='dialog' aria-labelledby='offcanvasLabel' data-bs-scroll="true" data-bs-backdrop="false">
 
@@ -131,17 +136,15 @@ const NavBar = () => {
 
           <div className='offcanvas-body d-xxl-none d-xl-none d-lg-none d-flex flex-column'>
             <div className='row mx-0 fs-5'>
-              {/* Slider for documentation */}
+              {/* Slider for toggle between menus */}
               <div className="form-check form-switch fs-md-3 fs-sm-4 fs-4 d-flex align-items-center justify-content-center my-2 col-12  mx-4">
-                <input className={`${styles.switch} form-check-input me-4`} type="checkbox" role="switch" id="flexSwitchCheckDefault" onClick={()=>{
-                  setSliderOn(!sliderOn)
-                }} />
-                <label className="form-check-label fs-md-3 fs-sm-4 fs-4" htmlFor="flexSwitchCheckDefault">Documentation</label>
+                <input className={`${styles.switch} form-check-input me-4`} type="checkbox" role="switch" id="flexSwitchCheckDefault" onClick={toggleMenu}  />
+                <label className="form-check-label fs-md-3 fs-sm-4 fs-4 text-capitalize w-50" htmlFor="flexSwitchCheckDefault">{activeMenu}</label>
               </div>
             </div> 
           
             <div className="row mx-0 mt-4 ">
-              {sliderOn===true && activeNav===true ?(<Documentation />):(<MainMenu/>)}
+              {activeMenu === 'documentation'? (<Documentation />):(<MainMenu/>)}
             </div>
           </div>
         </div>

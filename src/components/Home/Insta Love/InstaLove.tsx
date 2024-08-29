@@ -2,7 +2,6 @@ import styles from './InstaLove.module.scss';
 import React from 'react';
 import InstaLoversList from './InstaLoversList';
 import Image from 'next/image';
-import { useTheme } from '../../ThemeContext';
 import one from '../../../../public/assets/instaLovers/1.jpg'
 import two from '../../../../public/assets/instaLovers/2.jpg'
 import three from '../../../../public/assets/instaLovers/3.jpg'
@@ -11,32 +10,12 @@ import five from '../../../../public/assets/instaLovers/5.jpg'
 import six from '../../../../public/assets/instaLovers/6.jpg'
 
 const InstaLove = () => {
-  const {theme} = useTheme();
   return (
-    // <div className={`${styles.instaLove} ${theme==='dark' ? styles.darkInstaLove : ''}`}>
-    //   <div className={styles.heading}>
-    //     <p>instalove</p>
-    //     <p><em>@fashionnova</em></p>
-    //   </div>
-
-    //   <div className={styles.content}>
-    //     {
-    //       InstaLoversList.map((item:any)=>{
-    //         return(
-    //           <ul>
-    //             <li>
-    //               <Image src={item.id} alt='item' className={styles.item}/>
-    //             </li>
-    //           </ul>
-    //         )
-    //       })
-    //     }
-    //   </div>
-    // </div>
     <>
       <h1 className='text-uppercase fs-4 fs-sm-2 fs-md-1 fs-lg-1 fs-xl-1 fs-xxl-1 fw-bolder text-center'>instalove</h1>
       <p className='h5 fw-normal text-capitalize mb-4 fs-7 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-5 fs-xxl-5 text-center'><em>@fashionnova</em> </p>
 
+      {/* for pc views (xxl, xl, lg) */}
       <div className={`${styles.instaLovePc} col-12 mx-auto d-xxl-flex d-xl-flex d-lg-flex d-none align-items-center justify-content-center`} style={{background:'#F5F5F5'}}>
           {
             InstaLoversList.map((item:any,key:any)=>{
@@ -51,10 +30,8 @@ const InstaLove = () => {
           }
       </div>
 
-      {/* for mobile view */}
-
+      {/* for mobile views (md, sm, xs) */}
           <div id="instalove" className={`${styles.instaLoveMobile} carousel slide d-md-block d-sm-block d-block d-xxl-none d-xl-none d-lg-none`} data-bs-ride="carousel">
-
             <div className="carousel-indicators">
               <button type="button" data-bs-target="#instalove" data-bs-slide-to="0" className="active"></button>
               <button type="button" data-bs-target="#instalove" data-bs-slide-to="1"></button>
@@ -63,7 +40,6 @@ const InstaLove = () => {
               <button type="button" data-bs-target="#instalove" data-bs-slide-to="4"></button>
               <button type="button" data-bs-target="#instalove" data-bs-slide-to="5"></button>
             </div>
-
 
             <div className="carousel-inner">
               <div className="carousel-item active">
@@ -86,7 +62,6 @@ const InstaLove = () => {
               </div>
             </div>
 
-
             <button className="carousel-control-prev" type="button" data-bs-target="#instalove" data-bs-slide="prev">
               <span className="carousel-control-prev-icon"></span>
             </button>
@@ -94,7 +69,6 @@ const InstaLove = () => {
               <span className="carousel-control-next-icon"></span>
             </button>
           </div>
-      
     </>
   )
 }

@@ -1,24 +1,13 @@
-'use client';
-
 import styles from './Footer.module.scss';
-import React from 'react'
-import { FaFacebookF } from "react-icons/fa";
-import { FaTiktok } from "react-icons/fa";
-import { AiFillInstagram } from "react-icons/ai";
-import { IoMailOpen } from "react-icons/io5";
-import { IoMdCall } from "react-icons/io";
-import { useTheme } from '../../ThemeContext';
-import { BiBorderTop } from 'react-icons/bi';
+import React from 'react';
 
 const Footer = () => {
-  const {theme} = useTheme();
   return (
-
     <>
       {/* footer for xxl|xl|lg views */}
       <div className='col-12 d-xxl-flex d-xl-flex d-lg-flex d-none flex-column align-items-center justify-content-evenly' style={{background:'rgba(171, 93, 2, 0.06)'}}>
         <div className="row ing m-1 p-1 w-100 h-100 d-flex align-items-center justify-content-around">
-
+          {/* Socialize menu */}
           <div className='col-4 m-1 p-1 d-flex flex-column align-items-center justify-content-evenly text-uppercase text-center' style={{borderRight:'1px solid #BFBFBF'}}>
             <div className='row  m-1 py-2 w-50' >
               <p className='py-2 text-uppercase fw-bold fs-xxl-4 fs-xl-5 fs-lg-5'>socialize</p>
@@ -42,13 +31,15 @@ const Footer = () => {
           </div>
 
           <div className={`${styles.footerHeader} col-3 p-0 text-center`}>
-              <div className='row mx-0 w-100 d-flex flex-column align-items-center justify-content-center text-uppercase text-center' >
+              {/* Footer brandname */}
+              <div className='row mx-0 w-100 d-flex flex-column align-items-center justify-content-center text-uppercase text-center'>
                 <p className='h1 text-uppercase fs-lg-2 fs-xl-1 fs-xxl-1 pt-2 pb-0'>fashion<span className='' style={{letterSpacing:'-2px',marginLeft: '-13px'}}><b>nova</b></span></p>
                 <p className='text-capitalize fs-7 '>smiles.. colors.. memories..</p>
               </div>
           </div>
 
           <div className='col-4 text-center text-uppercase  h-100 d-flex flex-column justify-content-center' style={{borderLeft:'1px solid #BFBFBF'}}>
+              {/* Navigate menu */}
               <div className="row mx-0">
                 <p className='text-uppercase fw-bold fs-xxl-4 fs-xl-5 fs-lg-5'>navigate</p> 
               </div>
@@ -74,6 +65,7 @@ const Footer = () => {
       {/* footer for md|sm|xs views */}
       <div className='col-12 d-block d-sm-block d-md-block d-lg-none d-xl-none d-xxl-none' style={{background:'rgba(171, 93, 2, 0.06)'}}>
         <div className="row mx-0 ">
+          {/* Navigate menu */}
           <div className="col-12 d-flex flex-column text-uppercase">
             <p className='text-center fw-bold fs-6 fs-sm-5 fs-md-4'>navigate</p> 
             <a href="/" className='btn fs-7 fs-sm-6 fs-md-5'>Home</a>
@@ -85,6 +77,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="row mx-0 " >
+          {/* Socialize menu */}
           <div className="col-4  p-0" >
             <div className='row mx-0 text-center pt-2' >
               <p className=' text-uppercase fw-bold fs-6 fs-sm-5 fs-md-4'>socialize</p>
@@ -124,6 +117,7 @@ const Footer = () => {
               </div>
           </div>
         </div>
+        {/* Footer brandname */}
         <div className="row mx-0  w-100  text-center d-flex justify-content-center align-items-center fs-8 fs-sm-7 fs-md-7" style={{borderTop:'1px solid #BFBFBF'}}>
           © Copyright 2024. FASHIONNOVA. All Rights Reserved   EXE.LK
         </div>
