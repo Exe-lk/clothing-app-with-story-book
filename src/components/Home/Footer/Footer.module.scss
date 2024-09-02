@@ -1,7 +1,49 @@
-.footerHeader{
-  div{
-    p:nth-child(1){
-      font-size: 45px !important;
+@media screen and (min-width : 0) and (max-width: 575px) {
+  .footerHeader{
+    div{
+      p:nth-child(1){
+        font-size: 30px !important;
+      }
+    }
+  }
+}
+
+@media screen and (min-width : 576px) and (max-width: 767px) {
+  .footerHeader{
+    div{
+      p:nth-child(1){
+        font-size: 35px !important;
+      }
+    }
+  }
+}
+
+@media screen and (min-width : 768px) and (max-width: 991px) {
+  .footerHeader{
+    div{
+      p:nth-child(1){
+        font-size: 40px !important;
+      }
+    }
+  }
+}
+
+@media screen and (min-width : 992px) and (max-width: 1200px) {
+  .footerHeader{
+    div{
+      p:nth-child(1){
+        font-size: 40px !important;
+      }
+    }
+  }
+}
+
+@media screen and (min-width : 1200px) {
+  .footerHeader{
+    div{
+      p:nth-child(1){
+        font-size: 45px !important;
+      }
     }
   }
 }

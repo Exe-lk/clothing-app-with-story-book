@@ -34,13 +34,13 @@ const NewArrivals = () => {
         <h1 className='text-uppercase fs-4 fs-sm-2 fs-md-1 fs-lg-1 fs-xl-1 fs-xxl-1 fw-bold text-center'>new arrivals</h1>
         <p className='h5 fw-normal text-capitalize mb-4 fs-7 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-5 fs-xxl-5 text-center'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
         
-        <div>
+        <>
         
           {
             // here we are mapping the list with managed states for fav icon
             items.map((item:any, key:any)=>{
               return(
-                <div className={`${styles.itemContainer} itemCont btn col-xxl-2 col-xl-3 col-lg-3 col-md-3 col-sm-3 col-5 m-xxl-5 mx-3 my-2 m-sm-2 m-md-2 p-0 h-100`} key={item.id}>
+                <div className={`${styles.itemContainer} itemCont btn col-xxl-2 col-xl-3 col-lg-3 col-md-3 col-sm-3 col-5 m-xxl-5 mx-2 my-2 m-sm-2 m-md-2 p-0 h-100`} key={item.id}>
                   <div className={`${styles.imageContainer} row mx-0 d-flex align-items-center m-0 p-0 position-relative`}>
                     <Image src={item.name} alt='item' className={`${styles.image} img-fluid object-fit-cover m-0 p-0 rounded-3 `}/>
 
@@ -69,7 +69,7 @@ const NewArrivals = () => {
               )
             })
           }
-        </div>
+        </>
     </>
   )
 };

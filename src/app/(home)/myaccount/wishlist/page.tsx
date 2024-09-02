@@ -59,7 +59,7 @@ const Wishlist = () => {
                     <p className='fs-6 fs-xxl-5 fs-xl-5 fs-lg-5 fs-md-6 fs-sm-6 text-center w-100 fw-bold' style={{color:'rgba(128, 125, 126, 1)'}}>Rs 1700.00</p>
                   </div>
                   <div className="row mx-0 px-3 ">
-                    <button className={`${styles.btn1} btn text-white fs-7  py-xxl-2 py-xl-2 py-lg-2 py-md-1 py-sm-0 py-0 d-block mx-auto`} style={{background:'#AB5D02'}}>ADD TO CART</button>
+                    <button className={`${styles.btn1} btn text-white fs-8  py-xxl-2 py-xl-2 py-lg-2 py-md-1 py-sm-0 py-1 d-block mx-auto`} style={{background:'#AB5D02'}}>ADD TO CART</button>
                   </div>
                 </div>
 
@@ -100,7 +100,7 @@ const Wishlist = () => {
                     <p className='fs-6 fs-xxl-5 fs-xl-5 fs-lg-5 fs-md-6 fs-sm-6 text-center w-100 fw-bold' style={{color:'rgba(128, 125, 126, 1)'}}>Rs 1700.00</p>
                   </div>
                   <div className="row mx-0 px-3 ">
-                    <button className={`${styles.btn1} btn text-white fs-7  py-xxl-2 py-xl-2 py-lg-2 py-md-1 py-sm-0 py-0 d-block mx-auto`} style={{background:'#AB5D02'}}>ADD TO CART</button>
+                    <button className={`${styles.btn1} btn text-white fs-8  py-xxl-2 py-xl-2 py-lg-2 py-md-1 py-sm-0 py-1 d-block mx-auto`} style={{background:'#AB5D02'}}>ADD TO CART</button>
                   </div>
                 </div>
 
@@ -141,7 +141,7 @@ const Wishlist = () => {
                     <p className='fs-6 fs-xxl-5 fs-xl-5 fs-lg-5 fs-md-6 fs-sm-6 text-center w-100 fw-bold' style={{color:'rgba(128, 125, 126, 1)'}}>Rs 1700.00</p>
                   </div>
                   <div className="row mx-0 px-3 ">
-                    <button className={`${styles.btn1} btn text-white fs-7  py-xxl-2 py-xl-2 py-lg-2 py-md-1 py-sm-0 py-0 d-block mx-auto`} style={{background:'#AB5D02'}}>ADD TO CART</button>
+                    <button className={`${styles.btn1} btn text-white fs-8  py-xxl-2 py-xl-2 py-lg-2 py-md-1 py-sm-0 py-1 d-block mx-auto`} style={{background:'#AB5D02'}}>ADD TO CART</button>
                   </div>
                 </div>
 

@@ -8,7 +8,7 @@ const Footer = () => {
       <div className='col-12 d-xxl-flex d-xl-flex d-lg-flex d-none flex-column align-items-center justify-content-evenly' style={{background:'rgba(171, 93, 2, 0.06)'}}>
         <div className="row ing m-1 p-1 w-100 h-100 d-flex align-items-center justify-content-around">
           {/* Socialize menu */}
-          <div className='col-4 m-1 p-1 d-flex flex-column align-items-center justify-content-evenly text-uppercase text-center' style={{borderRight:'1px solid #BFBFBF'}}>
+          <div className='col-4 p-1 d-flex flex-column align-items-center justify-content-evenly text-uppercase text-center' style={{borderRight:'1px solid #BFBFBF'}}>
             <div className='row  m-1 py-2 w-50' >
               <p className='py-2 text-uppercase fw-bold fs-xxl-4 fs-xl-5 fs-lg-5'>socialize</p>
               <div className='d-flex align-items-center justify-content-evenly pb-2'>
@@ -30,7 +30,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className={`${styles.footerHeader} col-3 p-0 text-center`}>
+          <div className={`${styles.footerHeader} col-4 p-0 text-center`}>
               {/* Footer brandname */}
               <div className='row mx-0 w-100 d-flex flex-column align-items-center justify-content-center text-uppercase text-center'>
                 <p className='h1 text-uppercase fs-lg-2 fs-xl-1 fs-xxl-1 pt-2 pb-0'>fashion<span className='' style={{letterSpacing:'-2px',marginLeft: '-13px'}}><b>nova</b></span></p>
@@ -112,7 +112,7 @@ const Footer = () => {
           <div className={`${styles.footerHeader} col-8  p-0`}>
 
               <div className='row w-100 mx-1 mt-3 d-flex flex-column align-items-center justify-content-center text-uppercase text-center' >
-                <p className='h1 text-uppercase fs-3 fs-sm-2 fs-md-1 pt-2 pb-0'>fashion<span className='' style={{letterSpacing:'-2px',marginLeft: '-7px'}}><b>nova</b></span></p>
+                <p className='h1 text-uppercase fs-1 pt-2 pb-0'>fashion<span className='' style={{letterSpacing:'-2px',marginLeft: '-7px'}}><b>nova</b></span></p>
                 <p className='text-capitalize fs-7 fs-sm-6 fs-md-6'>smiles.. colors.. memories..</p>
               </div>
           </div>

@@ -35,7 +35,7 @@ export default function Home() {
         </div>
 
         {/* discounts banner */}
-        <div className='row my-3' >
+        <div className='row my-4' >
           <Discounts />
         </div>
 
@@ -45,12 +45,12 @@ export default function Home() {
         </div>
 
         {/* subscribe form */}
-        <div className='row my-5 '>
+        <div className='row my-5 mx-1'>
           <Subscribe />
         </div>
 
         {/* footer section */}
-        <div className='row m-2'>
+        <div className='row mx-0 my-2'>
           <Footer />
         </div> 
         

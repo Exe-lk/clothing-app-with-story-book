@@ -63,7 +63,7 @@ const MyInfo = () => {
               <input type="text" id='re- enter new password' className='form-control text-capitalize bg-white'/>
             </div>
           </form>
-          <button className='btn text-white fs-7 fs-xxl-5 fs-xl-5 fs-lg-5 fs-md-6 fs-sm-6  py-xxl-2 py-xl-2 py-lg-2 py-md-1 py-sm-0 py-0 d-block mx-auto text-capitalize ' style={{background:'#AB5D02'}}>save</button>
+          <button className='btn text-white fs-7 fs-xxl-5 fs-xl-5 fs-lg-5 fs-md-6 fs-sm-6 py-1 d-block mx-auto text-capitalize my-2 ' style={{background:'#AB5D02'}}>save</button>
         </div>
       </div>
 
