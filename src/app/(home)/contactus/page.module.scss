@@ -7,38 +7,61 @@
     }
   }
 
-  .imageContainer{
-    height: 600px;
-    display: flex;
-    position: relative;
-    .image1div{
-      position: absolute;
-      top:10%;
-      left: 20%;
-      z-index: 500;
-      height: inherit;
+  // .imageContainer{
+  //   height: 600px;
+  //   display: flex;
+  //   position: relative;
+  //   .image1div{
+  //     position: absolute;
+  //     top:10%;
+  //     left: 20%;
+  //     z-index: 500;
+  //     height: inherit;
+  //     .image1{
+  //       width: 400px;
+  //       height: 500px;
+  //       z-index: 999;
+  //     }
+  //   }
+  //   .image2div{
+  //     position: absolute;
+  //     top: 0;
+  //     right: -20%;
+  //     margin-left: auto;
+  //     width: auto;
+  //     .image2{
+  //       width: 500px;
+  //       height: 600px;
+  //       // background:linear-gradient(89.26deg, rgba(255, 255, 255, 0.37) -13.18%, rgba(171, 93, 2, 0.72) 99.27%);
+  //     }
+  //   }
+  // }
+}
+
+@media screen and (min-width : 1201px){
+  .mainContainer{
+
+    .imageContainer{
+      height: 610px !important;
       .image1{
         width: 400px;
         height: 500px;
         z-index: 999;
+        transform: translateX(50%);
       }
-    }
-    .image2div{
-      position: absolute;
-      top: 0;
-      right: -20%;
-      margin-left: auto;
-      width: auto;
-      .image2{
-        width: 500px;
-        height: 600px;
-        // background:linear-gradient(89.26deg, rgba(255, 255, 255, 0.37) -13.18%, rgba(171, 93, 2, 0.72) 99.27%);
+      div{
+        z-index: 500 !important;
+        .image2{
+          width: 500px;
+          height: 600px;
+          z-index: 400 !important;
+        }
       }
     }
   }
 }
 
-@media screen and (max-width : 1200px) {
+@media screen and (min-width : 992px) and (max-width: 1200px) {
   .mainContainer{
     .banner{
       .details{
@@ -47,10 +70,27 @@
         }
       }
     }
+    .imageContainer{
+      height: 610px !important;
+      .image1{
+        width: 400px;
+        height: 500px;
+        z-index: 999;
+        transform: translateX(50%);
+      }
+      div{
+        z-index: 500 !important;
+        .image2{
+          width: 500px;
+          height: 600px;
+          z-index: 400 !important;
+        }
+      }
+    }
   }
 }
 
-@media screen and (max-width : 992px) {
+@media screen and (min-width : 767px) and (max-width: 991px) {
   .mainContainer{
     .banner{
       .details{
@@ -59,10 +99,21 @@
         }
       }
     }
+    .imageContainer{
+      height: 620px !important;
+      .image1{
+        width: 400px;
+        height: 600px;
+        z-index: 999;
+        transform: translate(50%, -50%);
+        right: 50%; /* Align the center of image2 with the right edge of image1 */
+        top: 50%;
+      }
+    }
   }
 }
 
-@media screen and (max-width : 768px) {
+@media screen and (min-width : 575px) and (max-width: 767px) {
   .mainContainer{
     .banner{
       .details{
@@ -71,10 +122,21 @@
         }
       }
     }
+    .imageContainer{
+      height: 570px !important;
+      .image1{
+        width: 400px !important;
+        height: 550px;
+        z-index: 999;
+        transform: translate(50%, -50%);
+        right: 50%; /* Align the center of image2 with the right edge of image1 */
+        top: 50%;
+      }
+    }
   }
 }
 
-@media screen and (max-width : 576px) {
+@media screen and (min-width : 0) and (max-width: 575px) {
   .mainContainer{
     .banner{
       .details{
@@ -84,33 +146,14 @@
       }
     }
     .imageContainer{
-      width: 500px;
-      height: 600px;
-      padding: 0;
-      .image1div{
-        // display: none;
-        top: 10%;
-        left: 8%;
-        .image1{
-          width: 400px;
-          height: 500px;
-        }
-      }
-      .image2div{
-        // display: none;
-
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        // margin-left: 20px;
-        padding: 0;
-        .image2{
-          height: 600px;
-          width: inherit;
-          object-fit: cover;
-          margin: auto;
-        }
+      height: 440px !important;
+      .image1{
+        width: 400px;
+        height: 400px;
+        z-index: 999;
+        transform: translate(50%, -50%);
+        right: 50%; /* Align the center of image2 with the right edge of image1 */
+        top: 50%;
       }
     }
   }

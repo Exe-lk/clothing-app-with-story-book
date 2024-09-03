@@ -115,7 +115,7 @@ const MensItem = () => {
                   </div>
                 </div>
 
-                <div className={`${styles.itemDetails} col-xxl-8 col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12 p-1`} >
+                <div className={`${styles.itemDetails} col-xxl-8 col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12 p-xxl-3 p-xl-3 p-lg-3 p-md-3 p-2`} >
 
                   <div className='row mx-0 mb-2 d-flex justify-content-between align-items-center'>
                     <div className='col-xxl-10 col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10 p-0'>
@@ -203,7 +203,7 @@ const MensItem = () => {
                   </div>
                   <div className='mx-0 my-1 p-2 ' >
                     <div className="col-12">
-                      <Link href={`/mens/${item.itemId}&${item.name}/pay`} className='btn text-capitalize text-white fw-bold fs-7 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-5 fs-xxl-5 m-0 p-1 w-50' style={{background:'rgba(171, 93, 2, 1)'}}>
+                      <Link href={`/mens/${item.itemId}&${item.name}/pay`} className='btn text-capitalize text-white fw-bold fs-7 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-5 fs-xxl-5 m-0 p-1 w-100' style={{background:'rgba(171, 93, 2, 1)'}}>
                         pay now
                       </Link>
                     </div>
@@ -219,7 +219,7 @@ const MensItem = () => {
                 {
                     items.map((item:any, key:any)=>{
                       return(
-                        <div className={`${styles.itemContainer} col-xxl-2 col-xl-3 col-lg-3 col-md-3 col-sm-3 col-5 m-xxl-5 mx-3 my-2 m-sm-2 m-md-2 p-0 h-100 `} key={key}>
+                        <div className={`${styles.itemContainer} col-xxl-2 col-xl-3 col-lg-3 col-md-3 col-sm-3 col-5 m-xxl-5 mx-2 my-2 m-sm-2 m-md-2 p-0 h-100`} key={key}>
                           <div className={`${styles.imageContainer} row mx-0 d-flex align-items-center m-0 p-0 position-relative`}>
                             <Image src={item.name} alt='item' className={`${styles.image} img-fluid object-fit-cover m-0 p-0 rounded-3 `}/>
                             {

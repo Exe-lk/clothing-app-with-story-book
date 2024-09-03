@@ -13,13 +13,13 @@ const Header = () => {
   // manage user login/logout status
   const {isLogIn, setIsLogIn} = useLogin();
 
-    // hook for set the searching item name by the user
+  // hook for set the searching item name by the user
   const [searchItem, setSearchItem] = useState('');
 
-    // use to filter the items based on searchItem
-  const [filteredItems, setFilteredItems] = useState(productList);
+  // use to filter the items based on searchItem
+  const [filteredItems, setFilteredItems] = useState([]);
 
-    // hook for searchbar in pc view
+  // hook for searchbar in pc view
   const [activeSearch, setActiveSearch] = useState(false);
 
   // function to handle the changes on input section
@@ -27,12 +27,17 @@ const Header = () => {
     const searchTerm = e.target.value;
     setSearchItem(searchTerm)
 
-    const filteredItems = productList.filter((item:any) =>
-      item.des.toLowerCase().includes(searchTerm.toLowerCase())
-    );
+    if (searchTerm.trim() === '') {
+      // If the search term is empty, set filteredItems to an empty array
+      setFilteredItems([]);
+    } else {
+        const filteredItems = productList.filter((item:any) =>
+          item.des.toLowerCase().includes(searchTerm.toLowerCase())
+        );
 
-    // if searchTerm is in the productList set as filtered items
-    setFilteredItems(filteredItems);
+        // if searchTerm is in the productList set as filtered items
+        setFilteredItems(filteredItems);
+    }
   }
 
   useEffect(() => {
@@ -55,7 +60,8 @@ const Header = () => {
           <div className="col-12 d-flex align-items-center justify-between my-0 py-0 rounded rounded-pill" style={{border:'1px solid black'}} >
             <div className="col-9 my-0 py-0">
               <input className="border-0" type="search" value={searchItem} onChange={handleInputChange} placeholder="Search Products..." id='searchBar' onClick={()=>{
-                setActiveSearch(!activeSearch)
+                setActiveSearch(true);
+                setFilteredItems([]);
               }}/>
             </div>
             <div className="col-3 d-flex align-items-center justify-content-center my-0 py-0 ">
@@ -67,21 +73,39 @@ const Header = () => {
         </div > 
         
         {/* view for display search results */}
-        <div className={`${styles.searchRes} ${activeSearch===true? 'd-xxl-flex d-xl-flex d-lg-flex d-none' : 'd-none'} row mx-0 mt-2 bg-white rounded-1 flex-column overflow-y-scroll position-fixed bg-white w-25`} style={{top:'65px',zIndex:10000}} id='searchRes'>
-          <div className="col-12 ">
-            {filteredItems.length>0 ? filteredItems.map((item:any) => (
-              <Link href={{pathname: `/${item.section}/#`, query: {id: item.id, name: item.des}}} className='text-decoration-none ' key={item.key}>
-                <ul className='row mx-0 btn d-flex align-items-center mt-1 justify-content-center list-unstyled fw-bold ' >
-                  <li className='col-3 '>
-                    <img src={item.name.src} alt="item" className='img-fluid h-100' style={{width:'50px',height:'70px'}}/>
-                  </li>
-                  <li className='col-6 overflow-hidden'>{item.des}</li>
-                  <li className='col-3 '>{item.price}</li>
-                </ul>
-              </Link>
-            )): <div className='d-flex align-items-center justify-content-center'><p className='fs-5 '>No matching items found...</p> </div>}
+        {activeSearch && (filteredItems.length > 0 || searchItem) && (
+          <div
+            className={`${styles.searchRes} ${
+              activeSearch ? 'd-xxl-flex d-xl-flex d-lg-flex d-none' : 'd-none'
+            } row mx-0 mt-2 bg-white rounded-1 flex-column overflow-y-scroll position-fixed bg-white w-25`}
+            style={{ top: '65px', zIndex: 10000 }}
+            id="searchRes"
+          >
+          <div className="col-12">
+            {searchItem && filteredItems.length === 0 ? (
+              <div className="d-flex align-items-center justify-content-center">
+                <p className="fs-5">No matching items found...</p>
+              </div>
+            ) : (
+              filteredItems.map((item: any) => (
+                <Link
+                  href={{ pathname: `/${item.section}/#`, query: { id: item.id, name: item.des } }}
+                  className="text-decoration-none"
+                  key={item.key}
+                >
+                  <ul className="row mx-0 btn d-flex align-items-center mt-1 justify-content-center list-unstyled fw-bold">
+                    <li className="col-3">
+                      <img src={item.name.src} alt="item" className="img-fluid h-100" style={{ width: '50px', height: '70px' }} />
+                    </li>
+                    <li className="col-6 overflow-hidden">{item.des}</li>
+                    <li className="col-3">{item.price}</li>
+                  </ul>
+                </Link>
+              ))
+            )}
+              </div>
           </div>
-        </div>
+        )}
         
       </div>
       {/* navbar for md, sm, xs views */}

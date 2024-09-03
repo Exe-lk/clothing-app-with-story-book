@@ -11,7 +11,7 @@ import  styles from './page.module.scss';
 const page = () => {
   return (
     <div className={`${styles.mainContainer} container-fluid h-100  w-100 m-0 p-0`}>
-      <div className={`${styles.banner} row  w-100 mx-xxl-0 mx-2 p-1 position-relative`}>
+      <div className={`${styles.banner} row w-100 mx-xxl-0 mx-0 p-1 position-relative h-100`}>
         <div className={`${styles.details} position-absolute top-0 left-0 p-xxl-5 p-xl-4 p-lg-3 p-md-3 p-sm-3 px-3 mx-xxl-5 mx-xl-3 mx-lg-3 mx-md-3 mx-sm-1 my-1 my-lg-5`}>
           <h1 className='mb-xxl-4 mb-xl-4 mb-lg-4 mb-md-4 mb-sm-3 mb-2 mt-5 fw-bolder' style={{color:'rgba(171, 93, 2, 1)'}}>CONTACT US</h1>
           <p className='text-capitalize fs-xxl-5 fs-xl-5 fs-lg-5 fs-md-6 fs-sm-7 fs-7'>Our curated collection blends comfort with style, ensuring <br />
@@ -19,9 +19,9 @@ const page = () => {
         </div>
         <img src={contactus.src} alt="contactus" className='img-fluid object-fit-cover mx-0 px-0' />
       </div>
-      <div className="row  w-100 mx-xxl-0 mx-2 d-flex align-items-center justify-content-center ">
-        <div className="col-xxl-5 col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12  p-1 ms-xxl-5 ms-sm-auto mt-5 d-flex flex-column align-items-start justify-content-between me-3">
-          <div className="row mx-0 -m-1 pt-5 ps-xxl-5 ps-3">
+      <div className="row w-100 mx-xxl-0 mx-0 ">
+        <div className="col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12  px-1 mt-0 d-flex flex-column align-items-start justify-content-between">
+          <div className="row mx-0 pt-5 ps-xxl-5 ps-3">
             <h1 className=''>Get in <span style={{color:'rgba(171, 93, 2, 1)'}}>Touch</span></h1>
             <p className='fs-6'>ELorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           </div>
@@ -62,7 +62,7 @@ const page = () => {
             
           </div>
         </div>
-        <div className={`${styles.imageContainer} col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 my-2 `}>
+        {/* <div className={`${styles.imageContainer} col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 my-2 `}>
           <div className="row mx-0 ">
             <div className={`${styles.image1div} `}>
               <img src={map.src} alt="map" className={`${styles.image1}`}/>
@@ -70,6 +70,12 @@ const page = () => {
             <div className={`${styles.image2div}`} style={{background:'linear-gradient(89.26deg, rgba(255, 255, 255, 0.37) -13.18%, rgba(171, 93, 2, 0.72) 99.27%)'}}>
               <img src={girl.src} alt="girl" className={`${styles.image2} opacity-25`} />
             </div>
+          </div>
+        </div> */}
+        <div className={`${styles.imageContainer} col-xxl-7 col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12 my-2 position-relative h-100`}>
+          <img src={map.src} alt="map" className={`${styles.image1} position-absolute end-50 mt-xxl-5 mt-xl-5 mt-lg-5 mt-1`}/>
+          <div className='d-xxl-flex d-xl-flex d-lg-flex d-none' style={{background:'linear-gradient(89.26deg, rgba(255, 255, 255, 0.37) -13.18%, rgba(171, 93, 2, 0.72) 99.27%)'}}>
+            <img src={girl.src} alt="girl" className={`${styles.image2} opacity-25 position-absolute end-0 top-0`} />
           </div>
         </div>
       </div >

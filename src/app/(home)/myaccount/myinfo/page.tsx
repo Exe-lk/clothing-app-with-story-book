@@ -45,7 +45,7 @@ const MyInfo = () => {
             </div>
           </form>
 
-          <div className="row mx-0 mt-4 mb-2">
+          <div className="row mx-0 mt-4">
             <h4 className='position-relative text-capitalize fs-5 fs-xxl-3 fs-xl-3 fs-lg-4 fs-md-4 fs-sm-4 fw-bold'>Change Password</h4>
           </div>
 

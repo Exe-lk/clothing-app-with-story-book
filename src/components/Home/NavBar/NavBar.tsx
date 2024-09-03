@@ -7,10 +7,6 @@ import Documentation from './Doc/Documentation';
 import MainMenu from './Side Bar Main/MainMenu';
 import { productList } from '@/dummy data/products';
 
-const categories = [...new Set(productList.map((item:any)=>{
-  return item
-}))]
-
 const NavBar = () => {
   
   // hook for toggle between home and documentation in mobile view
@@ -30,19 +26,24 @@ const NavBar = () => {
   const [searchItem, setSearchItem] = useState('');
 
   // use to filter the items based on searchItem
-  const [filteredItems, setFilteredItems] = useState(productList);
+  const [filteredItems, setFilteredItems] = useState([]);
 
   // function to handle the changes on input section
   const handleInputChange = (e:any) => { 
     const searchTerm = e.target.value;
     setSearchItem(searchTerm)
 
-    const filteredItems = productList.filter((item:any) =>
-      item.des.toLowerCase().includes(searchTerm.toLowerCase())
-    );
+    if (searchTerm.trim() === '') {
+      // If the search term is empty, set filteredItems to an empty array
+      setFilteredItems([]);
+    } else {
+        const filteredItems = productList.filter((item:any) =>
+          item.des.toLowerCase().includes(searchTerm.toLowerCase())
+        );
 
-    // if searchTerm is in the productList set as filtered items
-    setFilteredItems(filteredItems);
+        // if searchTerm is in the productList set as filtered items
+        setFilteredItems(filteredItems);
+    }
   }
 
   // hook for stay in the alert on navbar item list
@@ -84,29 +85,31 @@ const NavBar = () => {
           <div className={`${styles.search} offcanvas-header d-sm-flex d-md-flex d-flex d-xxl-none d-xl-none d-lg-none flex-column`} style={{zIndex:500}} >
             <div className='row mx-0 w-100'>
               <div className='col-md-6 col-sm-6 col-10 m-auto d-flex d-sm-flex d-md-flex align-items-center justify-content-start justify-content-sm-center justify-content-md-center p-1' style={{height:'60px'}} onClick={()=>{
-              setActiveSearchMob(!activeSearchMob)
+              setActiveSearchMob(true)
               }}>
                   <i className="bi bi-search mx-2 btn"></i>
                   <input className={`${styles.searchBar} rounded-pill px-2 py-1`} type="search" placeholder="Search..." id='searchBar' value={searchItem} onChange={handleInputChange}/>
               </div> 
             </div> 
 
-            <div className={`${styles.searchRes} ${activeSearchMob===true? 'd-md-flex d-sm-flex d-flex d-xxl-none d-xl-none d-lg-none' : 'd-none'} row mx-0 w-100 position-fixed overflow-hidden h-auto`} style={{top:'160px'}} id='searchRes'>
-              <div className={`col-12 mx-0 mt-2 bg-white rounded-1 flex-column overflow-y-scroll bg-white`}  >
-                {filteredItems.length>0 ? filteredItems.map((item:any) => (
-                  // set the url based on query parameters
-                  <Link href={{pathname: `/${item.section}/#`, query: {id: item.id, name: item.des}}} className='text-decoration-none ' key={item.key}>
-                    <ul className='row mx-0 btn d-flex align-items-center mt-1 justify-content-center list-unstyled fw-bold ' data-bs-toggle="offcanvas" >
-                      <li className='col-3 '>
-                        <img src={item.name.src} alt="item" className='img-fluid h-100' style={{width:'50px',height:'70px'}}/>
-                      </li>
-                      <li className='col-6 overflow-hidden'>{item.des}</li>
-                      <li className='col-3 '>{item.price}</li>
-                    </ul>
-                  </Link>
-                )): <div className='d-flex align-items-center justify-content-center'><p className='fs-5 '>No matching items found...</p> </div>}
+            {activeSearchMob && (filteredItems.length > 0 || searchItem) && (
+              <div className={`${styles.searchRes} ${activeSearchMob===true? 'd-md-flex d-sm-flex d-flex d-xxl-none d-xl-none d-lg-none' : 'd-none'} row mx-0 w-100 position-fixed overflow-hidden h-auto`} style={{top:'160px'}} id='searchRes'>
+                <div className={`col-12 mx-0 mt-2 bg-white rounded-1 flex-column overflow-y-scroll bg-white`}  >
+                  {filteredItems.length>0 ? filteredItems.map((item:any) => (
+                    // set the url based on query parameters
+                    <Link href={{pathname: `/${item.section}/#`, query: {id: item.id, name: item.des}}} className='text-decoration-none ' key={item.key}>
+                      <ul className='row mx-0 btn d-flex align-items-center mt-1 justify-content-center list-unstyled fw-bold ' data-bs-toggle="offcanvas" >
+                        <li className='col-3 '>
+                          <img src={item.name.src} alt="item" className='img-fluid h-100' style={{width:'50px',height:'70px'}}/>
+                        </li>
+                        <li className='col-6 overflow-hidden'>{item.des}</li>
+                        <li className='col-3 '>{item.price}</li>
+                      </ul>
+                    </Link>
+                  )): <div className='d-flex align-items-center justify-content-center'><p className='fs-5 '>No matching items found...</p> </div>}
+                </div>
               </div>
-            </div>
+            )}
           </div>
           <div className='offcanvas-body d-xxl-flex d-xl-flex d-lg-flex d-none align-items-center justify-content-center vw-100'>
             {/* navbar list */}

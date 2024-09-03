@@ -201,7 +201,7 @@
   
   .login{
     transition: none;
-    translate: -1400px;
+    translate: -1500px;
   }
 
   .register{
@@ -209,6 +209,37 @@
     translate: 0;
   }
 
+}
+
+@media screen and (min-width : 0px) and (max-width: 991px) {
+  .login::before{
+    content: '' !important;
+    background-image: url(../../../../public/assets/loginRegister/login1.svg) !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    bottom: 0 !important;
+    right: 0 !important;
+    z-index: -10 !important;
+    opacity: .15 !important;
+  }
+  .register::before{
+    content: '' !important;
+    background-image: url(../../../../public/assets/loginRegister/register.png) !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    bottom: 0 !important;
+    right: 0 !important;
+    z-index: -10 !important;
+    opacity: .15 !important;
+  }
 }
 
 

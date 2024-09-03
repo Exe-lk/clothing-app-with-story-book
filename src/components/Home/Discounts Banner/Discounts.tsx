@@ -13,7 +13,7 @@ const Discounts = () => {
         <Image src={lefttImg}  alt='lefttImg' className={`${styles.img} img-fluid object-fit-cover`}/>
       </div>
       {/* discount banner middle description */}
-      <div className={`${styles.content} col-3 d-flex flex-column align-items-center justify-content-center `} style={{background:'rgba(245, 245, 245, 1)'}}>
+      <div className={`${styles.content} col-3 d-flex flex-column align-items-center justify-content-center px-1`} style={{background:'rgba(245, 245, 245, 1)'}}>
           <h1 className='text-capitalize my-xxl-3 my-xl-3 my-lg-3 my-md-3 my-sm-2 my-2 fw-bold '> {`women’s latest fashion`}</h1>
           <h3 className='text-capitalize my-xxl-3 my-xl-3 my-lg-2 my-md-2 my-sm-2 my-1 w-100 fs-xxl-2 fs-xl-3 fs-lg-4 fs-md-3 fs-sm-5 fs-7' style={{color:'#AB5D02'}}>20% discount</h3>
           <div className='w-100'>

@@ -224,32 +224,36 @@ const LoginPage = () => {
     //   </div>
     // </div>
 
-    <div className={`${styles.wrapper} ${action==='active' ? styles.active : ''} container my-auto d-flex align-items-center justify-content-center vw-100 vh-100`} >
+    <div className={`${styles.wrapper} ${action==='active' ? styles.active : ''} container-fluid my-auto d-flex align-items-center justify-content-center vw-100 vh-100`} >
 
       {
         registeredUsers.map((user:any)=>{
           return(
             <>
 
-              <div className={`${styles.login} row mx-0 p-2 h-auto text-center `} key={user.userId}>
-                <div className="col-6 overflow-hidden position-relative">
+              <div className={`${styles.login} row mx-0 p-2 h-auto text-center position-relative bg-transparent`} key={user.userId}>
+                  <Link href='/' className='position-absolute top-0 start-0 fs-2 d-block d-sm-block d-md-block d-lg-none d-xl-none d-xxl-none w-auto'>
+                    <i className="bi bi-arrow-left-circle" style={{color:'rgba(180, 110, 28, 1)'}}></i>
+                  </Link>
+
+                <div className="col-xxl-6 col-xl-6 col-lg-6 d-xxl-block d-xl-block d-lg-block d-none overflow-hidden">
                   <Link href='/' className='position-fixed top-0 start-0 fs-2'>
                     <i className="bi bi-arrow-left-circle" style={{color:'rgba(180, 110, 28, 1)'}}></i>
                   </Link>
                   <img src={login.src} alt="login" className='img-fluid object-fit-cover' style={{height:'350px',width:'600px'}}/>
                 </div>
-                <div className={`${styles.right} col-6`}>
+                <div className={`${styles.right} col-xxl-6 col-xl-6 col-lg-6 col-12`}>
                   <div className='row mx-0 text-center'>
                     <p className={`${styles.heading}`}>fashion<span><b>nova</b></span></p>
                     <p className='text-uppercase fs-6'>login to your account</p>
                   </div>
                   <div className='row mx-0 alert alert-dismissible fade show alert-secondary text-start ' role='alert'>
                     <button type="button" className="btn-close" data-bs-dismiss="alert"></button>
-                    <div className='col-1 m-auto'>
+                    <div className='col-2 m-auto'>
                       <i className="bi bi-lock-fill"></i>
                     </div>
-                    <div className='col-11 d-flex flex-column justify-content-center align-items-start'>
-                      <p><span className='fw-bold'>Email: </span>isuru@gmail.com</p>
+                    <div className='col-10 d-flex flex-column justify-content-center align-items-start'>
+                      <p><span className='fw-bold'>Email: </span>exe@gmail.com</p>
                       <p><span className='fw-bold'>Password: </span>123456</p>
                     </div>
 
@@ -280,13 +284,16 @@ const LoginPage = () => {
                 <p className='fs-7'>© Copyright 2024 FN. All Rights Reserved | EXE.LK</p>
               </div>
               <div className={`${styles.register} row mx-0 p-2  h-auto text-center`} >
-                <div className="col-6 overflow-hidden">
+                <Link href='/' className='position-absolute top-0 start-0 fs-2 d-block d-sm-block d-md-block d-lg-none d-xl-none d-xxl-none w-auto'>
+                  <i className="bi bi-arrow-left-circle" style={{color:'rgba(180, 110, 28, 1)'}}></i>
+                </Link>
+                <div className="col-xxl-6 col-xl-6 col-lg-6 d-xxl-block d-xl-block d-lg-block d-none overflow-hidden">
                   <Link href='/' className='position-fixed top-0 start-0 fs-2'>
                     <i className="bi bi-arrow-left-circle" style={{color:'rgba(180, 110, 28, 1)'}}></i>
                   </Link>
                   <img src={register.src} alt="register" className='img-fluid object-fit-cover' style={{height:'500px',width:'600px'}}/>
                 </div>
-                <div className={`${styles.right} col-6 `}>
+                <div className={`${styles.right} col-xxl-6 col-xl-6 col-lg-6 col-12`}>
                   <div className='row mx-0 text-center'>
                     <p className={`${styles.heading}`}>fashion<span><b>nova</b></span></p>
                     <p className='text-uppercase fs-6'>register to your account</p>
