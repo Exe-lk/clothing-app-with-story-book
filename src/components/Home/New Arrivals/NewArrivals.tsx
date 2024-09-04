@@ -4,6 +4,7 @@ import styles from './NewArrivals.module.scss';
 import React, { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 import { newArrivalsHomeList } from '../../../../public/assets/NewArrivalsHomeList';
+import Link from 'next/link';
 
 // Item interface for type saftey
 interface Item {
@@ -42,6 +43,7 @@ const NewArrivals = () => {
               return(
                 <div className={`${styles.itemContainer} itemCont btn col-xxl-2 col-xl-3 col-lg-3 col-md-3 col-sm-3 col-5 m-xxl-5 mx-2 my-2 m-sm-2 m-md-2 p-0 h-100`} key={item.id}>
                   <div className={`${styles.imageContainer} row mx-0 d-flex align-items-center m-0 p-0 position-relative`}>
+                    <Link href={{pathname: `/${item.category}/#`, query: {id: item.id, name: item.des}}} className='text-decoration-none text-black p-0'>
                     <Image src={item.name} alt='item' className={`${styles.image} img-fluid object-fit-cover m-0 p-0 rounded-3 `}/>
 
                     {/* show the discount badge if it is available */}
@@ -59,7 +61,8 @@ const NewArrivals = () => {
                     <div className={`${styles.addToCart} row btn rounded-0 mx-0 position-absolute bottom-0 d-flex align-items-center justify-content-center text-white p-xxl-3 p-xl-3 p-lg-3 p-2 w-100`} style={{background:'rgba(171, 93, 2, 0.66)'}}>
                       <i className="bi bi-cart3 w-auto ps-0 pe-2 fs-xxl-6"></i>
                       <p className='w-auto p-0 m-0 text-capitalize fs-xxl-6'>add to cart</p>
-                    </div>      
+                    </div>     
+                    </Link> 
                   </div>
                   <div className={`${styles.itemDes} row mx-0 d-flex align-items-start justify-content-between position-relative bg-white`} >
                     <p className='text-start fs-6 fs-sm-6 fs-xxl-5 fs-xl-5 fs-lg-5 p-0 mb-0 position-absolute top-0 text-capitalize' style={{color:'#5A5A5A'}}>{item.des}</p>

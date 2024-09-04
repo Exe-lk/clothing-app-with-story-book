@@ -10,6 +10,7 @@
   width: 200px;
   background-color: #05050b99;
   backdrop-filter: blur(.3rem);
+  // transition: width 0.5s ease-in-out !important;
 }
 
 .sideNav:hover a span{
@@ -27,25 +28,32 @@
 
 .sideNav:hover .list li{
   opacity: 1;
-  padding: 0 !important;
 }
 
-.sideNav .list li:not(:nth-child(1),:nth-child(4)):hover{
+.sideNav .list li:not(:nth-child(1),:nth-child(3)):hover{
   background-color: #232328;
 }
 
 .sideNav .list li:nth-child(1) li:hover,
-.sideNav .list li:nth-child(4) li:hover{
+.sideNav .list li:nth-child(3) li:hover{
   background-color: #232328;
 }
 
 .sideNav .list li:nth-child(1) div ul .item:hover,
-.sideNav .list li:nth-child(4) div ul .item:hover{
+.sideNav .list li:nth-child(3) div ul .item:hover{
   background-color: #232328;
   width: 100%;
 }
 .sideNav:hover .list li .menuDetails{
   display: block !important;
+  position: absolute; // Ensure this does not affect the layout
+  left: 48px; // Position this next to the sidebar
+  
+}
+
+.sideNav:hover .arrow{
+  position: absolute;
+  right: 8px; // Align it to the right of the menuDetails
 }
 
 .sideNav:hover .list .compoMenu{
@@ -70,8 +78,9 @@
   width: 70px;
   left:0;
   overflow-x:hidden;
-  padding-bottom:40px;
+  padding-bottom:30px;
   transition: width .2s ease-in-out;
   transition: background-color .2s ease-in-out;
   z-index: 1000000;
 }
+

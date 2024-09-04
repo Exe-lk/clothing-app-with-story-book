@@ -69,6 +69,26 @@ import D008It2 from '../../public/assets/discounted items/item8/2.jpg';
 import D008It3 from '../../public/assets/discounted items/item8/3.jpg';
 import D008It4 from '../../public/assets/discounted items/item8/4.jpg';
 
+import NA009It1 from '../../public/assets/newArrivals/item1/1.jpg';
+import NA009It2 from '../../public/assets/newArrivals/item1/2.jpg';
+import NA009It3 from '../../public/assets/newArrivals/item1/3.jpg';
+import NA009It4 from '../../public/assets/newArrivals/item1/4.jpg';
+
+import NA002It1 from '../../public/assets/newArrivals/item2/1.jpg';
+import NA002It2 from '../../public/assets/newArrivals/item2/2.jpg';
+import NA002It3 from '../../public/assets/newArrivals/item2/3.jpg';
+import NA002It4 from '../../public/assets/newArrivals/item2/4.jpg';
+
+import NA003It1 from '../../public/assets/newArrivals/item3/1.jpg';
+import NA003It2 from '../../public/assets/newArrivals/item3/2.jpg';
+import NA003It3 from '../../public/assets/newArrivals/item3/3.jpg';
+import NA003It4 from '../../public/assets/newArrivals/item3/4.jpg';
+
+import NA004It1 from '../../public/assets/newArrivals/item4/1.jpg';
+import NA004It2 from '../../public/assets/newArrivals/item4/2.jpg';
+import NA004It3 from '../../public/assets/newArrivals/item4/3.jpg';
+import NA004It4 from '../../public/assets/newArrivals/item4/4.jpg';
+
 export const womensCartList = [
   {
   itemId: 1,
@@ -219,6 +239,50 @@ export const womensCartList = [
   name: 'Square Neck Dress',
   availability: 'in-stock',
   price: 2500.00,
+  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam',
+  size: 'large',
+  colors: ['grey', 'green', 'blue', 'yellow'],
+  materials: 'Lorem ipsum'
+  },
+  {
+  itemId: 'NA001',
+  images: [NA009It1,NA009It2,NA009It3,NA009It4],
+  name: 'Rainy Light Green Skinee',
+  availability: 'in-stock',
+  price: 1700.00,
+  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam',
+  size: 'large',
+  colors: ['grey', 'green', 'blue', 'yellow'],
+  materials: 'Lorem ipsum'
+  },
+  {
+  itemId: 'NA002',
+  images: [NA002It1,NA002It2,NA002It3,NA002It4],
+  name: 'Rainy Light Beige Skinee',
+  availability: 'in-stock',
+  price: 1700.00,
+  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam',
+  size: 'large',
+  colors: ['grey', 'green', 'blue', 'yellow'],
+  materials: 'Lorem ipsum'
+  },
+  {
+  itemId: 'NA003',
+  images: [NA003It1,NA003It2,NA003It3,NA003It4],
+  name: 'Round Neck Black And White Skinee',
+  availability: 'in-stock',
+  price: 1700.00,
+  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam',
+  size: 'large',
+  colors: ['grey', 'green', 'blue', 'yellow'],
+  materials: 'Lorem ipsum'
+  },
+  {
+  itemId: 'NA004',
+  images: [NA004It1,NA004It2,NA004It3,NA004It4],
+  name: 'Keep Calm Baggy T Shirt',
+  availability: 'in-stock',
+  price: 1700.00,
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam',
   size: 'large',
   colors: ['grey', 'green', 'blue', 'yellow'],

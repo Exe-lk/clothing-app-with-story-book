@@ -86,10 +86,10 @@ const page = () => {
           
         <div className={`${styles.container} col-xxl-5 col-xl-5 col-lg-5 col-sm-10 col-md-10 col-10 mx-2 my-xxl-5 my-xl-5 my-lg-5 my-md-4 my-sm-4 my-4 bg-white p-2 rounded-3`} >
           <div className="row mx-0 ">
-            <div className="col-xxl-1 col-xl-2 col-lg-2 col-xl-2 col-2 m-0 p-0 text-center">
-              <MdOutlineRoundedCorner className='fs-5 fs-sm-3 fs-md-2 fs-lg-3 fs-xl-1 fs-xxl-1'/>
+            <div className="col-1 p-0 d-flex align-items-center justify-content-center mb-4 me-2">
+              <MdOutlineRoundedCorner className='fs-2 fs-sm-1 fs-md-2 fs-lg-1 fs-xl-1 fs-xxl-1'/>
             </div>
-            <div className="col-xxl-8 col-xl-6 col-lg-6 col-6 fs-6 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-5 fs-xxl-5 text-capitalize mb-4 fw-bold m-0 p-0">
+            <div className="col-xxl-7 col-xl-6 col-lg-6 col-6 fs-6 fs-sm-4 fs-md-3 fs-lg-3 fs-xl-1 fs-xxl-1 text-capitalize mb-4 fw-bold m-0 p-0">
               <p className='p-0 m-0'>rounded</p>
               <p className='p-0 m-0'>Search Bar</p>
             </div>
@@ -125,10 +125,10 @@ const page = () => {
         </div>
         <div className={`${styles.container} col-xxl-5 col-xl-5 col-lg-5 col-sm-10 col-md-10 col-10 mx-2 mx-2 my-xxl-5 my-xl-5 my-lg-5 my-md-4 my-sm-4 my-4 bg-white p-2 rounded-3`} >
           <div className="row mx-0">
-            <div className="col-xxl-1 col-xl-2 col-lg-2 col-xl-2 col-2 m-0 p-0 text-center" >
-              <i className="bi bi-palette fs-6 fs-sm-3 fs-md-2 fs-lg-3 fs-xl-5 fs-xxl-5"></i>
+            <div className="col-1 p-0 d-flex align-items-center justify-content-center mb-4 me-2" >
+              <i className="bi bi-palette fs-2 fs-sm-1 fs-md-2 fs-lg-1 fs-xl-1 fs-xxl-1"></i>
             </div>
-            <div className="col-xxl-8 col-xl-6 col-lg-6 col-6 fs-6 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-5 fs-xxl-5 text-capitalize mb-4 fw-bold m-0 p-0">
+            <div className="col-xxl-7 col-xl-6 col-lg-6 col-6 fs-6 fs-sm-4 fs-md-3 fs-lg-3 fs-xl-1 fs-xxl-1 text-capitalize mb-4 fw-bold m-0 p-0">
               <p className='p-0 m-0'>color</p>
               <p className='p-0 m-0'>Search Bar</p>
             </div>
@@ -166,10 +166,10 @@ const page = () => {
         </div>
         <div className={`${styles.container} col-xxl-5 col-xl-5 col-lg-5 col-sm-10 col-md-10 col-10 mx-2 my-xxl-5 my-xl-5 my-lg-5 my-md-4 my-sm-4 my-4 bg-white p-2 rounded-3`} >
           <div className="row mx-0 ">
-            <div className="col-xxl-1 col-xl-2 col-lg-2 col-xl-2 col-2 m-0 p-0 text-center">
-              <IoIosColorFill className='fs-5 fs-sm-3 fs-md-2 fs-lg-3 fs-xl-5 fs-xxl-5'/>
+            <div className="col-1 p-0 d-flex align-items-center justify-content-center mb-4 me-2">
+              <IoIosColorFill className='fs-2 fs-sm-1 fs-md-2 fs-lg-1 fs-xl-1 fs-xxl-1'/>
             </div>
-            <div className="col-xxl-8 col-xl-6 col-lg-6 col-6 fs-6 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-5 fs-xxl-5 text-capitalize mb-4 fw-bold m-0 p-0">
+            <div className="col-xxl-7 col-xl-6 col-lg-6 col-6 fs-6 fs-sm-4 fs-md-3 fs-lg-3 fs-xl-1 fs-xxl-1 text-capitalize mb-4 fw-bold m-0 p-0">
               <p className='p-0 m-0'>bg-color</p>
               <p className='p-0 m-0'>Search Bar</p>
             </div>
@@ -207,10 +207,10 @@ const page = () => {
         </div>
         <div className={`${styles.container} col-xxl-5 col-xl-5 col-lg-5 col-sm-10 col-md-10 col-10 mx-2 my-xxl-5 my-xl-5 my-lg-5 my-md-4 my-sm-4 my-4 bg-white p-2 rounded-3 `} >
           <div className="row mx-0">
-            <div className="col-xxl-1 col-xl-2 col-lg-2 col-xl-2 col-2 m-0 p-0 text-center ">
-              <i className="bi bi-distribute-vertical fs-5 fs-sm-3 fs-md-2 fs-lg-3 fs-xl-5 fs-xxl-5"></i>
+            <div className="col-1 p-0 d-flex align-items-center justify-content-center mb-4 me-2">
+              <i className="bi bi-distribute-vertical fs-2 fs-sm-1 fs-md-2 fs-lg-1 fs-xl-1 fs-xxl-1"></i>
             </div>
-            <div className="col-xxl-8 col-xl-6 col-lg-6 col-6 fs-6 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-5 fs-xxl-5 text-capitalize mb-4 fw-bold m-0 p-0">
+            <div className="col-xxl-7 col-xl-6 col-lg-6 col-6 fs-6 fs-sm-4 fs-md-3 fs-lg-3 fs-xl-1 fs-xxl-1 text-capitalize mb-4 fw-bold m-0 p-0">
               <p className='p-0 m-0'>padding</p>
               <p className='p-0 m-0'>Search Bar</p>
             </div>

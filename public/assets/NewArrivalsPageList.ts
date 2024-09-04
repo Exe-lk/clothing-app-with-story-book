@@ -1,16 +1,18 @@
-import one from '../assets/newArrivals/1.jpg'; 
-import two from '../assets/newArrivals/2.jpg'; 
-import three from '../assets/newArrivals/3.jpg'; 
-import four from '../assets/newArrivals/4.jpg'; 
-import five from '../assets/newArrivals/5.jpg'; 
-import six from '../assets/newArrivals/6.jpg'; 
+import one from '../assets/newArrivals/item1/1.jpg'; 
+import two from '../assets/newArrivals/item2/1.jpg'; 
+import three from '../assets/newArrivals/item3/1.jpg'; 
+import four from '../assets/newArrivals/item4/1.jpg'; 
+import five from '../assets/newArrivals/item5/1.jpg'; 
+import six from '../assets/newArrivals/item6/1.jpg'; 
 import seven from './discounted items/item7/1.jpg'; 
-import eight from '../assets/newArrivals/8.jpg'; 
+import eight from '../assets/newArrivals/item7/1.jpg'; 
 import twelve from './discounted items/item12/1.jpg'; 
 import thirteen from './discounted items/item13/1.jpg'; 
 import sixteen from './discounted items/item16/1.jpg'; 
 import eighteen from './discounted items/item18/1.jpg'; 
 import twenty from './discounted items/item20/1.jpg'; 
+import twentyone from './newArrivals/item8/1.jpg'; 
+
 
 export const newArrivalsPageList:any = [
   {'id':'NA001' ,'name': one, 'discount':false, 'category':'women', 'favourite': false, 'des':'Rainy Light Green Skinee', 'price':'Rs 1700.00'},
@@ -24,6 +26,7 @@ export const newArrivalsPageList:any = [
   {'id':'D020' ,'name': twenty, 'discount':false, 'category':'kids', 'favourite': false, 'des':'Little M Kids Loose Fit Casual T-Shirt', 'price':'Rs 1700.00'},
   {'id':'D007' ,'name': seven, 'discount':false, 'category':'women', 'favourite': false, 'des':'SweetHeart Printed Crop Top', 'price':'Rs 1700.00'},
   {'id':'NA008' ,'name': eight, 'discount':false, 'category':'men', 'favourite': false, 'des':'Extended Collar Linen Shirt', 'price':'Rs 1700.00'},
+  {'id':'NA009' ,'name': twentyone, 'discount':false, 'category':'men', 'favourite': false, 'des':'Extended Collar Linen Shirt', 'price':'Rs 1700.00'},
   {'id':'D012' ,'name': twelve, 'discount':false, 'category':'men', 'favourite': false, 'des':'The Jevin Kurta', 'price':'Rs 1700.00'},
   {'id':'D018' ,'name': eighteen, 'discount':false, 'category':'kids', 'favourite': false, 'des':'Ozone Kids Girls Casual Blouse', 'price':'Rs 1700.00'},
 ]

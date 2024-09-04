@@ -78,6 +78,26 @@ import D016It2 from '../../public/assets/discounted items/item16/2.jpg';
 import D016It3 from '../../public/assets/discounted items/item16/3.jpg';
 import D016It4 from '../../public/assets/discounted items/item16/4.jpg';
 
+import NA005It1 from '../../public/assets/newArrivals/item5/1.jpg';
+import NA005It2 from '../../public/assets/newArrivals/item5/2.jpg';
+import NA005It3 from '../../public/assets/newArrivals/item5/3.jpg';
+import NA005It4 from '../../public/assets/newArrivals/item5/4.jpg';
+
+import NA006It1 from '../../public/assets/newArrivals/item6/1.jpg';
+import NA006It2 from '../../public/assets/newArrivals/item6/2.jpg';
+import NA006It3 from '../../public/assets/newArrivals/item6/3.jpg';
+import NA006It4 from '../../public/assets/newArrivals/item6/4.jpg';
+
+import NA008It1 from '../../public/assets/newArrivals/item7/1.jpg';
+import NA008It2 from '../../public/assets/newArrivals/item7/2.jpg';
+import NA008It3 from '../../public/assets/newArrivals/item7/3.jpg';
+import NA008It4 from '../../public/assets/newArrivals/item7/4.jpg';
+
+import NA009It1 from '../../public/assets/newArrivals/item8/1.jpg';
+import NA009It2 from '../../public/assets/newArrivals/item8/2.jpg';
+import NA009It3 from '../../public/assets/newArrivals/item8/3.jpg';
+import NA009It4 from '../../public/assets/newArrivals/item8/4.jpg';
+
 
 export const mensCartList = [
 {
@@ -249,6 +269,50 @@ export const mensCartList = [
   itemId: 'D016',
   images: [D016It1,D016It2,D016It3,D016It4],
   name: 'The Shahan Coat',
+  availability: 'in-stock',
+  price: 1700.00,
+  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam',
+  size: 'large',
+  colors: ['grey', 'green', 'blue', 'yellow'],
+  materials: 'Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum'
+},
+{
+  itemId: 'NA005',
+  images: [NA005It1,NA005It2,NA005It3,NA005It4],
+  name: 'The Rory Shirt',
+  availability: 'in-stock',
+  price: 1700.00,
+  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam',
+  size: 'large',
+  colors: ['grey', 'green', 'blue', 'yellow'],
+  materials: 'Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum'
+},
+{
+  itemId: 'NA006',
+  images: [NA006It1,NA006It2,NA006It3,NA006It4],
+  name: 'The Pryce Shirt',
+  availability: 'in-stock',
+  price: 1700.00,
+  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam',
+  size: 'large',
+  colors: ['grey', 'green', 'blue', 'yellow'],
+  materials: 'Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum'
+},
+{
+  itemId: 'NA008',
+  images: [NA008It1,NA008It2,NA008It3,NA008It4],
+  name: 'Extended Collar Linen Shirt',
+  availability: 'in-stock',
+  price: 1700.00,
+  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam',
+  size: 'large',
+  colors: ['grey', 'green', 'blue', 'yellow'],
+  materials: 'Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum'
+},
+{
+  itemId: 'NA009',
+  images: [NA009It1,NA009It2,NA009It3,NA009It4],
+  name: 'Extended Collar Linen Shirt',
   availability: 'in-stock',
   price: 1700.00,
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam',

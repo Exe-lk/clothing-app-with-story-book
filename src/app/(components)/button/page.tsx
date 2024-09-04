@@ -83,12 +83,12 @@ const page = () => {
 
       <div className='row my-5 d-flex align-items-start justify-content-center' >
           
-        <div className={`${styles.container} col-xxl-5 col-xl-5 col-lg-5 col-sm-5 col-md-5 col-5 mx-2 my-xxl-5 my-xl-5 my-lg-5 my-md-4 my-sm-4 my-4 bg-white p-2 rounded-3`} >
+        <div className={`${styles.container} col-xxl-5 col-xl-5 col-lg-5 col-sm-10 col-md-10 col-10 mx-2 my-xxl-5 my-xl-5 my-lg-5 my-md-4 my-sm-4 my-4 bg-white p-2 rounded-3`} >
           <div className="row mx-0">
-            <div className="col-xxl-1 col-xl-2 col-lg-2 col-xl-2 col-2 m-0 p-0 text-center">
-              <MdOutlineRoundedCorner className='fs-6 fs-sm-3 fs-md-2 fs-lg-3 fs-xl-1 fs-xxl-1'/>
+            <div className="col-1 p-0 d-flex align-items-center justify-content-center mb-4 me-2">
+              <MdOutlineRoundedCorner className='fs-2 fs-sm-1 fs-md-2 fs-lg-1 fs-xl-1 fs-xxl-1'/>
             </div>
-            <div className="col-xxl-8 col-xl-6 col-lg-6 col-6 fs-7 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-5 fs-xxl-5 text-capitalize mb-4 fw-bold m-0 p-0">
+            <div className="col-xxl-7 col-xl-6 col-lg-6 col-6 fs-6 fs-sm-4 fs-md-3 fs-lg-3 fs-xl-1 fs-xxl-1 text-capitalize mb-4 fw-bold m-0 p-0">
               <p className='p-0 m-0'>rounded</p>
               <p className='p-0 m-0'>Button</p>
             </div>
@@ -107,12 +107,12 @@ const page = () => {
             <button className='btn col-3 mx-xxl-2 mx-xl-2 mx-lg-2 mx-md-2 mx-1 my-xxl-2 my-1 p-1 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5  text-white rounded-pill ' style={{background:'#AB5D02'}}>pill</button>
           </div>
         </div>
-        <div className={`${styles.container} col-xxl-5 col-xl-5 col-lg-5 col-sm-5 col-md-5 col-5 mx-2 mx-2 my-xxl-5 my-xl-5 my-lg-5 my-md-4 my-sm-4 my-4 bg-white p-2 rounded-3`} >
+        <div className={`${styles.container} col-xxl-5 col-xl-5 col-lg-5 col-sm-10 col-md-10 col-10 mx-2 my-xxl-5 my-xl-5 my-lg-5 my-md-4 my-sm-4 my-4 bg-white p-2 rounded-3`} >
           <div className="row mx-0">
-            <div className="col-xxl-1 col-xl-2 col-lg-2 col-xl-2 col-2 m-0 p-0 text-center" >
-              <SlSizeFullscreen className='fs-6 fs-sm-3 fs-md-2 fs-lg-3 fs-xl-5 fs-xxl-5'/>
+            <div className="col-1 p-0 d-flex align-items-center justify-content-center mb-4 me-2" >
+              <SlSizeFullscreen className='fs-2 fs-sm-1 fs-md-2 fs-lg-1 fs-xl-1 fs-xxl-1'/>
             </div>
-            <div className="col-xxl-8 col-xl-6 col-lg-6 col-6 fs-7 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-5 fs-xxl-5 text-capitalize mb-4 fw-bold m-0 p-0">
+            <div className="col-xxl-7 col-xl-6 col-lg-6 col-6 fs-6 fs-sm-4 fs-md-3 fs-lg-3 fs-xl-1 fs-xxl-1 text-capitalize mb-4 fw-bold m-0 p-0">
               <p className='p-0 m-0'>size</p>
               <p className='p-0 m-0'>Button</p>
             </div>
@@ -127,12 +127,12 @@ const page = () => {
             <button className='btn btn-sm col-3 mx-xxl-2 mx-xl-2 mx-lg-2 mx-md-2 mx-1 my-xxl-2 my-1 text-white rounded-0 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5 text-center invisible' style={{background:'#AB5D02'}}>sm</button>
           </div>
         </div>
-        <div className={`${styles.container} col-xxl-5 col-xl-5 col-lg-5 col-sm-5 col-md-5 col-5 mx-2 my-xxl-5 my-xl-5 my-lg-5 my-md-4 my-sm-4 my-4 bg-white p-2 rounded-3`} >
+        <div className={`${styles.container} col-xxl-5 col-xl-5 col-lg-5 col-sm-10 col-md-10 col-10 mx-2 my-xxl-5 my-xl-5 my-lg-5 my-md-4 my-sm-4 my-4 bg-white p-2 rounded-3`} >
           <div className="row mx-0">
-            <div className="col-xxl-1 col-xl-2 col-lg-2 col-xl-2 col-2 m-0 p-0 text-center">
-              <IoIosColorFill className='fs-6 fs-sm-3 fs-md-2 fs-lg-3 fs-xl-5 fs-xxl-5'/>
+            <div className="col-1 p-0 d-flex align-items-center justify-content-center mb-4 me-2">
+              <IoIosColorFill className='fs-2 fs-sm-1 fs-md-2 fs-lg-1 fs-xl-1 fs-xxl-1'/>
             </div>
-            <div className="col-xxl-8 col-xl-6 col-lg-6 col-6 fs-7 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-5 fs-xxl-5 text-capitalize mb-4 fw-bold m-0 p-0">
+            <div className="col-xxl-7 col-xl-6 col-lg-6 col-6 fs-6 fs-sm-4 fs-md-3 fs-lg-3 fs-xl-1 fs-xxl-1 text-capitalize mb-4 fw-bold m-0 p-0">
               <p className='p-0 m-0'>bg-color</p>
               <p className='p-0 m-0'>Button</p>
             </div>
@@ -148,12 +148,12 @@ const page = () => {
             <button className='btn col-3 mx-xxl-2 mx-xl-2 mx-lg-2 mx-md-2 mx-1 my-xxl-2 my-1 p-1 fs-8 fs-sm-7 fs-md-6 fs-lg-6 fs-xl-6 fs-xxl-5  text-white bg-black' >black</button>
           </div>
         </div>
-        <div className={`${styles.container} col-xxl-5 col-xl-5 col-lg-5 col-sm-5 col-md-5 col-5 mx-2 my-xxl-5 my-xl-5 my-lg-5 my-md-4 my-sm-4 my-4 bg-white p-2 rounded-3`} >
+        <div className={`${styles.container} col-xxl-5 col-xl-5 col-lg-5 col-sm-10 col-md-10 col-10 mx-2 my-xxl-5 my-xl-5 my-lg-5 my-md-4 my-sm-4 my-4 bg-white p-2 rounded-3`} >
           <div className="row mx-0">
-            <div className="col-xxl-1 col-xl-2 col-lg-2 col-xl-2 col-2 m-0 p-0 text-center ">
-              <RiShadowLine className='fs-6 fs-sm-3 fs-md-2 fs-lg-3 fs-xl-5 fs-xxl-5'/>
+            <div className="col-1 p-0 d-flex align-items-center justify-content-center mb-4 me-2 ">
+              <RiShadowLine className='fs-2 fs-sm-1 fs-md-2 fs-lg-1 fs-xl-1 fs-xxl-1'/>
             </div>
-            <div className="col-xxl-8 col-xl-6 col-lg-6 col-6 fs-7 fs-sm-6 fs-md-5 fs-lg-6 fs-xl-5 fs-xxl-5 text-capitalize mb-4 fw-bold m-0 p-0">
+            <div className="col-xxl-7 col-xl-6 col-lg-6 col-6 fs-6 fs-sm-4 fs-md-3 fs-lg-3 fs-xl-1 fs-xxl-1 text-capitalize mb-4 fw-bold m-0 p-0">
               <p className='p-0 m-0'>shadow</p>
               <p className='p-0 m-0'>Button</p>
             </div>

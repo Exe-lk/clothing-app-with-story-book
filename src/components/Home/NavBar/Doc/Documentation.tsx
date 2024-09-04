@@ -49,7 +49,7 @@ const Documentation = () => {
           </a>
           <ul className="dropdown-menu border-0" aria-labelledby="navbarDropdown" data-bs-toggle="offcanvas">
             <Link className="dropdown-item text-capitalize ms-4 ms-md-5 fs-md-4 fs-sm-5 fs-5" href="/button" >button</Link>
-            <Link className="dropdown-item text-capitalize ms-4 ms-md-5 fs-md-4 fs-sm-5 fs-5" href="/searchBar">search bar</Link>
+            <Link className="dropdown-item text-capitalize ms-4 ms-md-5 fs-md-4 fs-sm-5 fs-5" href="/searchbar">search bar</Link>
             <Link className="dropdown-item text-capitalize ms-4 ms-md-5 fs-md-4 fs-sm-5 fs-5" href="/">component 3</Link>
           </ul>
         </li>
